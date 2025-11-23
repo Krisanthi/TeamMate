@@ -21,9 +21,6 @@ public enum Role {
     public String getDisplayName() { return displayName; }
     public String getDescription() { return description; }
 
-    /**
-     * Parses string to Role enum
-     */
     public static Role fromString(String role) {
         if (role == null) return null;
 

@@ -25,16 +25,10 @@ public enum PersonalityType {
     public String getDisplayName() { return displayName; }
     public String getDescription() { return description; }
 
-    /**
-     * Checks if a score falls within this personality type's range
-     */
     public boolean isInRange(int score) {
         return score >= minScore && score <= maxScore;
     }
 
-    /**
-     * Parses string to PersonalityType enum
-     */
     public static PersonalityType fromString(String type) {
         if (type == null) return null;
 
