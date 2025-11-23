@@ -4,6 +4,7 @@ import com.teammate.util.InvalidInputException;
 
 /**
  * Utility class for classifying personality types based on scores
+ * Implements scoring algorithm: Total (5-25) * 4 = Score (50-100)
  */
 public class PersonalityClassifier {
 
@@ -28,12 +29,12 @@ public class PersonalityClassifier {
             }
         }
 
-        // Default fallback
-        return PersonalityType.THINKER;
+        return PersonalityType.THINKER; // Default fallback
     }
 
     /**
      * Calculates personality score from survey responses (1-5 each)
+     * Formula: Total (5-25) * 4 = Score (50-100)
      * @param responses Array of 5 responses (each 1-5)
      * @return Scaled score (50-100)
      */
@@ -51,21 +52,14 @@ public class PersonalityClassifier {
             total += responses[i];
         }
 
-        // Total range: 5-25, scale to 50-100
-        // Formula: ((total - 5) / 20) * 50 + 50
-        return (int) Math.round(((total - 5) / 20.0) * 50 + 50);
+        // Total range: 5-25, multiply by 4 to scale to 50-100
+        return total * 4;
     }
 
-    /**
-     * Validates if a score is within acceptable range
-     */
     public static boolean validateScore(int score) {
         return score >= MIN_SCORE && score <= MAX_SCORE;
     }
 
-    /**
-     * Gets the personality type description for a score
-     */
     public static String getDescriptionForScore(int score) {
         PersonalityType type = classify(score);
         return type.getDescription();

@@ -12,9 +12,6 @@ public class Team {
     private int teamSize;
     private double averageSkill;
 
-    /**
-     * Constructor with team ID and size
-     */
     public Team(String teamId, int teamSize) {
         this.teamId = teamId;
         this.teamSize = teamSize;
@@ -22,9 +19,6 @@ public class Team {
         this.averageSkill = 0.0;
     }
 
-    /**
-     * Adds a member to the team if space available
-     */
     public boolean addMember(Participant participant) {
         if (members.size() >= teamSize) {
             return false;
@@ -34,9 +28,6 @@ public class Team {
         return true;
     }
 
-    /**
-     * Removes a member from the team
-     */
     public boolean removeMember(Participant participant) {
         boolean removed = members.remove(participant);
         if (removed) {
@@ -45,9 +36,6 @@ public class Team {
         return removed;
     }
 
-    /**
-     * Calculates the average skill level of team members
-     */
     public double calculateAverageSkill() {
         if (members.isEmpty()) {
             averageSkill = 0.0;
@@ -63,10 +51,7 @@ public class Team {
     }
 
     /**
-     * Checks if team is balanced according to criteria:
-     * - Has diverse roles (at least 3 different)
-     * - Has mixed personalities
-     * - Not too many from same game
+     * Checks if team is balanced according to all criteria
      */
     public boolean isBalanced() {
         if (members.size() < teamSize) {
@@ -99,16 +84,10 @@ public class Team {
         return rolesDiverse && noGameDomination && hasPersonalityMix;
     }
 
-    /**
-     * Checks if team is full
-     */
     public boolean isFull() {
         return members.size() >= teamSize;
     }
 
-    /**
-     * Gets count of specific personality type in team
-     */
     public int getPersonalityCount(PersonalityType type) {
         int count = 0;
         for (Participant p : members) {
@@ -119,9 +98,6 @@ public class Team {
         return count;
     }
 
-    /**
-     * Gets count of specific role in team
-     */
     public int getRoleCount(Role role) {
         int count = 0;
         for (Participant p : members) {
@@ -132,9 +108,6 @@ public class Team {
         return count;
     }
 
-    /**
-     * Gets count of specific game in team
-     */
     public int getGameCount(String game) {
         int count = 0;
         for (Participant p : members) {

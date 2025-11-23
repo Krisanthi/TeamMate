@@ -14,15 +14,9 @@ public class Participant {
     private int personalityScore;
     private PersonalityType personalityType;
 
-    /**
-     * Default constructor
-     */
     public Participant() {
     }
 
-    /**
-     * Full constructor with all parameters
-     */
     public Participant(String id, String name, String email, String preferredGame,
                        int skillLevel, Role preferredRole, int personalityScore) {
         this.id = id;
