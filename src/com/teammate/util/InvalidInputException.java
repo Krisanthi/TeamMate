@@ -5,16 +5,10 @@ package com.teammate.util;
  */
 public class InvalidInputException extends Exception {
 
-    /**
-     * Constructor with message
-     */
     public InvalidInputException(String message) {
         super(message);
     }
 
-    /**
-     * Constructor with message and cause
-     */
     public InvalidInputException(String message, Throwable cause) {
         super(message, cause);
     }
