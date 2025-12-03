@@ -126,11 +126,15 @@ public class FileHandler {
         }
     }
 
+    /**
+     * Saves teams to CSV - OVERWRITES existing file completely
+     */
     public void saveTeams(List<Team> teams) throws FileProcessingException {
         BufferedWriter writer = null;
 
         try {
-            writer = new BufferedWriter(new FileWriter(outputFilePath));
+            // false parameter means overwrite the file
+            writer = new BufferedWriter(new FileWriter(outputFilePath, false));
 
             writer.write("TeamID,ParticipantID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityType,PersonalityScore");
             writer.newLine();
@@ -145,6 +149,8 @@ public class FileHandler {
                     writer.newLine();
                 }
             }
+
+            Logger.logInfo("Saved " + teams.size() + " teams");
 
         } catch (IOException e) {
             throw new FileProcessingException("Error writing teams", e);

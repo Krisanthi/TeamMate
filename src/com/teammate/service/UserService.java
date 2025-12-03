@@ -3,10 +3,10 @@ package com.teammate.service;
 import com.teammate.model.*;
 import com.teammate.util.*;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * Manages participant data with auto-ID generation and CSV persistence
+ * Service for managing participants
+ * Uses LinkedHashMap to maintain insertion order automatically
  */
 public class UserService {
 
@@ -15,14 +15,14 @@ public class UserService {
     private int nextIdNumber;
 
     public UserService(String csvFilePath) {
-        this.participants = new ConcurrentHashMap<>();
+        this.participants = new LinkedHashMap<>();
         this.csvFilePath = csvFilePath;
         this.nextIdNumber = 101;
         Logger.logInfo("UserService initialized");
     }
 
     /**
-     * Registers participant with auto-generated ID (P101, P102, etc.)
+     * Registers new participant with auto-generated ID
      */
     public Participant registerParticipant(String name, String email, String preferredGame,
                                            int skillLevel, Role preferredRole, int personalityScore)
@@ -37,10 +37,10 @@ public class UserService {
         try {
             saveAllToCSV();
         } catch (FileProcessingException e) {
-            Logger.logError("Failed to save to CSV: " + e.getMessage());
+            Logger.logError("Failed to save participant to CSV: " + e.getMessage());
         }
 
-        Logger.logInfo("Registered: " + newId);
+        Logger.logInfo("Participant registered: " + newId);
         return participant;
     }
 
@@ -51,16 +51,16 @@ public class UserService {
         return "P" + String.format("%03d", nextIdNumber++);
     }
 
-    public boolean participantExists(String id) {
-        return participants.containsKey(id);
-    }
-
     public Participant getParticipant(String id) {
         return participants.get(id);
     }
 
     public void updateParticipant(Participant participant) throws InvalidInputException {
-        if (participant == null || !participants.containsKey(participant.getId())) {
+        if (participant == null) {
+            throw new InvalidInputException("Participant cannot be null");
+        }
+
+        if (!participants.containsKey(participant.getId())) {
             throw new InvalidInputException("Participant not found");
         }
 
@@ -72,24 +72,29 @@ public class UserService {
             Logger.logError("Failed to update CSV: " + e.getMessage());
         }
 
-        Logger.logInfo("Updated: " + participant.getId());
+        Logger.logInfo("Participant updated: " + participant.getId());
     }
 
     public boolean deleteParticipant(String id) {
         Participant removed = participants.remove(id);
 
         if (removed != null) {
+            // Update participants CSV
             try {
                 saveAllToCSV();
             } catch (FileProcessingException e) {
-                Logger.logError("Failed to update CSV: " + e.getMessage());
+                Logger.logError("Failed to update CSV after deletion: " + e.getMessage());
             }
-            Logger.logInfo("Deleted: " + id);
+
+            Logger.logInfo("Participant deleted: " + id);
             return true;
         }
         return false;
     }
 
+    /**
+     * Gets all participants in insertion order (LinkedHashMap maintains order)
+     */
     public List<Participant> getAllParticipants() {
         return new ArrayList<>(participants.values());
     }
@@ -101,9 +106,10 @@ public class UserService {
         for (Participant p : loaded) {
             participants.put(p.getId(), p);
 
-            // Update nextIdNumber based on existing IDs
+            // Update nextIdNumber
             try {
-                int num = Integer.parseInt(p.getId().substring(1));
+                String numStr = p.getId().substring(1);
+                int num = Integer.parseInt(numStr);
                 if (num >= nextIdNumber) {
                     nextIdNumber = num + 1;
                 }
@@ -112,22 +118,16 @@ public class UserService {
             }
         }
 
-        Logger.logInfo("Loaded " + loaded.size() + " participants");
+        Logger.logInfo("Loaded " + loaded.size() + " participants. Next ID: P" +
+                String.format("%03d", nextIdNumber));
         return loaded.size();
     }
 
     private void saveAllToCSV() throws FileProcessingException {
         FileHandler fileHandler = new FileHandler("", csvFilePath);
         List<Participant> allParticipants = new ArrayList<>(participants.values());
-        allParticipants.sort(Comparator.comparing(Participant::getId));
+
         fileHandler.saveParticipants(allParticipants, csvFilePath);
-    }
-
-    public void clearAll() {
-        participants.clear();
-    }
-
-    public int getParticipantCount() {
-        return participants.size();
+        Logger.logInfo("Saved " + allParticipants.size() + " participants to CSV");
     }
 }

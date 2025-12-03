@@ -26,10 +26,6 @@ public class Logger {
         log("ERROR", message);
     }
 
-    public static void logDebug(String message) {
-        log("DEBUG", message);
-    }
-
     private static void log(String level, String message) {
         String timestamp = LocalDateTime.now().format(formatter);
         String logMessage = String.format("[%s] [%s] %s", timestamp, level, message);

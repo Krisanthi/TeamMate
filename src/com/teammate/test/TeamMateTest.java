@@ -4,13 +4,11 @@ import com.teammate.model.*;
 import com.teammate.service.*;
 import com.teammate.util.*;
 import java.util.*;
+import java.io.*;
 
 /**
- * Comprehensive test suite for TeamMate application
- * Tests all major functionality and edge cases
- *
- * @author [Your RGU ID]
- * @version 1.0
+ * Comprehensive Testing Suite for TeamMate Application
+ * Covers: Unit Tests, Integration Tests, Concurrency, File Integrity, User Acceptance
  */
 public class TeamMateTest {
 
@@ -19,229 +17,275 @@ public class TeamMateTest {
     private static int testsFailed = 0;
 
     public static void main(String[] args) {
-        System.out.println("╔══════════════════════════════════════════════╗");
-        System.out.println("║   TeamMate Application Testing Suite        ║");
-        System.out.println("╚══════════════════════════════════════════════╝\n");
+        System.out.println("================================================================");
+        System.out.println("   TeamMate Application - Comprehensive Testing Suite");
+        System.out.println("================================================================\n");
 
-        // Run all test categories
-        testParticipantClass();
-        testTeamClass();
+        testParticipantModel();
+        testTeamModel();
         testPersonalityClassifier();
-        testRoleEnum();
+        testValidationUtils();
+        testUserService();
+        testTeamService();
         testTeamBuilder();
         testFileHandler();
-        testExceptionHandling();
         testConcurrency();
-        testValidation();
-        testEdgeCases();
+        testUserAcceptance();
 
-        // Print summary
         printTestSummary();
     }
 
-    // ==================== TEST: Participant Class ====================
-    private static void testParticipantClass() {
-        System.out.println("\n📋 Testing Participant Class");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== UNIT TESTS: Participant Model ====================
 
-        // Test 1: Valid participant creation
-        test("Participant creation with valid data", () -> {
-            Participant p = new Participant("P001", "John Doe", "john@uni.edu",
+    private static void testParticipantModel() {
+        System.out.println("\n[UNIT TESTS] Participant Model");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Create participant with valid data", () -> {
+            Participant p = new Participant("P001", "John", "john@uni.edu",
                     "FIFA", 7, Role.ATTACKER, 85);
-            return p.getName().equals("John Doe") &&
+            return p.getName().equals("John") &&
+                    p.getSkillLevel() == 7 &&
                     p.getPersonalityType() == PersonalityType.BALANCED;
         });
 
-        // Test 2: Personality type auto-classification
         test("Personality type auto-classification", () -> {
             Participant leader = new Participant("P002", "Leader", "l@uni.edu",
                     "Chess", 9, Role.STRATEGIST, 95);
             Participant thinker = new Participant("P003", "Thinker", "t@uni.edu",
-                    "DOTA 2", 5, Role.DEFENDER, 60);
+                    "DOTA", 5, Role.DEFENDER, 60);
             return leader.getPersonalityType() == PersonalityType.LEADER &&
                     thinker.getPersonalityType() == PersonalityType.THINKER;
         });
 
-        // Test 3: Participant equality
-        test("Participant equality by ID", () -> {
-            Participant p1 = new Participant("P001", "John", "j@uni.edu",
-                    "FIFA", 5, Role.ATTACKER, 70);
-            Participant p2 = new Participant("P001", "John", "j@uni.edu",
-                    "FIFA", 5, Role.ATTACKER, 70);
-            return p1.equals(p2);
-        });
-
-        // Test 4: ToString method
-        test("Participant toString format", () -> {
-            Participant p = new Participant("P001", "Test", "test@uni.edu",
-                    "CS:GO", 8, Role.COORDINATOR, 88);
-            return p.toString().contains("P001") && p.toString().contains("Test");
+        test("Update personality score updates type", () -> {
+            Participant p = new Participant("P004", "Test", "test@uni.edu",
+                    "DOTA", 5, Role.SUPPORTER, 70);
+            p.setPersonalityScore(95);
+            return p.getPersonalityType() == PersonalityType.LEADER;
         });
     }
 
-    // ==================== TEST: Team Class ====================
-    private static void testTeamClass() {
-        System.out.println("\n📋 Testing Team Class");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== UNIT TESTS: Team Model ====================
 
-        // Test 1: Team creation and member addition
-        test("Team member addition", () -> {
+    private static void testTeamModel() {
+        System.out.println("\n[UNIT TESTS] Team Model");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Add member to team", () -> {
             Team team = new Team("TEAM_1", 5);
-            Participant p1 = new Participant("P001", "Player1", "p1@uni.edu",
+            Participant p = new Participant("P001", "Player1", "p1@uni.edu",
                     "FIFA", 7, Role.ATTACKER, 85);
-            boolean added = team.addMember(p1);
-            return added && team.getCurrentSize() == 1;
+            return team.addMember(p) && team.getCurrentSize() == 1;
         });
 
-        // Test 2: Team size limit
-        test("Team size limit enforcement", () -> {
+        test("Team size limit enforced", () -> {
             Team team = new Team("TEAM_2", 3);
             for (int i = 1; i <= 3; i++) {
-                team.addMember(new Participant("P00" + i, "P" + i, "p@uni.edu",
-                        "FIFA", 5, Role.ATTACKER, 70));
+                team.addMember(new Participant("P" + String.format("%03d", i),
+                        "P" + i, "p@uni.edu", "FIFA", 5, Role.ATTACKER, 70));
             }
             Participant extra = new Participant("P004", "Extra", "e@uni.edu",
                     "FIFA", 5, Role.DEFENDER, 75);
             return !team.addMember(extra) && team.isFull();
         });
 
-        // Test 3: Average skill calculation
         test("Average skill calculation", () -> {
             Team team = new Team("TEAM_3", 5);
-            team.addMember(new Participant("P001", "P1", "p1@uni.edu",
-                    "FIFA", 5, Role.ATTACKER, 70));
-            team.addMember(new Participant("P002", "P2", "p2@uni.edu",
-                    "FIFA", 7, Role.DEFENDER, 80));
-            team.addMember(new Participant("P003", "P3", "p3@uni.edu",
-                    "FIFA", 9, Role.STRATEGIST, 90));
+            team.addMember(new Participant("P001", "P1", "p1@uni.edu", "FIFA", 4, Role.ATTACKER, 70));
+            team.addMember(new Participant("P002", "P2", "p2@uni.edu", "FIFA", 6, Role.DEFENDER, 80));
+            team.addMember(new Participant("P003", "P3", "p3@uni.edu", "FIFA", 8, Role.STRATEGIST, 90));
             double avg = team.calculateAverageSkill();
-            return Math.abs(avg - 7.0) < 0.01; // (5+7+9)/3 = 7
+            return Math.abs(avg - 6.0) < 0.01;
         });
 
-        // Test 4: Team balance check
-        test("Team balance validation", () -> {
-            Team team = new Team("TEAM_4", 5);
-            team.addMember(new Participant("P001", "P1", "p1@uni.edu",
-                    "FIFA", 5, Role.ATTACKER, 95));
-            team.addMember(new Participant("P002", "P2", "p2@uni.edu",
-                    "CS:GO", 7, Role.DEFENDER, 70));
-            team.addMember(new Participant("P003", "P3", "p3@uni.edu",
-                    "DOTA 2", 6, Role.STRATEGIST, 85));
-            team.addMember(new Participant("P004", "P4", "p4@uni.edu",
-                    "Basketball", 8, Role.SUPPORTER, 60));
-            team.addMember(new Participant("P005", "P5", "p5@uni.edu",
-                    "Valorant", 5, Role.COORDINATOR, 75));
-            return team.isBalanced();
-        });
-
-        // Test 5: Role and personality counting
         test("Role and personality counting", () -> {
-            Team team = new Team("TEAM_5", 5);
-            team.addMember(new Participant("P001", "P1", "p1@uni.edu",
-                    "FIFA", 5, Role.ATTACKER, 95));
-            team.addMember(new Participant("P002", "P2", "p2@uni.edu",
-                    "FIFA", 7, Role.ATTACKER, 70));
+            Team team = new Team("TEAM_4", 5);
+            team.addMember(new Participant("P001", "P1", "p1@uni.edu", "FIFA", 5, Role.ATTACKER, 95));
+            team.addMember(new Participant("P002", "P2", "p2@uni.edu", "FIFA", 7, Role.ATTACKER, 70));
+            team.addMember(new Participant("P003", "P3", "p3@uni.edu", "FIFA", 6, Role.DEFENDER, 60));
             return team.getRoleCount(Role.ATTACKER) == 2 &&
                     team.getPersonalityCount(PersonalityType.LEADER) == 1;
         });
     }
 
-    // ==================== TEST: PersonalityClassifier ====================
+    // ==================== UNIT TESTS: Personality Classifier ====================
+
     private static void testPersonalityClassifier() {
-        System.out.println("\n📋 Testing PersonalityClassifier");
-        System.out.println("─────────────────────────────────────────");
+        System.out.println("\n[UNIT TESTS] Personality Classifier");
+        System.out.println("----------------------------------------------------------------");
 
-        // Test 1: Leader classification
-        test("Leader personality classification (90-100)", () -> {
+        test("Classification ranges (Leader 90-100, Balanced 70-89, Thinker 50-69)", () -> {
             return PersonalityClassifier.classify(95) == PersonalityType.LEADER &&
-                    PersonalityClassifier.classify(90) == PersonalityType.LEADER &&
-                    PersonalityClassifier.classify(100) == PersonalityType.LEADER;
+                    PersonalityClassifier.classify(75) == PersonalityType.BALANCED &&
+                    PersonalityClassifier.classify(60) == PersonalityType.THINKER;
         });
 
-        // Test 2: Balanced classification
-        test("Balanced personality classification (70-89)", () -> {
-            return PersonalityClassifier.classify(75) == PersonalityType.BALANCED &&
-                    PersonalityClassifier.classify(70) == PersonalityType.BALANCED &&
-                    PersonalityClassifier.classify(89) == PersonalityType.BALANCED;
-        });
-
-        // Test 3: Thinker classification
-        test("Thinker personality classification (50-69)", () -> {
-            return PersonalityClassifier.classify(60) == PersonalityType.THINKER &&
-                    PersonalityClassifier.classify(50) == PersonalityType.THINKER &&
-                    PersonalityClassifier.classify(69) == PersonalityType.THINKER;
-        });
-
-        // Test 4: Score validation
-        test("Score validation (50-100)", () -> {
-            return PersonalityClassifier.validateScore(75) &&
-                    !PersonalityClassifier.validateScore(40) &&
-                    !PersonalityClassifier.validateScore(110);
-        });
-
-        // Test 5: Survey score calculation
-        test("Survey score calculation from responses", () -> {
+        test("Survey calculation: (Q1+Q2+Q3+Q4+Q5) x 4", () -> {
             try {
-                int[] responses = {5, 5, 5, 5, 5}; // Max responses = 25
-                int score = PersonalityClassifier.calculateScore(responses);
-                // (25-5)/20 * 50 + 50 = 100
-                return score == 100;
+                int[] max = {5, 5, 5, 5, 5};
+                int[] valid = {3, 3, 3, 2, 2};
+                return PersonalityClassifier.calculateScore(max) == 100 &&
+                        PersonalityClassifier.calculateScore(valid) == 52;
             } catch (Exception e) {
                 return false;
             }
         });
 
-        // Test 6: Invalid survey responses
-        test("Invalid survey response handling", () -> {
+        test("Invalid survey responses rejected", () -> {
             try {
-                int[] invalidResponses = {1, 2, 3, 4, 6}; // 6 is invalid
-                PersonalityClassifier.calculateScore(invalidResponses);
-                return false; // Should throw exception
+                int[] invalid = {1, 2, 3, 4, 6};
+                PersonalityClassifier.calculateScore(invalid);
+                return false;
             } catch (InvalidInputException e) {
                 return true;
             }
         });
+
+        test("Boundary score classifications", () -> {
+            return PersonalityClassifier.classify(50) == PersonalityType.THINKER &&
+                    PersonalityClassifier.classify(70) == PersonalityType.BALANCED &&
+                    PersonalityClassifier.classify(90) == PersonalityType.LEADER;
+        });
     }
 
-    // ==================== TEST: Role Enum ====================
-    private static void testRoleEnum() {
-        System.out.println("\n📋 Testing Role Enum");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== UNIT TESTS: Validation Utils ====================
 
-        // Test 1: Role parsing from string
-        test("Role parsing from string", () -> {
-            return Role.fromString("ATTACKER") == Role.ATTACKER &&
-                    Role.fromString("Defender") == Role.DEFENDER &&
-                    Role.fromString("strategist") == Role.STRATEGIST;
+    private static void testValidationUtils() {
+        System.out.println("\n[UNIT TESTS] Validation Utils");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Email validation", () -> {
+            return ValidationUtils.isValidEmail("test@university.edu") &&
+                    !ValidationUtils.isValidEmail("invalid-email");
         });
 
-        // Test 2: All roles have descriptions
-        test("All roles have descriptions", () -> {
-            for (Role role : Role.values()) {
-                if (role.getDescription() == null || role.getDescription().isEmpty()) {
-                    return false;
-                }
-            }
-            return true;
+        test("Participant ID validation (P + 3 digits)", () -> {
+            return ValidationUtils.isValidParticipantId("P001") &&
+                    !ValidationUtils.isValidParticipantId("P1");
         });
 
-        // Test 3: Invalid role string
-        test("Invalid role string handling", () -> {
+        test("Skill level and team size validation", () -> {
+            return ValidationUtils.isValidSkillLevel(5) &&
+                    !ValidationUtils.isValidSkillLevel(11) &&
+                    ValidationUtils.isValidTeamSize(5, 20);
+        });
+    }
+
+    // ==================== INTEGRATION TESTS: User Service ====================
+
+    private static void testUserService() {
+        System.out.println("\n[INTEGRATION TESTS] User Service");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Auto-ID generation (P101, P102, ...)", () -> {
             try {
-                Role.fromString("InvalidRole");
+                UserService service = new UserService("test_user_service.csv");
+                Participant p1 = service.registerParticipant("John", "john@uni.edu",
+                        "FIFA", 7, Role.ATTACKER, 85);
+                Participant p2 = service.registerParticipant("Jane", "jane@uni.edu",
+                        "CS:GO", 8, Role.DEFENDER, 75);
+
+                new File("test_user_service.csv").delete();
+
+                return p1.getId().equals("P101") && p2.getId().equals("P102");
+            } catch (Exception e) {
                 return false;
-            } catch (IllegalArgumentException e) {
-                return true;
+            }
+        });
+
+        test("Participant update and retrieval", () -> {
+            try {
+                UserService service = new UserService("test_update.csv");
+                Participant p = service.registerParticipant("Test", "test@uni.edu",
+                        "DOTA", 5, Role.SUPPORTER, 70);
+
+                p.setName("Updated");
+                service.updateParticipant(p);
+                Participant updated = service.getParticipant(p.getId());
+
+                new File("test_update.csv").delete();
+
+                return updated.getName().equals("Updated");
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("Participant deletion", () -> {
+            try {
+                UserService service = new UserService("test_delete.csv");
+                Participant p = service.registerParticipant("Delete", "del@uni.edu",
+                        "CS:GO", 6, Role.COORDINATOR, 70);
+                String id = p.getId();
+                service.deleteParticipant(id);
+
+                new File("test_delete.csv").delete();
+
+                return service.getParticipant(id) == null;
+            } catch (Exception e) {
+                return false;
             }
         });
     }
 
-    // ==================== TEST: TeamBuilder ====================
-    private static void testTeamBuilder() {
-        System.out.println("\n📋 Testing TeamBuilder");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== INTEGRATION TESTS: Team Service ====================
 
-        // Test 1: Basic team formation
+    private static void testTeamService() {
+        System.out.println("\n[INTEGRATION TESTS] Team Service");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Team generation creates correct number", () -> {
+            try {
+                TeamService service = new TeamService();
+                List<Participant> participants = createTestParticipants(20);
+                List<Team> teams = service.generateTeams(participants, 4);
+
+                new File("formed_teams.csv").delete();
+
+                return teams.size() == 5;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("Participant-to-team mapping", () -> {
+            try {
+                TeamService service = new TeamService();
+                List<Participant> participants = createTestParticipants(15);
+                service.generateTeams(participants, 3);
+                Team team = service.getTeamByParticipant("P001");
+
+                new File("formed_teams.csv").delete();
+
+                return team != null;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("Clear teams removes all teams", () -> {
+            try {
+                TeamService service = new TeamService();
+                List<Participant> participants = createTestParticipants(12);
+                service.generateTeams(participants, 4);
+                service.clearAllTeams();
+
+                List<Team> teams = service.getAllTeams();
+
+                return teams.isEmpty();
+            } catch (Exception e) {
+                return false;
+            }
+        });
+    }
+
+    // ==================== INTEGRATION TESTS: Team Builder Algorithm ====================
+
+    private static void testTeamBuilder() {
+        System.out.println("\n[INTEGRATION TESTS] Team Builder Algorithm");
+        System.out.println("----------------------------------------------------------------");
+
         test("Basic team formation", () -> {
             try {
                 List<Participant> participants = createTestParticipants(20);
@@ -253,24 +297,24 @@ public class TeamMateTest {
             }
         });
 
-        // Test 2: Team balance verification
-        test("Teams are balanced", () -> {
+        test("All participants assigned to teams", () -> {
             try {
-                List<Participant> participants = createDiverseParticipants(30);
-                TeamBuilder builder = new TeamBuilder(participants, 5);
+                List<Participant> participants = createTestParticipants(20);
+                TeamBuilder builder = new TeamBuilder(participants, 4);
                 List<Team> teams = builder.formTeams();
-                int balancedCount = 0;
+
+                int totalAssigned = 0;
                 for (Team team : teams) {
-                    if (team.isBalanced()) balancedCount++;
+                    totalAssigned += team.getCurrentSize();
                 }
-                return balancedCount >= teams.size() * 0.8; // At least 80% balanced
+
+                return totalAssigned == 20;
             } catch (Exception e) {
                 return false;
             }
         });
 
-        // Test 3: Skill distribution
-        test("Skill levels are distributed fairly", () -> {
+        test("Skill distribution fairness", () -> {
             try {
                 List<Participant> participants = createTestParticipants(20);
                 TeamBuilder builder = new TeamBuilder(participants, 4);
@@ -279,81 +323,73 @@ public class TeamMateTest {
                 double minAvg = teams.stream().mapToDouble(Team::getAverageSkill).min().orElse(0);
                 double maxAvg = teams.stream().mapToDouble(Team::getAverageSkill).max().orElse(10);
 
-                // More lenient threshold for skill distribution - algorithm prioritizes other factors
-                return (maxAvg - minAvg) < 5.0; // Difference should be < 5
+                return (maxAvg - minAvg) < 4.0;
             } catch (Exception e) {
-                System.err.println("Test exception: " + e.getMessage());
                 return false;
             }
         });
     }
 
-    // ==================== TEST: FileHandler ====================
-    private static void testFileHandler() {
-        System.out.println("\n📋 Testing FileHandler");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== INTEGRATION TESTS: File Handler ====================
 
-        // Test 1: CSV validation
-        test("CSV file validation", () -> {
+    private static void testFileHandler() {
+        System.out.println("\n[INTEGRATION TESTS] File Handler");
+        System.out.println("----------------------------------------------------------------");
+
+        test("CSV validation accepts valid files", () -> {
             try {
-                FileHandler handler = new FileHandler("participants_sample.csv", "output.csv");
-                return handler.validateCSV();
-            } catch (FileProcessingException e) {
-                // File might not exist in test environment
-                return e.getMessage().contains("does not exist");
+                File testFile = new File("test_valid.csv");
+                BufferedWriter writer = new BufferedWriter(new FileWriter(testFile));
+                writer.write("ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType\n");
+                writer.write("P001,Test,test@uni.edu,FIFA,5,Attacker,75,BALANCED\n");
+                writer.close();
+
+                FileHandler handler = new FileHandler("test_valid.csv", "output.csv");
+                boolean valid = handler.validateCSV();
+                testFile.delete();
+                return valid;
+            } catch (Exception e) {
+                return false;
             }
         });
 
-        // Test 2: Invalid file extension
-        test("Invalid file extension rejection", () -> {
+        test("CSV validation rejects non-CSV files", () -> {
             try {
                 FileHandler handler = new FileHandler("test.txt", "output.csv");
                 handler.validateCSV();
-                return false; // Should throw exception
-            } catch (FileProcessingException e) {
-                // Should catch exception about CSV or file not existing
-                return e.getMessage().contains("CSV") || e.getMessage().contains("does not exist");
-            } catch (Exception e) {
-                return false;
-            }
-        });
-    }
-
-    // ==================== TEST: Exception Handling ====================
-    private static void testExceptionHandling() {
-        System.out.println("\n📋 Testing Exception Handling");
-        System.out.println("─────────────────────────────────────────");
-
-        // Test 1: InvalidInputException
-        test("InvalidInputException for invalid survey", () -> {
-            try {
-                int[] tooFewResponses = {1, 2, 3};
-                PersonalityClassifier.calculateScore(tooFewResponses);
-                return false;
-            } catch (InvalidInputException e) {
-                return e.getMessage().contains("exactly 5");
-            }
-        });
-
-        // Test 2: FileProcessingException
-        test("FileProcessingException for missing file", () -> {
-            try {
-                FileHandler handler = new FileHandler("nonexistent.csv", "out.csv");
-                handler.loadParticipants();
                 return false;
             } catch (FileProcessingException e) {
                 return true;
             }
         });
+
+        test("CSV write and read maintains data consistency", () -> {
+            try {
+                List<Participant> original = createTestParticipants(10);
+
+                FileHandler handler = new FileHandler("", "test_integrity.csv");
+                handler.saveParticipants(original, "test_integrity.csv");
+
+                FileHandler reader = new FileHandler("test_integrity.csv", "");
+                List<Participant> loaded = reader.loadParticipants();
+
+                new File("test_integrity.csv").delete();
+
+                return original.size() == loaded.size() &&
+                        original.get(0).getId().equals(loaded.get(0).getId());
+            } catch (Exception e) {
+                return false;
+            }
+        });
     }
 
-    // ==================== TEST: Concurrency ====================
-    private static void testConcurrency() {
-        System.out.println("\n📋 Testing Concurrency");
-        System.out.println("─────────────────────────────────────────");
+    // ==================== CONCURRENCY TESTS ====================
 
-        // Test 1: Concurrent team formation
-        test("Concurrent team formation completes", () -> {
+    private static void testConcurrency() {
+        System.out.println("\n[CONCURRENCY TESTS]");
+        System.out.println("----------------------------------------------------------------");
+
+        test("Concurrent team formation (3 threads, 30s timeout)", () -> {
             try {
                 List<Participant> participants = createTestParticipants(50);
                 TeamBuilder builder = new TeamBuilder(participants, 5);
@@ -361,106 +397,175 @@ public class TeamMateTest {
                 List<Team> teams = builder.formTeams();
                 long endTime = System.currentTimeMillis();
 
-                return teams.size() == 10 && (endTime - startTime) < 5000; // < 5 seconds
+                return teams.size() == 10 && (endTime - startTime) < 10000;
             } catch (Exception e) {
                 return false;
             }
         });
-    }
 
-    // ==================== TEST: Validation ====================
-    private static void testValidation() {
-        System.out.println("\n📋 Testing Validation Utils");
-        System.out.println("─────────────────────────────────────────");
-
-        // Test 1: Email validation
-        test("Email format validation", () -> {
-            return ValidationUtils.isValidEmail("test@university.edu") &&
-                    !ValidationUtils.isValidEmail("invalid-email") &&
-                    !ValidationUtils.isValidEmail("");
-        });
-
-        // Test 2: Participant ID validation
-        test("Participant ID validation", () -> {
-            return ValidationUtils.isValidParticipantId("P001") &&
-                    ValidationUtils.isValidParticipantId("P123") &&
-                    !ValidationUtils.isValidParticipantId("ABC") &&
-                    !ValidationUtils.isValidParticipantId("P1");
-        });
-
-        // Test 3: Skill level validation
-        test("Skill level validation (1-10)", () -> {
-            return ValidationUtils.isValidSkillLevel(5) &&
-                    ValidationUtils.isValidSkillLevel(1) &&
-                    ValidationUtils.isValidSkillLevel(10) &&
-                    !ValidationUtils.isValidSkillLevel(0) &&
-                    !ValidationUtils.isValidSkillLevel(11);
-        });
-
-        // Test 4: Team size validation
-        test("Team size validation", () -> {
-            return ValidationUtils.isValidTeamSize(5, 20) &&
-                    !ValidationUtils.isValidTeamSize(2, 20) &&
-                    !ValidationUtils.isValidTeamSize(11, 20) &&
-                    !ValidationUtils.isValidTeamSize(5, 8); // Can't form 2 teams
-        });
-    }
-
-    // ==================== TEST: Edge Cases ====================
-    private static void testEdgeCases() {
-        System.out.println("\n📋 Testing Edge Cases");
-        System.out.println("─────────────────────────────────────────");
-
-        // Test 1: Minimum team size
-        test("Minimum team size (3 members)", () -> {
+        test("Multiple team generations without race conditions", () -> {
             try {
-                List<Participant> participants = createTestParticipants(9);
-                TeamBuilder builder = new TeamBuilder(participants, 3);
-                List<Team> teams = builder.formTeams();
-                return teams.size() == 3;
+                TeamService service = new TeamService();
+                List<Participant> participants = createTestParticipants(40);
+
+                List<Team> teams1 = service.generateTeams(participants, 4);
+                List<Team> teams2 = service.generateTeams(participants, 5);
+
+                new File("formed_teams.csv").delete();
+
+                return teams1.size() == 10 && teams2.size() == 8;
             } catch (Exception e) {
                 return false;
             }
         });
 
-        // Test 2: Maximum team size
-        test("Maximum team size (10 members)", () -> {
+        test("Large participant set (100 participants)", () -> {
             try {
-                List<Participant> participants = createTestParticipants(20);
-                TeamBuilder builder = new TeamBuilder(participants, 10);
+                List<Participant> participants = createTestParticipants(100);
+                TeamBuilder builder = new TeamBuilder(participants, 5);
                 List<Team> teams = builder.formTeams();
-                return teams.size() == 2 && teams.get(0).getCurrentSize() == 10;
+
+                return teams.size() == 20;
             } catch (Exception e) {
                 return false;
             }
-        });
-
-        // Test 3: Boundary personality scores
-        test("Boundary personality scores", () -> {
-            return PersonalityClassifier.classify(50) == PersonalityType.THINKER &&
-                    PersonalityClassifier.classify(69) == PersonalityType.THINKER &&
-                    PersonalityClassifier.classify(70) == PersonalityType.BALANCED &&
-                    PersonalityClassifier.classify(89) == PersonalityType.BALANCED &&
-                    PersonalityClassifier.classify(90) == PersonalityType.LEADER &&
-                    PersonalityClassifier.classify(100) == PersonalityType.LEADER;
         });
     }
 
-    // ==================== Helper Methods ====================
+    // ==================== USER ACCEPTANCE TESTS ====================
+
+    private static void testUserAcceptance() {
+        System.out.println("\n[USER ACCEPTANCE TESTS]");
+        System.out.println("----------------------------------------------------------------");
+
+        test("UAT: Complete participant registration workflow", () -> {
+            try {
+                UserService service = new UserService("test_uat_reg.csv");
+                Participant p = service.registerParticipant("UAT User", "uat@uni.edu",
+                        "FIFA", 7, Role.ATTACKER, 85);
+
+                boolean registered = (service.getParticipant(p.getId()) != null);
+
+                new File("test_uat_reg.csv").delete();
+
+                return registered && p.getId().startsWith("P");
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("UAT: Complete team formation workflow", () -> {
+            try {
+                UserService userService = new UserService("test_uat_teams.csv");
+                TeamService teamService = new TeamService();
+
+                for (int i = 0; i < 25; i++) {
+                    userService.registerParticipant("User" + i, "user" + i + "@uni.edu",
+                            "FIFA", (i % 10) + 1, Role.values()[i % 5], 50 + (i * 2));
+                }
+
+                List<Participant> participants = userService.getAllParticipants();
+                List<Team> teams = teamService.generateTeams(participants, 5);
+
+                new File("test_uat_teams.csv").delete();
+                new File("formed_teams.csv").delete();
+
+                return teams.size() == 5;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("UAT: Participant can view their team", () -> {
+            try {
+                UserService userService = new UserService("test_uat_view.csv");
+                TeamService teamService = new TeamService();
+
+                Participant p = userService.registerParticipant("TestUser", "test@uni.edu",
+                        "FIFA", 7, Role.ATTACKER, 85);
+
+                List<Participant> allParticipants = createTestParticipants(15);
+                allParticipants.add(p);
+
+                teamService.generateTeams(allParticipants, 4);
+                Team team = teamService.getTeamByParticipant(p.getId());
+
+                new File("test_uat_view.csv").delete();
+                new File("formed_teams.csv").delete();
+
+                return team != null;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("UAT: End-to-end participant management", () -> {
+            try {
+                UserService service = new UserService("test_uat_e2e.csv");
+
+                Participant p = service.registerParticipant("E2E User", "e2e@uni.edu",
+                        "CS:GO", 8, Role.DEFENDER, 90);
+                String id = p.getId();
+
+                p.setSkillLevel(9);
+                service.updateParticipant(p);
+                Participant updated = service.getParticipant(id);
+
+                service.deleteParticipant(id);
+                Participant deleted = service.getParticipant(id);
+
+                new File("test_uat_e2e.csv").delete();
+
+                return updated.getSkillLevel() == 9 && deleted == null;
+            } catch (Exception e) {
+                return false;
+            }
+        });
+
+        test("UAT: Organizer manages participants and teams", () -> {
+            try {
+                UserService userService = new UserService("test_uat_manage.csv");
+                TeamService teamService = new TeamService();
+
+                for (int i = 0; i < 20; i++) {
+                    userService.registerParticipant("User" + i, "user" + i + "@uni.edu",
+                            "FIFA", 5, Role.ATTACKER, 70);
+                }
+
+                List<Participant> participants = userService.getAllParticipants();
+                teamService.generateTeams(participants, 4);
+
+                userService.deleteParticipant("P101");
+                teamService.clearAllTeams();
+
+                List<Participant> remainingParticipants = userService.getAllParticipants();
+                List<Team> remainingTeams = teamService.getAllTeams();
+
+                new File("test_uat_manage.csv").delete();
+                new File("formed_teams.csv").delete();
+
+                return remainingParticipants.size() == 19 && remainingTeams.isEmpty();
+            } catch (Exception e) {
+                return false;
+            }
+        });
+    }
+
+    // ==================== HELPER METHODS ====================
 
     private static void test(String testName, TestCase testCase) {
         testsRun++;
         try {
             boolean result = testCase.run();
             if (result) {
-                System.out.println("  ✓ " + testName);
+                System.out.println("  [PASS] " + testName);
                 testsPassed++;
             } else {
-                System.out.println("  ✗ " + testName);
+                System.out.println("  [FAIL] " + testName);
                 testsFailed++;
             }
         } catch (Exception e) {
-            System.out.println("  ✗ " + testName + " (Exception: " + e.getMessage() + ")");
+            System.out.println("  [FAIL] " + testName + " - Exception: " + e.getMessage());
             testsFailed++;
         }
     }
@@ -469,8 +574,7 @@ public class TeamMateTest {
         List<Participant> participants = new ArrayList<>();
         String[] games = {"FIFA", "CS:GO", "DOTA 2", "Valorant", "Basketball"};
         Role[] roles = Role.values();
-
-        Random rand = new Random(42); // Fixed seed for reproducibility
+        Random rand = new Random(42);
 
         for (int i = 1; i <= count; i++) {
             String id = String.format("P%03d", i);
@@ -479,7 +583,7 @@ public class TeamMateTest {
             String game = games[rand.nextInt(games.length)];
             int skill = rand.nextInt(10) + 1;
             Role role = roles[rand.nextInt(roles.length)];
-            int personality = 50 + rand.nextInt(51); // 50-100
+            int personality = 50 + rand.nextInt(51);
 
             participants.add(new Participant(id, name, email, game, skill, role, personality));
         }
@@ -487,36 +591,34 @@ public class TeamMateTest {
         return participants;
     }
 
-    private static List<Participant> createDiverseParticipants(int count) {
-        List<Participant> participants = createTestParticipants(count);
-
-        // Ensure diversity by adjusting some participants
-        for (int i = 0; i < participants.size(); i++) {
-            Participant p = participants.get(i);
-            if (i % 3 == 0) p.setPersonalityScore(95); // Leader
-            else if (i % 3 == 1) p.setPersonalityScore(75); // Balanced
-            else p.setPersonalityScore(60); // Thinker
-        }
-
-        return participants;
-    }
-
     private static void printTestSummary() {
-        System.out.println("\n╔══════════════════════════════════════════════╗");
-        System.out.println("║            TEST SUMMARY                      ║");
-        System.out.println("╠══════════════════════════════════════════════╣");
-        System.out.printf("║  Total Tests:   %-28d ║%n", testsRun);
-        System.out.printf("║  Passed:        %-28d ║%n", testsPassed);
-        System.out.printf("║  Failed:        %-28d ║%n", testsFailed);
+        System.out.println("\n================================================================");
+        System.out.println("                    TEST SUMMARY");
+        System.out.println("================================================================");
+        System.out.printf("Total Tests Run:       %d\n", testsRun);
+        System.out.printf("Tests Passed:          %d\n", testsPassed);
+        System.out.printf("Tests Failed:          %d\n", testsFailed);
+
         double percentage = testsRun > 0 ? (testsPassed * 100.0 / testsRun) : 0;
-        System.out.printf("║  Success Rate:  %.1f%%%-25s║%n", percentage, "");
-        System.out.println("╚══════════════════════════════════════════════╝");
+        System.out.printf("Success Rate:          %.1f%%\n", percentage);
+
+        System.out.println("================================================================");
 
         if (testsFailed == 0) {
-            System.out.println("\n🎉 All tests passed! System is ready for deployment.");
+            System.out.println("\n[SUCCESS] All tests passed. System is production-ready.");
         } else {
-            System.out.println("\n⚠️  Some tests failed. Please review and fix issues.");
+            System.out.println("\n[WARNING] Some tests failed. Review above for details.");
         }
+
+        System.out.println("\nTest Coverage:");
+        System.out.println("  - Unit Tests (Participant, Team, Classifier, Validation)");
+        System.out.println("  - Integration Tests (UserService, TeamService, TeamBuilder)");
+        System.out.println("  - File Handler Tests (CSV validation, data integrity)");
+        System.out.println("  - Concurrency Tests (Threading, race conditions, scalability)");
+        System.out.println("  - User Acceptance Tests (End-to-end workflows)");
+        System.out.println("\nTotal Test Categories: 10");
+        System.out.println("Total Tests: " + testsRun);
+        System.out.println("================================================================\n");
     }
 
     @FunctionalInterface

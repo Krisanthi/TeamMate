@@ -4,11 +4,11 @@ package com.teammate.model;
  * Enumeration of gaming/sports roles
  */
 public enum Role {
-    STRATEGIST("Strategist", "Focuses on tactics and planning"),
-    ATTACKER("Attacker", "Frontline player with offensive tactics"),
-    DEFENDER("Defender", "Protects and supports team stability"),
-    SUPPORTER("Supporter", "Jack-of-all-trades, adapts roles"),
-    COORDINATOR("Coordinator", "Communication lead, keeps team organized");
+    STRATEGIST("Strategist", "Focuses on tactics and planning. Keeps the bigger picture in mind during gameplay."),
+    ATTACKER("Attacker", "Frontline player. Good reflexes, offensive tactics, quick execution."),
+    DEFENDER("Defender", "Protects and supports team stability. Good under pressure and team-focused."),
+    SUPPORTER("Supporter", "Jack-of-all-trades. Adapts roles, ensures smooth coordination."),
+    COORDINATOR("Coordinator", "Communication lead. Keeps the team informed and organized in real time.");
 
     private final String displayName;
     private final String description;
