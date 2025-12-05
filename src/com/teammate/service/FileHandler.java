@@ -6,7 +6,13 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Handles CSV file operations for participants and teams
+ * FileHandler - CSV File Operations
+ *
+ * Handles reading and writing CSV files for participants and teams.
+ *
+ * @author Student Name
+ * @version 1.0
+ * @since 2025
  */
 public class FileHandler {
 
@@ -19,6 +25,11 @@ public class FileHandler {
         this.outputFilePath = outputFilePath;
     }
 
+    /**
+     * Loads participants from CSV file
+     * @return List of participants
+     * @throws FileProcessingException if file operation fails
+     */
     public List<Participant> loadParticipants() throws FileProcessingException {
         List<Participant> participants = new ArrayList<>();
         BufferedReader reader = null;
@@ -63,6 +74,13 @@ public class FileHandler {
         return participants;
     }
 
+    /**
+     * Parses a CSV line into a Participant object
+     * @param line The CSV line
+     * @param lineNumber The line number
+     * @return Participant object
+     * @throws InvalidInputException if line is invalid
+     */
     private Participant parseParticipantLine(String line, int lineNumber) throws InvalidInputException {
         String[] fields = line.split(CSV_DELIMITER, -1);
 
@@ -94,7 +112,10 @@ public class FileHandler {
     }
 
     /**
-     * Saves participants to CSV (overwrites existing file)
+     * Saves participants to CSV file
+     * @param participants List of participants
+     * @param filePath Output file path
+     * @throws FileProcessingException if write fails
      */
     public void saveParticipants(List<Participant> participants, String filePath)
             throws FileProcessingException {
@@ -127,13 +148,14 @@ public class FileHandler {
     }
 
     /**
-     * Saves teams to CSV - OVERWRITES existing file completely
+     * Saves teams to CSV file (overwrites existing)
+     * @param teams List of teams
+     * @throws FileProcessingException if write fails
      */
     public void saveTeams(List<Team> teams) throws FileProcessingException {
         BufferedWriter writer = null;
 
         try {
-            // false parameter means overwrite the file
             writer = new BufferedWriter(new FileWriter(outputFilePath, false));
 
             writer.write("TeamID,ParticipantID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityType,PersonalityScore");
@@ -161,6 +183,11 @@ public class FileHandler {
         }
     }
 
+    /**
+     * Validates CSV file exists and is readable
+     * @return true if valid
+     * @throws FileProcessingException if validation fails
+     */
     public boolean validateCSV() throws FileProcessingException {
         if (inputFilePath == null || inputFilePath.trim().isEmpty()) {
             throw new FileProcessingException("File path is empty");
