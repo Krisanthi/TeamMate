@@ -3,8 +3,13 @@ package com.teammate.model;
 import java.util.*;
 
 /**
- * Represents a formed team with multiple participants
- * Provides methods to check team balance and composition
+ * Team - Represents a formed team with multiple participants
+ *
+ * Provides methods to check team balance and composition according to matching strategy.
+ *
+ * @author Student Name
+ * @version 1.0
+ * @since 2025
  */
 public class Team {
     private String teamId;
@@ -19,6 +24,11 @@ public class Team {
         this.averageSkill = 0.0;
     }
 
+    /**
+     * Adds a member to the team
+     * @param participant The participant to add
+     * @return true if added successfully, false if team is full
+     */
     public boolean addMember(Participant participant) {
         if (members.size() >= teamSize) {
             return false;
@@ -28,6 +38,11 @@ public class Team {
         return true;
     }
 
+    /**
+     * Removes a member from the team
+     * @param participant The participant to remove
+     * @return true if removed successfully
+     */
     public boolean removeMember(Participant participant) {
         boolean removed = members.remove(participant);
         if (removed) {
@@ -36,6 +51,10 @@ public class Team {
         return removed;
     }
 
+    /**
+     * Calculates average skill level of team members
+     * @return The average skill level
+     */
     public double calculateAverageSkill() {
         if (members.isEmpty()) {
             averageSkill = 0.0;
@@ -51,7 +70,13 @@ public class Team {
     }
 
     /**
-     * Checks if team is balanced according to all criteria
+     * Checks if team is balanced according to all matching criteria:
+     * 1. Team is full
+     * 2. At least 3 different roles
+     * 3. No single game dominates (max half the team)
+     * 4. At least 2 different personality types
+     *
+     * @return true if team meets all balance criteria
      */
     public boolean isBalanced() {
         if (members.size() < teamSize) {
@@ -84,10 +109,19 @@ public class Team {
         return rolesDiverse && noGameDomination && hasPersonalityMix;
     }
 
+    /**
+     * Checks if team is full
+     * @return true if team has reached maximum size
+     */
     public boolean isFull() {
         return members.size() >= teamSize;
     }
 
+    /**
+     * Counts participants of a specific personality type
+     * @param type The personality type to count
+     * @return Number of participants with that type
+     */
     public int getPersonalityCount(PersonalityType type) {
         int count = 0;
         for (Participant p : members) {
@@ -98,6 +132,11 @@ public class Team {
         return count;
     }
 
+    /**
+     * Counts participants with a specific role
+     * @param role The role to count
+     * @return Number of participants with that role
+     */
     public int getRoleCount(Role role) {
         int count = 0;
         for (Participant p : members) {
@@ -108,6 +147,11 @@ public class Team {
         return count;
     }
 
+    /**
+     * Counts participants preferring a specific game
+     * @param game The game name
+     * @return Number of participants preferring that game
+     */
     public int getGameCount(String game) {
         int count = 0;
         for (Participant p : members) {
