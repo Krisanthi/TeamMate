@@ -16,7 +16,7 @@ package com.teammate.model;
  * - Each team should have 1-2 Thinkers
  * - Remaining members should be Balanced types
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
