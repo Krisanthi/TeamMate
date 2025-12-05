@@ -9,7 +9,7 @@ import com.teammate.util.InvalidInputException;
  * Implements scoring algorithm: Total (5-25) × 4 = Score (20-100)
  * Valid range enforced: 50-100
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
