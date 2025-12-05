@@ -10,7 +10,7 @@ import java.util.*;
  *
  * Handles reading and writing CSV files for participants and teams.
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
