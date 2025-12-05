@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
  * Phase 7: Balance team skills
  * Phase 8: Final role diversity adjustments
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 2.0
  * @since 2025
  */
