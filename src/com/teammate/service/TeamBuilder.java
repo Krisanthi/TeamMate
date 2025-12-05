@@ -9,28 +9,24 @@ import java.util.stream.Collectors;
 /**
  * TeamBuilder - Intelligent Team Formation Algorithm
  *
- * This class implements a multi-phase concurrent algorithm to form balanced teams
- * according to the following matching criteria:
+ * Implements multi-phase algorithm to form balanced teams according to matching strategy.
  *
  * MATCHING CRITERIA:
- * 1. Game/Sport Variety: Max 2 players per game per team
+ * 1. Game/Sport Variety: Max 3 players per game per team
  * 2. Role Diversity: At least 3 different roles per team
- * 3. Personality Mix: 1 Leader, 1-2 Thinkers, remaining Balanced per team
- * 4. Skill Balance: Team averages close to global average
+ * 3. Personality Mix: 1 Leader, 1-2 Thinkers, remaining Balanced
+ * 4. Skill Balance: Avoid stacking high-skill players
+ * 5. Randomization: Fair distribution within constraints
  *
  * ALGORITHM PHASES:
- * Phase 1: Distribute Leaders (1 per team, round-robin)
- * Phase 2: Distribute Thinkers (1-2 per team, round-robin)
- * Phase 3: Distribute roles for diversity (concurrent)
- * Phase 4: Distribute Balanced types to fill teams (concurrent)
- * Phase 5: Distribute any remaining participants (concurrent)
- * Phase 6: Balance team skills through strategic swaps
- * Phase 7: Final adjustments for role diversity if needed
- *
- * CONCURRENCY:
- * - Uses ExecutorService with 3 threads for parallel distribution
- * - Synchronized methods prevent race conditions
- * - Thread-safe assignment checking
+ * Phase 1: Shuffle participants for randomization
+ * Phase 2: Distribute Leaders (exactly 1 per team)
+ * Phase 3: Distribute Thinkers (1-2 per team)
+ * Phase 4: Distribute by role diversity (concurrent)
+ * Phase 5: Distribute Balanced types (concurrent)
+ * Phase 6: Distribute remaining (concurrent)
+ * Phase 7: Balance team skills
+ * Phase 8: Final role diversity adjustments
  *
  * @author Student Name
  * @version 2.0
@@ -41,8 +37,14 @@ public class TeamBuilder {
     private List<Participant> participants;
     private List<Team> teams;
     private int teamSize;
-    private static final int MAX_SAME_GAME = 2;
+
+    private static final int MAX_SAME_GAME = 3;
     private static final int MIN_ROLE_DIVERSITY = 3;
+    private static final int MAX_LEADERS_PER_TEAM = 1;
+    private static final int MIN_THINKERS_PER_TEAM = 1;
+    private static final int MAX_THINKERS_PER_TEAM = 2;
+
+    private final Random random = new Random();
 
     public TeamBuilder(List<Participant> participants, int teamSize) {
         this.participants = new ArrayList<>(participants);
@@ -51,28 +53,30 @@ public class TeamBuilder {
     }
 
     /**
-     * Forms teams using concurrent processing with thread pool
-     *
-     * Strategy:
-     * Phase 1: Distribute 1 Leader per team (round-robin)
-     * Phase 2: Distribute 1-2 Thinkers per team (round-robin)
-     * Phase 3-5: Concurrent distribution of roles and remaining participants
-     * Phase 6: Balance skills across teams
-     * Phase 7: Final adjustments for role diversity
+     * Forms balanced teams using multi-phase concurrent algorithm
+     * @return List of formed teams
+     * @throws InterruptedException if thread execution is interrupted
+     * @throws ExecutionException if concurrent execution fails
      */
     public List<Team> formTeams() throws InterruptedException, ExecutionException {
-        sortParticipantsForDistribution();
+        // Phase 1: Shuffle for randomization
+        Collections.shuffle(participants, random);
+        Logger.logInfo("Shuffled participants for fair distribution");
 
+        participants.sort((p1, p2) -> Integer.compare(p2.getSkillLevel(), p1.getSkillLevel()));
+
+        // Initialize teams
         int numTeams = participants.size() / teamSize;
         for (int i = 0; i < numTeams; i++) {
             teams.add(new Team("TEAM_" + (i + 1), teamSize));
         }
+        Logger.logInfo("Created " + numTeams + " teams");
 
-        // Phase 1-2: Distribute personalities strategically (FIXED)
-        distributeByPersonality(PersonalityType.LEADER, 1);      // 1 Leader per team
-        distributeByPersonality(PersonalityType.THINKER, 2);     // 1-2 Thinkers per team
+        // Phase 2-3: Distribute personality types strategically
+        distributeLeaders();
+        distributeThinkers();
 
-        // Phase 3-5: Concurrent role distribution
+        // Phase 4-6: Concurrent distribution
         ExecutorService executor = Executors.newFixedThreadPool(3);
         List<Future<Boolean>> futures = new ArrayList<>();
 
@@ -87,80 +91,123 @@ public class TeamBuilder {
         executor.shutdown();
         executor.awaitTermination(10, TimeUnit.SECONDS);
 
-        // Phase 6-7: Optimization
+        // Phase 7-8: Optimization
         balanceTeamSkills();
         performFinalAdjustments();
 
+        Logger.logInfo("Team formation complete");
         return teams;
     }
 
     /**
-     * Sorts participants for optimal distribution
-     * Priority: Personality type first, then skill level (high to low)
+     * Phase 2: Distributes Leaders (1 per team)
+     * @return true when complete
      */
-    private void sortParticipantsForDistribution() {
-        participants.sort((p1, p2) -> {
-            int personalityCompare = p1.getPersonalityType().compareTo(p2.getPersonalityType());
-            if (personalityCompare != 0) return personalityCompare;
-            return Integer.compare(p2.getSkillLevel(), p1.getSkillLevel());
-        });
-    }
-
-    /**
-     * Distributes participants of a specific personality type across teams
-     * FIXED: Now accepts maxPerTeam parameter to enforce personality mix rules
-     *
-     * @param targetType The personality type to distribute
-     * @param maxPerTeam Maximum number of this type per team (1 for Leader, 2 for Thinker)
-     * @return true when distribution is complete
-     */
-    private synchronized boolean distributeByPersonality(PersonalityType targetType, int maxPerTeam) {
-        List<Participant> typeParticipants = participants.stream()
-                .filter(p -> p.getPersonalityType() == targetType)
+    private synchronized boolean distributeLeaders() {
+        List<Participant> leaders = participants.stream()
+                .filter(p -> p.getPersonalityType() == PersonalityType.LEADER)
+                .sorted((p1, p2) -> Integer.compare(p2.getSkillLevel(), p1.getSkillLevel()))
                 .collect(Collectors.toList());
 
-        int teamIndex = 0;
-        for (Participant p : typeParticipants) {
-            if (isParticipantAssigned(p)) continue;
+        Logger.logInfo("Distributing " + leaders.size() + " leaders across " + teams.size() + " teams");
 
-            Team team = teams.get(teamIndex % teams.size());
-            if (!team.isFull() && team.getPersonalityCount(targetType) < maxPerTeam) {
-                team.addMember(p);
-                teamIndex++;
+        int startTeam = random.nextInt(Math.max(1, teams.size()));
+        int teamIndex = 0;
+
+        for (Participant leader : leaders) {
+            if (isParticipantAssigned(leader)) continue;
+
+            for (int i = 0; i < teams.size(); i++) {
+                int currentIndex = (startTeam + teamIndex + i) % teams.size();
+                Team team = teams.get(currentIndex);
+
+                if (!team.isFull() && team.getPersonalityCount(PersonalityType.LEADER) < MAX_LEADERS_PER_TEAM) {
+                    team.addMember(leader);
+                    teamIndex++;
+                    break;
+                }
             }
         }
+
+        Logger.logInfo("Leaders distributed");
         return true;
     }
 
     /**
-     * NEW METHOD: Distributes Balanced personality types to fill remaining team slots
-     * Called after Leaders and Thinkers are assigned
-     *
-     * @return true when distribution is complete
+     * Phase 3: Distributes Thinkers (1-2 per team)
+     * @return true when complete
+     */
+    private synchronized boolean distributeThinkers() {
+        List<Participant> thinkers = participants.stream()
+                .filter(p -> p.getPersonalityType() == PersonalityType.THINKER)
+                .sorted((p1, p2) -> Integer.compare(p2.getSkillLevel(), p1.getSkillLevel()))
+                .collect(Collectors.toList());
+
+        Logger.logInfo("Distributing " + thinkers.size() + " thinkers across " + teams.size() + " teams");
+
+        int teamIndex = random.nextInt(Math.max(1, teams.size()));
+
+        for (Participant thinker : thinkers) {
+            if (isParticipantAssigned(thinker)) continue;
+
+            Team bestTeam = null;
+            for (int i = 0; i < teams.size(); i++) {
+                int currentIndex = (teamIndex + i) % teams.size();
+                Team team = teams.get(currentIndex);
+
+                if (!team.isFull() && team.getPersonalityCount(PersonalityType.THINKER) < MIN_THINKERS_PER_TEAM) {
+                    bestTeam = team;
+                    teamIndex = (currentIndex + 1) % teams.size();
+                    break;
+                }
+            }
+
+            if (bestTeam == null) {
+                for (int i = 0; i < teams.size(); i++) {
+                    int currentIndex = (teamIndex + i) % teams.size();
+                    Team team = teams.get(currentIndex);
+
+                    if (!team.isFull() && team.getPersonalityCount(PersonalityType.THINKER) < MAX_THINKERS_PER_TEAM) {
+                        bestTeam = team;
+                        teamIndex = (currentIndex + 1) % teams.size();
+                        break;
+                    }
+                }
+            }
+
+            if (bestTeam != null) {
+                bestTeam.addMember(thinker);
+            }
+        }
+
+        Logger.logInfo("Thinkers distributed");
+        return true;
+    }
+
+    /**
+     * Phase 4: Distributes Balanced types
+     * @return true when complete
      */
     private synchronized boolean distributeBalancedTypes() {
         List<Participant> balancedParticipants = participants.stream()
                 .filter(p -> p.getPersonalityType() == PersonalityType.BALANCED && !isParticipantAssigned(p))
                 .collect(Collectors.toList());
 
-        int teamIndex = 0;
-        for (Participant p : balancedParticipants) {
-            if (isParticipantAssigned(p)) continue;
+        Logger.logInfo("Distributing " + balancedParticipants.size() + " balanced participants");
 
-            Team team = findBestTeamForParticipant(p, teamIndex);
-            if (team != null && !team.isFull()) {
-                team.addMember(p);
-                teamIndex = (teamIndex + 1) % teams.size();
+        for (Participant p : balancedParticipants) {
+            Team bestTeam = findBestTeamForParticipant(p);
+            if (bestTeam != null && !bestTeam.isFull()) {
+                bestTeam.addMember(p);
             }
         }
+
         return true;
     }
 
     /**
-     * Distributes participants by role to ensure role diversity
-     * Groups participants by role and distributes each role across teams
-     *
-     * @return true when distribution is complete
+     * Phase 5: Distributes by role diversity
+     * @return true when complete
      */
     private synchronized boolean distributeByRoleDiversity() {
         Map<Role, List<Participant>> roleMap = new HashMap<>();
@@ -173,15 +220,13 @@ public class TeamBuilder {
 
         for (Role role : Role.values()) {
             List<Participant> roleParticipants = roleMap.get(role);
-            int teamIndex = 0;
 
             for (Participant p : roleParticipants) {
                 if (isParticipantAssigned(p)) continue;
 
-                Team team = findBestTeamForParticipant(p, teamIndex);
-                if (team != null && !team.isFull()) {
-                    team.addMember(p);
-                    teamIndex = (teamIndex + 1) % teams.size();
+                Team bestTeam = findBestTeamForParticipant(p);
+                if (bestTeam != null && !bestTeam.isFull()) {
+                    bestTeam.addMember(p);
                 }
             }
         }
@@ -189,18 +234,20 @@ public class TeamBuilder {
     }
 
     /**
-     * Distributes any remaining unassigned participants
-     * Uses scoring algorithm to find best team fit
-     *
-     * @return true when distribution is complete
+     * Phase 6: Distributes remaining unassigned participants
+     * @return true when complete
      */
     private synchronized boolean distributeRemaining() {
         List<Participant> unassigned = participants.stream()
                 .filter(p -> !isParticipantAssigned(p))
                 .collect(Collectors.toList());
 
+        if (!unassigned.isEmpty()) {
+            Logger.logInfo("Distributing " + unassigned.size() + " remaining participants");
+        }
+
         for (Participant p : unassigned) {
-            Team bestTeam = findBestTeamForParticipant(p, 0);
+            Team bestTeam = findBestTeamForParticipant(p);
             if (bestTeam != null && !bestTeam.isFull()) {
                 bestTeam.addMember(p);
             }
@@ -209,25 +256,34 @@ public class TeamBuilder {
     }
 
     /**
-     * Finds the best team for a participant using scoring algorithm
-     * Considers: game variety, role diversity, personality mix, skill balance
-     *
-     * @param p The participant to assign
-     * @param startIndex Starting team index for rotation
-     * @return Best team for this participant, or null if none available
+     * Finds best team for participant using scoring algorithm
+     * @param p The participant
+     * @return Best team or null
      */
-    private Team findBestTeamForParticipant(Participant p, int startIndex) {
+    private Team findBestTeamForParticipant(Participant p) {
+        List<Team> availableTeams = teams.stream()
+                .filter(t -> !t.isFull())
+                .collect(Collectors.toList());
+
+        if (availableTeams.isEmpty()) {
+            return null;
+        }
+
+        double globalAvg = teams.stream()
+                .filter(t -> t.getCurrentSize() > 0)
+                .mapToDouble(Team::getAverageSkill)
+                .average()
+                .orElse(5.0);
+
         Team bestTeam = null;
-        int bestScore = -1;
+        int bestScore = Integer.MIN_VALUE;
 
-        for (int i = 0; i < teams.size(); i++) {
-            int index = (startIndex + i) % teams.size();
-            Team team = teams.get(index);
+        Collections.shuffle(availableTeams, random);
 
-            if (team.isFull()) continue;
+        for (Team team : availableTeams) {
+            int score = calculateTeamScore(team, p, globalAvg);
 
-            int score = calculateTeamScore(team, p);
-            if (score > bestScore) {
+            if (score > bestScore || (score == bestScore && random.nextBoolean())) {
                 bestScore = score;
                 bestTeam = team;
             }
@@ -237,55 +293,55 @@ public class TeamBuilder {
     }
 
     /**
-     * Calculates team score based on matching criteria
-     * Higher score = better fit for the participant
-     *
-     * Scoring:
-     * - Game variety: -50 if exceeds max same game
-     * - Role diversity: +30 if role is new to team
-     * - Personality mix: +40 for needed Leader, +20 for needed type
-     * - Skill balance: -2 per point difference from team average
-     *
-     * @param team The team to score
-     * @param p The participant being evaluated
-     * @return Score (higher is better fit)
+     * Calculates team score for participant placement
+     * @param team The team
+     * @param p The participant
+     * @param globalAvg Global average skill
+     * @return Score (higher is better)
      */
-    private int calculateTeamScore(Team team, Participant p) {
+    private int calculateTeamScore(Team team, Participant p, double globalAvg) {
         int score = 100;
 
-        // Game variety: penalty for too many same game
+        // Game variety
         if (team.getGameCount(p.getPreferredGame()) >= MAX_SAME_GAME) {
-            score -= 50;
+            score -= 40;
         }
 
-        // Role diversity: bonus for new roles
+        // Role diversity
         if (team.getRoleCount(p.getPreferredRole()) == 0) {
-            score += 30;
+            score += 25;
         }
 
         // Personality mix
         PersonalityType pType = p.getPersonalityType();
-        if (pType == PersonalityType.LEADER && team.getPersonalityCount(pType) == 0) {
-            score += 40;
-        } else if (team.getPersonalityCount(pType) < team.getCurrentSize() / 2) {
-            score += 20;
+        int currentCount = team.getPersonalityCount(pType);
+        if (currentCount < team.getCurrentSize() / 3) {
+            score += 15;
         }
 
         // Skill balance
         double teamAvg = team.getAverageSkill();
         if (teamAvg > 0) {
-            int skillDiff = Math.abs(p.getSkillLevel() - (int) teamAvg);
-            score -= skillDiff * 2;
+            double newAvg = (teamAvg * team.getCurrentSize() + p.getSkillLevel()) / (team.getCurrentSize() + 1);
+
+            double currentDiff = Math.abs(teamAvg - globalAvg);
+            double newDiff = Math.abs(newAvg - globalAvg);
+
+            if (newDiff > currentDiff) {
+                score -= (int)((newDiff - currentDiff) * 10);
+            } else {
+                score += (int)((currentDiff - newDiff) * 5);
+            }
         }
 
-        // Note: Removed random component for deterministic results
+        // Randomization
+        score += random.nextInt(7) - 3;
 
         return score;
     }
 
     /**
-     * Balances team skills by swapping members between high and low skill teams
-     * Goal: Bring all team averages closer to global average
+     * Phase 7: Balances team skills through swaps
      */
     private void balanceTeamSkills() {
         double globalAvg = teams.stream()
@@ -293,70 +349,84 @@ public class TeamBuilder {
                 .average()
                 .orElse(0.0);
 
+        Logger.logInfo("Global average skill: " + String.format("%.2f", globalAvg));
+
         List<Team> highSkillTeams = teams.stream()
-                .filter(t -> t.getAverageSkill() > globalAvg + 1.5)
+                .filter(t -> t.getAverageSkill() > globalAvg + 1.0)
                 .collect(Collectors.toList());
 
         List<Team> lowSkillTeams = teams.stream()
-                .filter(t -> t.getAverageSkill() < globalAvg - 1.5)
+                .filter(t -> t.getAverageSkill() < globalAvg - 1.0)
                 .collect(Collectors.toList());
 
         for (Team highTeam : highSkillTeams) {
             for (Team lowTeam : lowSkillTeams) {
-                swapMembersForBalance(highTeam, lowTeam);
-            }
-        }
-    }
-
-    /**
-     * Swaps members between two teams to improve skill balance
-     * Only swaps if it reduces the skill difference between teams
-     *
-     * @param team1 First team
-     * @param team2 Second team
-     */
-    private void swapMembersForBalance(Team team1, Team team2) {
-        List<Participant> team1Members = team1.getMembers();
-        List<Participant> team2Members = team2.getMembers();
-
-        for (Participant p1 : team1Members) {
-            for (Participant p2 : team2Members) {
-                if (wouldSwapImproveBalance(team1, team2, p1, p2)) {
-                    team1.removeMember(p1);
-                    team2.removeMember(p2);
-                    team1.addMember(p2);
-                    team2.addMember(p1);
-                    return;
+                if (swapMembersForBalance(highTeam, lowTeam, globalAvg)) {
+                    Logger.logInfo("Swapped members between " + highTeam.getTeamId() +
+                            " and " + lowTeam.getTeamId() + " for skill balance");
                 }
             }
         }
     }
 
     /**
-     * Evaluates if swapping two participants would improve team balance
-     *
+     * Attempts to swap members for better balance
+     * @param team1 First team
+     * @param team2 Second team
+     * @param globalAvg Global average
+     * @return true if swap made
+     */
+    private boolean swapMembersForBalance(Team team1, Team team2, double globalAvg) {
+        List<Participant> team1Members = team1.getMembers();
+        List<Participant> team2Members = team2.getMembers();
+
+        for (Participant p1 : team1Members) {
+            for (Participant p2 : team2Members) {
+                if (p1.getPersonalityType() == PersonalityType.LEADER ||
+                        p2.getPersonalityType() == PersonalityType.LEADER) {
+                    continue;
+                }
+
+                if (wouldSwapImproveBalance(team1, team2, p1, p2, globalAvg)) {
+                    team1.removeMember(p1);
+                    team2.removeMember(p2);
+                    team1.addMember(p2);
+                    team2.addMember(p1);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Checks if swap would improve balance
      * @param team1 First team
      * @param team2 Second team
      * @param p1 Participant from team1
      * @param p2 Participant from team2
-     * @return true if swap reduces skill difference between teams
+     * @param globalAvg Global average
+     * @return true if swap improves balance
      */
-    private boolean wouldSwapImproveBalance(Team team1, Team team2, Participant p1, Participant p2) {
-        double currentDiff = Math.abs(team1.getAverageSkill() - team2.getAverageSkill());
+    private boolean wouldSwapImproveBalance(Team team1, Team team2, Participant p1, Participant p2, double globalAvg) {
+        double currentDev1 = Math.abs(team1.getAverageSkill() - globalAvg);
+        double currentDev2 = Math.abs(team2.getAverageSkill() - globalAvg);
+        double currentTotalDev = currentDev1 + currentDev2;
 
         double team1NewAvg = (team1.getAverageSkill() * team1.getCurrentSize() -
                 p1.getSkillLevel() + p2.getSkillLevel()) / team1.getCurrentSize();
         double team2NewAvg = (team2.getAverageSkill() * team2.getCurrentSize() -
                 p2.getSkillLevel() + p1.getSkillLevel()) / team2.getCurrentSize();
 
-        double newDiff = Math.abs(team1NewAvg - team2NewAvg);
+        double newDev1 = Math.abs(team1NewAvg - globalAvg);
+        double newDev2 = Math.abs(team2NewAvg - globalAvg);
+        double newTotalDev = newDev1 + newDev2;
 
-        return newDiff < currentDiff;
+        return newTotalDev < currentTotalDev;
     }
 
     /**
-     * Performs final adjustments to ensure minimum role diversity
-     * If a team has fewer than MIN_ROLE_DIVERSITY roles, swaps members with other teams
+     * Phase 8: Final role diversity adjustments
      */
     private void performFinalAdjustments() {
         for (Team team : teams) {
@@ -368,21 +438,22 @@ public class TeamBuilder {
             if (roles.size() < MIN_ROLE_DIVERSITY && teams.size() > 1) {
                 for (Team otherTeam : teams) {
                     if (otherTeam == team) continue;
-                    swapForRoleDiversity(team, otherTeam);
-                    break;
+                    if (swapForRoleDiversity(team, otherTeam)) {
+                        Logger.logInfo("Improved role diversity for " + team.getTeamId());
+                        break;
+                    }
                 }
             }
         }
     }
 
     /**
-     * Swaps members between teams to improve role diversity
-     * Finds a role missing from team1 and swaps for it
-     *
-     * @param team1 Team needing more role diversity
+     * Swaps members to improve role diversity
+     * @param team1 Team needing diversity
      * @param team2 Team to swap with
+     * @return true if swap made
      */
-    private void swapForRoleDiversity(Team team1, Team team2) {
+    private boolean swapForRoleDiversity(Team team1, Team team2) {
         Set<Role> team1Roles = team1.getMembers().stream()
                 .map(Participant::getPreferredRole)
                 .collect(Collectors.toSet());
@@ -390,26 +461,30 @@ public class TeamBuilder {
         for (Participant p2 : team2.getMembers()) {
             if (!team1Roles.contains(p2.getPreferredRole())) {
                 for (Participant p1 : team1.getMembers()) {
-                    team1.removeMember(p1);
-                    team2.removeMember(p2);
-                    team1.addMember(p2);
-                    team2.addMember(p1);
-                    return;
+                    if (p1.getPersonalityType() != PersonalityType.LEADER &&
+                            p2.getPersonalityType() != PersonalityType.LEADER) {
+                        team1.removeMember(p1);
+                        team2.removeMember(p2);
+                        team1.addMember(p2);
+                        team2.addMember(p1);
+                        return true;
+                    }
                 }
             }
         }
+        return false;
     }
 
     /**
-     * Checks if a participant is already assigned to any team
-     * Thread-safe check to prevent double-assignment in concurrent execution
-     *
-     * @param p The participant to check
-     * @return true if participant is assigned to a team, false otherwise
+     * Checks if participant is already assigned
+     * @param p The participant
+     * @return true if assigned
      */
     private boolean isParticipantAssigned(Participant p) {
         for (Team team : teams) {
-            if (team.getMembers().contains(p)) return true;
+            if (team.getMembers().contains(p)) {
+                return true;
+            }
         }
         return false;
     }
