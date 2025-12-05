@@ -1,0 +1,11 @@
+TeamID,ParticipantID,Name,Email,PreferredGame,SkillLevel,Role,PersonalityType,PersonalityScore
+TEAM_1,P010,Player10,player10@uni.edu,Dota,10,COORDINATOR,THINKER,59
+TEAM_1,P008,Player8,player8@uni.edu,Valorant,8,DEFENDER,THINKER,57
+TEAM_1,P006,Player6,player6@uni.edu,FIFA,6,STRATEGIST,THINKER,55
+TEAM_1,P002,Player2,player2@uni.edu,LOL,2,ATTACKER,THINKER,51
+TEAM_1,P004,Player4,player4@uni.edu,CS2,4,SUPPORTER,THINKER,53
+TEAM_2,P009,Player9,player9@uni.edu,CS2,9,SUPPORTER,THINKER,58
+TEAM_2,P007,Player7,player7@uni.edu,LOL,7,ATTACKER,THINKER,56
+TEAM_2,P001,Player1,player1@uni.edu,FIFA,1,STRATEGIST,THINKER,50
+TEAM_2,P003,Player3,player3@uni.edu,Valorant,3,DEFENDER,THINKER,52
+TEAM_2,P005,Player5,player5@uni.edu,Dota,5,COORDINATOR,THINKER,54

@@ -1,0 +1,3 @@
+ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType
+P101,A,a@u.edu,G,7,ATTACKER,85,BALANCED
+P102,B,b@u.edu,G,6,DEFENDER,75,BALANCED

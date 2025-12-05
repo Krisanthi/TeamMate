@@ -1,0 +1,2789 @@
+[2025-11-24 10:37:16] [INFO] Application started
+[2025-11-24 10:37:16] [INFO] UserService initialized
+[2025-11-24 10:37:16] [INFO] TeamService initialized
+[2025-11-24 10:37:16] [INFO] Loaded 100 participants
+[2025-11-24 10:54:32] [INFO] TeamMate application started
+[2025-11-24 10:54:32] [INFO] UserService initialized
+[2025-11-24 10:54:32] [INFO] TeamService initialized
+[2025-11-24 10:54:32] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 10:54:45] [INFO] New participant registration initiated
+[2025-11-24 10:55:18] [INFO] Saved 101 participants
+[2025-11-24 10:55:18] [INFO] Saved 101 participants to CSV
+[2025-11-24 10:55:18] [INFO] Participant registered: P101
+[2025-11-24 10:55:18] [INFO] New participant registered: P101
+[2025-11-24 10:55:27] [INFO] Participant logged out: P101
+[2025-11-24 10:55:32] [INFO] Organizer logged in successfully
+[2025-11-24 10:55:46] [INFO] Saved 20 teams
+[2025-11-24 10:55:46] [INFO] Exported 20 teams to formed_teams.csv
+[2025-11-24 10:55:46] [INFO] Generated 20 teams
+[2025-11-24 10:56:34] [INFO] Saved 20 teams
+[2025-11-24 10:56:34] [INFO] Exported 20 teams to formed_teams.csv
+[2025-11-24 10:57:19] [INFO] Saved 100 participants
+[2025-11-24 10:57:19] [INFO] Saved 100 participants to CSV
+[2025-11-24 10:57:19] [INFO] Participant deleted: P101
+[2025-11-24 10:57:19] [INFO] Saved 0 teams
+[2025-11-24 10:57:19] [INFO] Cleared teams CSV file
+[2025-11-24 10:57:19] [INFO] All teams cleared
+[2025-11-24 10:57:34] [INFO] Saved 20 teams
+[2025-11-24 10:57:34] [INFO] Exported 20 teams to formed_teams.csv
+[2025-11-24 10:57:34] [INFO] Generated 20 teams
+[2025-11-24 10:57:44] [INFO] Organizer logged out
+[2025-11-24 10:57:48] [INFO] User chose to exit application
+[2025-11-24 10:57:48] [INFO] Application terminated
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant updated: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 0 participants
+[2025-11-24 14:39:11] [INFO] Saved 0 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant deleted: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 3 participants
+[2025-11-24 14:39:11] [INFO] Saved 3 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P103
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 5 teams
+[2025-11-24 14:39:11] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 5 teams
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 5 teams
+[2025-11-24 14:39:11] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 5 teams
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] Saved 0 teams
+[2025-11-24 14:39:11] [INFO] Cleared teams CSV file
+[2025-11-24 14:39:11] [INFO] All teams cleared
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to test_export.csv
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 6 teams
+[2025-11-24 14:39:11] [INFO] Exported 6 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 6 teams
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 10 teams
+[2025-11-24 14:39:11] [INFO] Exported 10 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 10 teams
+[2025-11-24 14:39:11] [INFO] Saved 8 teams
+[2025-11-24 14:39:11] [INFO] Exported 8 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 8 teams
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 3 participants
+[2025-11-24 14:39:11] [INFO] Saved 3 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P103
+[2025-11-24 14:39:11] [INFO] Saved 4 participants
+[2025-11-24 14:39:11] [INFO] Saved 4 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P104
+[2025-11-24 14:39:11] [INFO] Saved 5 participants
+[2025-11-24 14:39:11] [INFO] Saved 5 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P105
+[2025-11-24 14:39:11] [INFO] Saved 6 participants
+[2025-11-24 14:39:11] [INFO] Saved 6 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P106
+[2025-11-24 14:39:11] [INFO] Saved 7 participants
+[2025-11-24 14:39:11] [INFO] Saved 7 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P107
+[2025-11-24 14:39:11] [INFO] Saved 8 participants
+[2025-11-24 14:39:11] [INFO] Saved 8 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P108
+[2025-11-24 14:39:11] [INFO] Saved 9 participants
+[2025-11-24 14:39:11] [INFO] Saved 9 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P109
+[2025-11-24 14:39:11] [INFO] Saved 10 participants
+[2025-11-24 14:39:11] [INFO] Saved 10 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P110
+[2025-11-24 14:39:11] [INFO] Saved 10 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [WARNING] Skipping line 3
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant updated: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Loaded 1 participants. Next ID: P102
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant deleted: P102
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Loaded 1 participants. Next ID: P102
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] Saved 0 teams
+[2025-11-24 14:39:11] [INFO] Cleared teams CSV file
+[2025-11-24 14:39:11] [INFO] All teams cleared
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] Saved 3 teams
+[2025-11-24 14:39:11] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 3 teams
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 3 participants
+[2025-11-24 14:39:11] [INFO] Saved 3 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P103
+[2025-11-24 14:39:11] [INFO] Saved 4 participants
+[2025-11-24 14:39:11] [INFO] Saved 4 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P104
+[2025-11-24 14:39:11] [INFO] Saved 5 participants
+[2025-11-24 14:39:11] [INFO] Saved 5 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P105
+[2025-11-24 14:39:11] [INFO] Saved 6 participants
+[2025-11-24 14:39:11] [INFO] Saved 6 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P106
+[2025-11-24 14:39:11] [INFO] Saved 7 participants
+[2025-11-24 14:39:11] [INFO] Saved 7 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P107
+[2025-11-24 14:39:11] [INFO] Saved 8 participants
+[2025-11-24 14:39:11] [INFO] Saved 8 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P108
+[2025-11-24 14:39:11] [INFO] Saved 9 participants
+[2025-11-24 14:39:11] [INFO] Saved 9 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P109
+[2025-11-24 14:39:11] [INFO] Saved 10 participants
+[2025-11-24 14:39:11] [INFO] Saved 10 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P110
+[2025-11-24 14:39:11] [INFO] Saved 11 participants
+[2025-11-24 14:39:11] [INFO] Saved 11 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P111
+[2025-11-24 14:39:11] [INFO] Saved 12 participants
+[2025-11-24 14:39:11] [INFO] Saved 12 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P112
+[2025-11-24 14:39:11] [INFO] Saved 13 participants
+[2025-11-24 14:39:11] [INFO] Saved 13 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P113
+[2025-11-24 14:39:11] [INFO] Saved 14 participants
+[2025-11-24 14:39:11] [INFO] Saved 14 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P114
+[2025-11-24 14:39:11] [INFO] Saved 15 participants
+[2025-11-24 14:39:11] [INFO] Saved 15 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P115
+[2025-11-24 14:39:11] [INFO] Saved 16 participants
+[2025-11-24 14:39:11] [INFO] Saved 16 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P116
+[2025-11-24 14:39:11] [INFO] Saved 17 participants
+[2025-11-24 14:39:11] [INFO] Saved 17 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P117
+[2025-11-24 14:39:11] [INFO] Saved 18 participants
+[2025-11-24 14:39:11] [INFO] Saved 18 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P118
+[2025-11-24 14:39:11] [INFO] Saved 19 participants
+[2025-11-24 14:39:11] [INFO] Saved 19 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P119
+[2025-11-24 14:39:11] [INFO] Saved 20 participants
+[2025-11-24 14:39:11] [INFO] Saved 20 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P120
+[2025-11-24 14:39:11] [INFO] Saved 21 participants
+[2025-11-24 14:39:11] [INFO] Saved 21 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P121
+[2025-11-24 14:39:11] [INFO] Saved 22 participants
+[2025-11-24 14:39:11] [INFO] Saved 22 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P122
+[2025-11-24 14:39:11] [INFO] Saved 23 participants
+[2025-11-24 14:39:11] [INFO] Saved 23 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P123
+[2025-11-24 14:39:11] [INFO] Saved 24 participants
+[2025-11-24 14:39:11] [INFO] Saved 24 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P124
+[2025-11-24 14:39:11] [INFO] Saved 25 participants
+[2025-11-24 14:39:11] [INFO] Saved 25 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P125
+[2025-11-24 14:39:11] [INFO] Saved 5 teams
+[2025-11-24 14:39:11] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 5 teams
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 4 teams
+[2025-11-24 14:39:11] [INFO] Exported 4 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 4 teams
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant updated: P101
+[2025-11-24 14:39:11] [INFO] Saved 0 participants
+[2025-11-24 14:39:11] [INFO] Saved 0 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant deleted: P101
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 3 participants
+[2025-11-24 14:39:11] [INFO] Saved 3 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P103
+[2025-11-24 14:39:11] [INFO] Saved 4 participants
+[2025-11-24 14:39:11] [INFO] Saved 4 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P104
+[2025-11-24 14:39:11] [INFO] Saved 5 participants
+[2025-11-24 14:39:11] [INFO] Saved 5 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P105
+[2025-11-24 14:39:11] [INFO] Saved 6 participants
+[2025-11-24 14:39:11] [INFO] Saved 6 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P106
+[2025-11-24 14:39:11] [INFO] Saved 7 participants
+[2025-11-24 14:39:11] [INFO] Saved 7 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P107
+[2025-11-24 14:39:11] [INFO] Saved 8 participants
+[2025-11-24 14:39:11] [INFO] Saved 8 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P108
+[2025-11-24 14:39:11] [INFO] Saved 9 participants
+[2025-11-24 14:39:11] [INFO] Saved 9 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P109
+[2025-11-24 14:39:11] [INFO] Saved 10 participants
+[2025-11-24 14:39:11] [INFO] Saved 10 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P110
+[2025-11-24 14:39:11] [INFO] Saved 11 participants
+[2025-11-24 14:39:11] [INFO] Saved 11 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P111
+[2025-11-24 14:39:11] [INFO] Saved 12 participants
+[2025-11-24 14:39:11] [INFO] Saved 12 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P112
+[2025-11-24 14:39:11] [INFO] Saved 13 participants
+[2025-11-24 14:39:11] [INFO] Saved 13 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P113
+[2025-11-24 14:39:11] [INFO] Saved 14 participants
+[2025-11-24 14:39:11] [INFO] Saved 14 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P114
+[2025-11-24 14:39:11] [INFO] Saved 15 participants
+[2025-11-24 14:39:11] [INFO] Saved 15 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P115
+[2025-11-24 14:39:11] [INFO] Saved 16 participants
+[2025-11-24 14:39:11] [INFO] Saved 16 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P116
+[2025-11-24 14:39:11] [INFO] Saved 17 participants
+[2025-11-24 14:39:11] [INFO] Saved 17 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P117
+[2025-11-24 14:39:11] [INFO] Saved 18 participants
+[2025-11-24 14:39:11] [INFO] Saved 18 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P118
+[2025-11-24 14:39:11] [INFO] Saved 19 participants
+[2025-11-24 14:39:11] [INFO] Saved 19 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P119
+[2025-11-24 14:39:11] [INFO] Saved 20 participants
+[2025-11-24 14:39:11] [INFO] Saved 20 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P120
+[2025-11-24 14:39:11] [INFO] Saved 21 participants
+[2025-11-24 14:39:11] [INFO] Saved 21 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P121
+[2025-11-24 14:39:11] [INFO] Saved 22 participants
+[2025-11-24 14:39:11] [INFO] Saved 22 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P122
+[2025-11-24 14:39:11] [INFO] Saved 23 participants
+[2025-11-24 14:39:11] [INFO] Saved 23 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P123
+[2025-11-24 14:39:11] [INFO] Saved 24 participants
+[2025-11-24 14:39:11] [INFO] Saved 24 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P124
+[2025-11-24 14:39:11] [INFO] Saved 25 participants
+[2025-11-24 14:39:11] [INFO] Saved 25 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P125
+[2025-11-24 14:39:11] [INFO] Saved 26 participants
+[2025-11-24 14:39:11] [INFO] Saved 26 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P126
+[2025-11-24 14:39:11] [INFO] Saved 27 participants
+[2025-11-24 14:39:11] [INFO] Saved 27 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P127
+[2025-11-24 14:39:11] [INFO] Saved 28 participants
+[2025-11-24 14:39:11] [INFO] Saved 28 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P128
+[2025-11-24 14:39:11] [INFO] Saved 29 participants
+[2025-11-24 14:39:11] [INFO] Saved 29 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P129
+[2025-11-24 14:39:11] [INFO] Saved 30 participants
+[2025-11-24 14:39:11] [INFO] Saved 30 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P130
+[2025-11-24 14:39:11] [INFO] Saved 31 participants
+[2025-11-24 14:39:11] [INFO] Saved 31 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P131
+[2025-11-24 14:39:11] [INFO] Saved 32 participants
+[2025-11-24 14:39:11] [INFO] Saved 32 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P132
+[2025-11-24 14:39:11] [INFO] Saved 33 participants
+[2025-11-24 14:39:11] [INFO] Saved 33 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P133
+[2025-11-24 14:39:11] [INFO] Saved 34 participants
+[2025-11-24 14:39:11] [INFO] Saved 34 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P134
+[2025-11-24 14:39:11] [INFO] Saved 35 participants
+[2025-11-24 14:39:11] [INFO] Saved 35 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P135
+[2025-11-24 14:39:11] [INFO] Saved 36 participants
+[2025-11-24 14:39:11] [INFO] Saved 36 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P136
+[2025-11-24 14:39:11] [INFO] Saved 37 participants
+[2025-11-24 14:39:11] [INFO] Saved 37 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P137
+[2025-11-24 14:39:11] [INFO] Saved 38 participants
+[2025-11-24 14:39:11] [INFO] Saved 38 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P138
+[2025-11-24 14:39:11] [INFO] Saved 39 participants
+[2025-11-24 14:39:11] [INFO] Saved 39 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P139
+[2025-11-24 14:39:11] [INFO] Saved 40 participants
+[2025-11-24 14:39:11] [INFO] Saved 40 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P140
+[2025-11-24 14:39:11] [INFO] Saved 41 participants
+[2025-11-24 14:39:11] [INFO] Saved 41 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P141
+[2025-11-24 14:39:11] [INFO] Saved 42 participants
+[2025-11-24 14:39:11] [INFO] Saved 42 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P142
+[2025-11-24 14:39:11] [INFO] Saved 43 participants
+[2025-11-24 14:39:11] [INFO] Saved 43 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P143
+[2025-11-24 14:39:11] [INFO] Saved 44 participants
+[2025-11-24 14:39:11] [INFO] Saved 44 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P144
+[2025-11-24 14:39:11] [INFO] Saved 45 participants
+[2025-11-24 14:39:11] [INFO] Saved 45 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P145
+[2025-11-24 14:39:11] [INFO] Saved 46 participants
+[2025-11-24 14:39:11] [INFO] Saved 46 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P146
+[2025-11-24 14:39:11] [INFO] Saved 47 participants
+[2025-11-24 14:39:11] [INFO] Saved 47 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P147
+[2025-11-24 14:39:11] [INFO] Saved 48 participants
+[2025-11-24 14:39:11] [INFO] Saved 48 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P148
+[2025-11-24 14:39:11] [INFO] Saved 49 participants
+[2025-11-24 14:39:11] [INFO] Saved 49 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P149
+[2025-11-24 14:39:11] [INFO] Saved 50 participants
+[2025-11-24 14:39:11] [INFO] Saved 50 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P150
+[2025-11-24 14:39:11] [INFO] Saved 51 participants
+[2025-11-24 14:39:11] [INFO] Saved 51 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P151
+[2025-11-24 14:39:11] [INFO] Saved 52 participants
+[2025-11-24 14:39:11] [INFO] Saved 52 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P152
+[2025-11-24 14:39:11] [INFO] Saved 53 participants
+[2025-11-24 14:39:11] [INFO] Saved 53 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P153
+[2025-11-24 14:39:11] [INFO] Saved 54 participants
+[2025-11-24 14:39:11] [INFO] Saved 54 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P154
+[2025-11-24 14:39:11] [INFO] Saved 55 participants
+[2025-11-24 14:39:11] [INFO] Saved 55 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P155
+[2025-11-24 14:39:11] [INFO] Saved 56 participants
+[2025-11-24 14:39:11] [INFO] Saved 56 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P156
+[2025-11-24 14:39:11] [INFO] Saved 57 participants
+[2025-11-24 14:39:11] [INFO] Saved 57 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P157
+[2025-11-24 14:39:11] [INFO] Saved 58 participants
+[2025-11-24 14:39:11] [INFO] Saved 58 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P158
+[2025-11-24 14:39:11] [INFO] Saved 59 participants
+[2025-11-24 14:39:11] [INFO] Saved 59 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P159
+[2025-11-24 14:39:11] [INFO] Saved 60 participants
+[2025-11-24 14:39:11] [INFO] Saved 60 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P160
+[2025-11-24 14:39:11] [INFO] Saved 61 participants
+[2025-11-24 14:39:11] [INFO] Saved 61 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P161
+[2025-11-24 14:39:11] [INFO] Saved 62 participants
+[2025-11-24 14:39:11] [INFO] Saved 62 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P162
+[2025-11-24 14:39:11] [INFO] Saved 63 participants
+[2025-11-24 14:39:11] [INFO] Saved 63 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P163
+[2025-11-24 14:39:11] [INFO] Saved 64 participants
+[2025-11-24 14:39:11] [INFO] Saved 64 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P164
+[2025-11-24 14:39:11] [INFO] Saved 65 participants
+[2025-11-24 14:39:11] [INFO] Saved 65 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P165
+[2025-11-24 14:39:11] [INFO] Saved 66 participants
+[2025-11-24 14:39:11] [INFO] Saved 66 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P166
+[2025-11-24 14:39:11] [INFO] Saved 67 participants
+[2025-11-24 14:39:11] [INFO] Saved 67 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P167
+[2025-11-24 14:39:11] [INFO] Saved 68 participants
+[2025-11-24 14:39:11] [INFO] Saved 68 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P168
+[2025-11-24 14:39:11] [INFO] Saved 69 participants
+[2025-11-24 14:39:11] [INFO] Saved 69 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P169
+[2025-11-24 14:39:11] [INFO] Saved 70 participants
+[2025-11-24 14:39:11] [INFO] Saved 70 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P170
+[2025-11-24 14:39:11] [INFO] Saved 71 participants
+[2025-11-24 14:39:11] [INFO] Saved 71 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P171
+[2025-11-24 14:39:11] [INFO] Saved 72 participants
+[2025-11-24 14:39:11] [INFO] Saved 72 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P172
+[2025-11-24 14:39:11] [INFO] Saved 73 participants
+[2025-11-24 14:39:11] [INFO] Saved 73 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P173
+[2025-11-24 14:39:11] [INFO] Saved 74 participants
+[2025-11-24 14:39:11] [INFO] Saved 74 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P174
+[2025-11-24 14:39:11] [INFO] Saved 75 participants
+[2025-11-24 14:39:11] [INFO] Saved 75 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P175
+[2025-11-24 14:39:11] [INFO] Saved 76 participants
+[2025-11-24 14:39:11] [INFO] Saved 76 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P176
+[2025-11-24 14:39:11] [INFO] Saved 77 participants
+[2025-11-24 14:39:11] [INFO] Saved 77 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P177
+[2025-11-24 14:39:11] [INFO] Saved 78 participants
+[2025-11-24 14:39:11] [INFO] Saved 78 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P178
+[2025-11-24 14:39:11] [INFO] Saved 79 participants
+[2025-11-24 14:39:11] [INFO] Saved 79 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P179
+[2025-11-24 14:39:11] [INFO] Saved 80 participants
+[2025-11-24 14:39:11] [INFO] Saved 80 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P180
+[2025-11-24 14:39:11] [INFO] Saved 81 participants
+[2025-11-24 14:39:11] [INFO] Saved 81 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P181
+[2025-11-24 14:39:11] [INFO] Saved 82 participants
+[2025-11-24 14:39:11] [INFO] Saved 82 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P182
+[2025-11-24 14:39:11] [INFO] Saved 83 participants
+[2025-11-24 14:39:11] [INFO] Saved 83 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P183
+[2025-11-24 14:39:11] [INFO] Saved 84 participants
+[2025-11-24 14:39:11] [INFO] Saved 84 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P184
+[2025-11-24 14:39:11] [INFO] Saved 85 participants
+[2025-11-24 14:39:11] [INFO] Saved 85 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P185
+[2025-11-24 14:39:11] [INFO] Saved 86 participants
+[2025-11-24 14:39:11] [INFO] Saved 86 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P186
+[2025-11-24 14:39:11] [INFO] Saved 87 participants
+[2025-11-24 14:39:11] [INFO] Saved 87 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P187
+[2025-11-24 14:39:11] [INFO] Saved 88 participants
+[2025-11-24 14:39:11] [INFO] Saved 88 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P188
+[2025-11-24 14:39:11] [INFO] Saved 89 participants
+[2025-11-24 14:39:11] [INFO] Saved 89 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P189
+[2025-11-24 14:39:11] [INFO] Saved 90 participants
+[2025-11-24 14:39:11] [INFO] Saved 90 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P190
+[2025-11-24 14:39:11] [INFO] Saved 91 participants
+[2025-11-24 14:39:11] [INFO] Saved 91 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P191
+[2025-11-24 14:39:11] [INFO] Saved 92 participants
+[2025-11-24 14:39:11] [INFO] Saved 92 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P192
+[2025-11-24 14:39:11] [INFO] Saved 93 participants
+[2025-11-24 14:39:11] [INFO] Saved 93 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P193
+[2025-11-24 14:39:11] [INFO] Saved 94 participants
+[2025-11-24 14:39:11] [INFO] Saved 94 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P194
+[2025-11-24 14:39:11] [INFO] Saved 95 participants
+[2025-11-24 14:39:11] [INFO] Saved 95 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P195
+[2025-11-24 14:39:11] [INFO] Saved 96 participants
+[2025-11-24 14:39:11] [INFO] Saved 96 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P196
+[2025-11-24 14:39:11] [INFO] Saved 97 participants
+[2025-11-24 14:39:11] [INFO] Saved 97 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P197
+[2025-11-24 14:39:11] [INFO] Saved 98 participants
+[2025-11-24 14:39:11] [INFO] Saved 98 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P198
+[2025-11-24 14:39:11] [INFO] Saved 99 participants
+[2025-11-24 14:39:11] [INFO] Saved 99 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P199
+[2025-11-24 14:39:11] [INFO] Saved 100 participants
+[2025-11-24 14:39:11] [INFO] Saved 100 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P200
+[2025-11-24 14:39:11] [INFO] UserService initialized
+[2025-11-24 14:39:11] [INFO] TeamService initialized
+[2025-11-24 14:39:11] [INFO] Saved 1 participants
+[2025-11-24 14:39:11] [INFO] Saved 1 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P101
+[2025-11-24 14:39:11] [INFO] Saved 2 participants
+[2025-11-24 14:39:11] [INFO] Saved 2 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P102
+[2025-11-24 14:39:11] [INFO] Saved 3 participants
+[2025-11-24 14:39:11] [INFO] Saved 3 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P103
+[2025-11-24 14:39:11] [INFO] Saved 4 participants
+[2025-11-24 14:39:11] [INFO] Saved 4 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P104
+[2025-11-24 14:39:11] [INFO] Saved 5 participants
+[2025-11-24 14:39:11] [INFO] Saved 5 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P105
+[2025-11-24 14:39:11] [INFO] Saved 6 participants
+[2025-11-24 14:39:11] [INFO] Saved 6 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P106
+[2025-11-24 14:39:11] [INFO] Saved 7 participants
+[2025-11-24 14:39:11] [INFO] Saved 7 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P107
+[2025-11-24 14:39:11] [INFO] Saved 8 participants
+[2025-11-24 14:39:11] [INFO] Saved 8 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P108
+[2025-11-24 14:39:11] [INFO] Saved 9 participants
+[2025-11-24 14:39:11] [INFO] Saved 9 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P109
+[2025-11-24 14:39:11] [INFO] Saved 10 participants
+[2025-11-24 14:39:11] [INFO] Saved 10 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P110
+[2025-11-24 14:39:11] [INFO] Saved 11 participants
+[2025-11-24 14:39:11] [INFO] Saved 11 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P111
+[2025-11-24 14:39:11] [INFO] Saved 12 participants
+[2025-11-24 14:39:11] [INFO] Saved 12 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P112
+[2025-11-24 14:39:11] [INFO] Saved 13 participants
+[2025-11-24 14:39:11] [INFO] Saved 13 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P113
+[2025-11-24 14:39:11] [INFO] Saved 14 participants
+[2025-11-24 14:39:11] [INFO] Saved 14 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P114
+[2025-11-24 14:39:11] [INFO] Saved 15 participants
+[2025-11-24 14:39:11] [INFO] Saved 15 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P115
+[2025-11-24 14:39:11] [INFO] Saved 16 participants
+[2025-11-24 14:39:11] [INFO] Saved 16 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P116
+[2025-11-24 14:39:11] [INFO] Saved 17 participants
+[2025-11-24 14:39:11] [INFO] Saved 17 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P117
+[2025-11-24 14:39:11] [INFO] Saved 18 participants
+[2025-11-24 14:39:11] [INFO] Saved 18 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P118
+[2025-11-24 14:39:11] [INFO] Saved 19 participants
+[2025-11-24 14:39:11] [INFO] Saved 19 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P119
+[2025-11-24 14:39:11] [INFO] Saved 20 participants
+[2025-11-24 14:39:11] [INFO] Saved 20 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant registered: P120
+[2025-11-24 14:39:11] [INFO] Saved 5 teams
+[2025-11-24 14:39:11] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-24 14:39:11] [INFO] Generated 5 teams
+[2025-11-24 14:39:11] [INFO] Saved 19 participants
+[2025-11-24 14:39:11] [INFO] Saved 19 participants to CSV
+[2025-11-24 14:39:11] [INFO] Participant deleted: P101
+[2025-11-24 14:39:11] [INFO] Saved 0 teams
+[2025-11-24 14:39:11] [INFO] Cleared teams CSV file
+[2025-11-24 14:39:11] [INFO] All teams cleared
+[2025-11-24 15:08:20] [INFO] TeamMate application started
+[2025-11-24 15:08:20] [INFO] UserService initialized
+[2025-11-24 15:08:20] [INFO] TeamService initialized
+[2025-11-24 15:08:20] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 15:08:41] [INFO] Participant logged in: P001
+[2025-11-24 15:11:45] [INFO] Participant logged out: P001
+[2025-11-24 15:11:50] [INFO] Organizer logged in successfully
+[2025-11-24 17:15:24] [INFO] TeamMate application started
+[2025-11-24 17:15:24] [INFO] UserService initialized
+[2025-11-24 17:15:24] [INFO] TeamService initialized
+[2025-11-24 17:15:24] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 17:15:46] [INFO] Participant logged in: P001
+[2025-11-24 17:28:55] [INFO] TeamMate application started
+[2025-11-24 17:28:55] [INFO] UserService initialized
+[2025-11-24 17:28:55] [INFO] TeamService initialized
+[2025-11-24 17:28:55] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 17:29:00] [INFO] Participant logged in: P001
+[2025-11-24 17:29:09] [INFO] Saved 100 participants
+[2025-11-24 17:29:09] [INFO] Saved 100 participants to CSV
+[2025-11-24 17:29:09] [INFO] Participant updated: P001
+[2025-11-24 21:17:17] [INFO] TeamMate application started
+[2025-11-24 21:17:17] [INFO] UserService initialized
+[2025-11-24 21:17:17] [INFO] TeamService initialized
+[2025-11-24 21:17:17] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 21:17:29] [INFO] Organizer logged in successfully
+[2025-11-24 21:26:16] [INFO] TeamMate application started
+[2025-11-24 21:26:16] [INFO] UserService initialized
+[2025-11-24 21:26:16] [INFO] TeamService initialized
+[2025-11-24 21:26:16] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-24 21:26:25] [INFO] Organizer logged in successfully
+[2025-11-24 21:26:32] [INFO] Viewed unassigned participants: 100 found
+[2025-11-24 21:26:56] [INFO] Saved 25 teams
+[2025-11-24 21:26:56] [INFO] Exported 25 teams to formed_teams.csv
+[2025-11-24 21:26:56] [INFO] Generated 25 teams
+[2025-11-24 21:27:13] [INFO] Saved 33 teams
+[2025-11-24 21:27:13] [INFO] Exported 33 teams to formed_teams.csv
+[2025-11-24 21:27:13] [INFO] Generated 33 teams
+[2025-11-24 21:27:18] [INFO] Viewed unassigned participants: 1 found
+[2025-11-24 21:27:29] [INFO] Saved 16 teams
+[2025-11-24 21:27:29] [INFO] Exported 16 teams to formed_teams.csv
+[2025-11-24 21:27:29] [INFO] Generated 16 teams
+[2025-11-24 21:27:31] [INFO] Viewed unassigned participants: 4 found
+[2025-11-27 11:19:32] [INFO] TeamMate application started
+[2025-11-27 11:19:32] [INFO] UserService initialized
+[2025-11-27 11:19:32] [INFO] TeamService initialized
+[2025-11-27 11:19:32] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 11:22:44] [INFO] TeamMate application started
+[2025-11-27 11:22:44] [INFO] UserService initialized
+[2025-11-27 11:22:44] [INFO] TeamService initialized
+[2025-11-27 11:22:44] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 11:23:06] [INFO] TeamMate application started
+[2025-11-27 11:23:06] [INFO] UserService initialized
+[2025-11-27 11:23:06] [INFO] TeamService initialized
+[2025-11-27 11:23:06] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 11:31:40] [INFO] TeamMate application started
+[2025-11-27 11:31:40] [INFO] UserService initialized
+[2025-11-27 11:31:40] [INFO] TeamService initialized
+[2025-11-27 11:31:40] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 11:32:27] [WARNING] Failed organizer login attempt
+[2025-11-27 11:32:47] [INFO] Organizer logged in successfully
+[2025-11-27 11:33:06] [INFO] Saved 25 teams
+[2025-11-27 11:33:06] [INFO] Exported 25 teams to formed_teams.csv
+[2025-11-27 11:33:06] [INFO] Generated 25 teams
+[2025-11-27 11:33:37] [INFO] Saved 25 teams
+[2025-11-27 11:33:37] [INFO] Exported 25 teams to formed_teams.csv
+[2025-11-27 16:52:23] [INFO] TeamMate application started
+[2025-11-27 16:52:23] [INFO] UserService initialized
+[2025-11-27 16:52:23] [INFO] TeamService initialized
+[2025-11-27 16:52:23] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 16:53:20] [INFO] TeamMate application started
+[2025-11-27 16:53:20] [INFO] UserService initialized
+[2025-11-27 16:53:20] [INFO] TeamService initialized
+[2025-11-27 16:53:20] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-27 16:53:32] [INFO] Organizer logged in successfully
+[2025-11-27 16:57:40] [INFO] TeamMate application started
+[2025-11-27 16:57:41] [INFO] UserService initialized
+[2025-11-27 16:57:41] [INFO] TeamService initialized
+[2025-11-27 16:57:41] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 2 participants
+[2025-11-28 01:26:35] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P102
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant updated: P101
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 0 participants
+[2025-11-28 01:26:35] [INFO] Saved 0 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant deleted: P101
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 5 teams
+[2025-11-28 01:26:35] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 5 teams
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 5 teams
+[2025-11-28 01:26:35] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 5 teams
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 3 teams
+[2025-11-28 01:26:35] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 3 teams
+[2025-11-28 01:26:35] [INFO] Saved 0 teams
+[2025-11-28 01:26:35] [INFO] Cleared teams CSV file
+[2025-11-28 01:26:35] [INFO] All teams cleared
+[2025-11-28 01:26:35] [INFO] Saved 10 participants
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 10 teams
+[2025-11-28 01:26:35] [INFO] Exported 10 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 10 teams
+[2025-11-28 01:26:35] [INFO] Saved 8 teams
+[2025-11-28 01:26:35] [INFO] Exported 8 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 8 teams
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 2 participants
+[2025-11-28 01:26:35] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P102
+[2025-11-28 01:26:35] [INFO] Saved 3 participants
+[2025-11-28 01:26:35] [INFO] Saved 3 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P103
+[2025-11-28 01:26:35] [INFO] Saved 4 participants
+[2025-11-28 01:26:35] [INFO] Saved 4 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P104
+[2025-11-28 01:26:35] [INFO] Saved 5 participants
+[2025-11-28 01:26:35] [INFO] Saved 5 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P105
+[2025-11-28 01:26:35] [INFO] Saved 6 participants
+[2025-11-28 01:26:35] [INFO] Saved 6 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P106
+[2025-11-28 01:26:35] [INFO] Saved 7 participants
+[2025-11-28 01:26:35] [INFO] Saved 7 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P107
+[2025-11-28 01:26:35] [INFO] Saved 8 participants
+[2025-11-28 01:26:35] [INFO] Saved 8 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P108
+[2025-11-28 01:26:35] [INFO] Saved 9 participants
+[2025-11-28 01:26:35] [INFO] Saved 9 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P109
+[2025-11-28 01:26:35] [INFO] Saved 10 participants
+[2025-11-28 01:26:35] [INFO] Saved 10 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P110
+[2025-11-28 01:26:35] [INFO] Saved 11 participants
+[2025-11-28 01:26:35] [INFO] Saved 11 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P111
+[2025-11-28 01:26:35] [INFO] Saved 12 participants
+[2025-11-28 01:26:35] [INFO] Saved 12 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P112
+[2025-11-28 01:26:35] [INFO] Saved 13 participants
+[2025-11-28 01:26:35] [INFO] Saved 13 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P113
+[2025-11-28 01:26:35] [INFO] Saved 14 participants
+[2025-11-28 01:26:35] [INFO] Saved 14 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P114
+[2025-11-28 01:26:35] [INFO] Saved 15 participants
+[2025-11-28 01:26:35] [INFO] Saved 15 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P115
+[2025-11-28 01:26:35] [INFO] Saved 16 participants
+[2025-11-28 01:26:35] [INFO] Saved 16 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P116
+[2025-11-28 01:26:35] [INFO] Saved 17 participants
+[2025-11-28 01:26:35] [INFO] Saved 17 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P117
+[2025-11-28 01:26:35] [INFO] Saved 18 participants
+[2025-11-28 01:26:35] [INFO] Saved 18 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P118
+[2025-11-28 01:26:35] [INFO] Saved 19 participants
+[2025-11-28 01:26:35] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P119
+[2025-11-28 01:26:35] [INFO] Saved 20 participants
+[2025-11-28 01:26:35] [INFO] Saved 20 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P120
+[2025-11-28 01:26:35] [INFO] Saved 21 participants
+[2025-11-28 01:26:35] [INFO] Saved 21 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P121
+[2025-11-28 01:26:35] [INFO] Saved 22 participants
+[2025-11-28 01:26:35] [INFO] Saved 22 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P122
+[2025-11-28 01:26:35] [INFO] Saved 23 participants
+[2025-11-28 01:26:35] [INFO] Saved 23 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P123
+[2025-11-28 01:26:35] [INFO] Saved 24 participants
+[2025-11-28 01:26:35] [INFO] Saved 24 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P124
+[2025-11-28 01:26:35] [INFO] Saved 25 participants
+[2025-11-28 01:26:35] [INFO] Saved 25 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P125
+[2025-11-28 01:26:35] [INFO] Saved 5 teams
+[2025-11-28 01:26:35] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 5 teams
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 4 teams
+[2025-11-28 01:26:35] [INFO] Exported 4 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 4 teams
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant updated: P101
+[2025-11-28 01:26:35] [INFO] Saved 0 participants
+[2025-11-28 01:26:35] [INFO] Saved 0 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant deleted: P101
+[2025-11-28 01:26:35] [INFO] UserService initialized
+[2025-11-28 01:26:35] [INFO] TeamService initialized
+[2025-11-28 01:26:35] [INFO] Saved 1 participants
+[2025-11-28 01:26:35] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P101
+[2025-11-28 01:26:35] [INFO] Saved 2 participants
+[2025-11-28 01:26:35] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P102
+[2025-11-28 01:26:35] [INFO] Saved 3 participants
+[2025-11-28 01:26:35] [INFO] Saved 3 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P103
+[2025-11-28 01:26:35] [INFO] Saved 4 participants
+[2025-11-28 01:26:35] [INFO] Saved 4 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P104
+[2025-11-28 01:26:35] [INFO] Saved 5 participants
+[2025-11-28 01:26:35] [INFO] Saved 5 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P105
+[2025-11-28 01:26:35] [INFO] Saved 6 participants
+[2025-11-28 01:26:35] [INFO] Saved 6 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P106
+[2025-11-28 01:26:35] [INFO] Saved 7 participants
+[2025-11-28 01:26:35] [INFO] Saved 7 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P107
+[2025-11-28 01:26:35] [INFO] Saved 8 participants
+[2025-11-28 01:26:35] [INFO] Saved 8 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P108
+[2025-11-28 01:26:35] [INFO] Saved 9 participants
+[2025-11-28 01:26:35] [INFO] Saved 9 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P109
+[2025-11-28 01:26:35] [INFO] Saved 10 participants
+[2025-11-28 01:26:35] [INFO] Saved 10 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P110
+[2025-11-28 01:26:35] [INFO] Saved 11 participants
+[2025-11-28 01:26:35] [INFO] Saved 11 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P111
+[2025-11-28 01:26:35] [INFO] Saved 12 participants
+[2025-11-28 01:26:35] [INFO] Saved 12 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P112
+[2025-11-28 01:26:35] [INFO] Saved 13 participants
+[2025-11-28 01:26:35] [INFO] Saved 13 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P113
+[2025-11-28 01:26:35] [INFO] Saved 14 participants
+[2025-11-28 01:26:35] [INFO] Saved 14 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P114
+[2025-11-28 01:26:35] [INFO] Saved 15 participants
+[2025-11-28 01:26:35] [INFO] Saved 15 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P115
+[2025-11-28 01:26:35] [INFO] Saved 16 participants
+[2025-11-28 01:26:35] [INFO] Saved 16 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P116
+[2025-11-28 01:26:35] [INFO] Saved 17 participants
+[2025-11-28 01:26:35] [INFO] Saved 17 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P117
+[2025-11-28 01:26:35] [INFO] Saved 18 participants
+[2025-11-28 01:26:35] [INFO] Saved 18 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P118
+[2025-11-28 01:26:35] [INFO] Saved 19 participants
+[2025-11-28 01:26:35] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P119
+[2025-11-28 01:26:35] [INFO] Saved 20 participants
+[2025-11-28 01:26:35] [INFO] Saved 20 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant registered: P120
+[2025-11-28 01:26:35] [INFO] Saved 5 teams
+[2025-11-28 01:26:35] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:26:35] [INFO] Generated 5 teams
+[2025-11-28 01:26:35] [INFO] Saved 19 participants
+[2025-11-28 01:26:35] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:26:35] [INFO] Participant deleted: P101
+[2025-11-28 01:26:35] [INFO] Saved 0 teams
+[2025-11-28 01:26:35] [INFO] Cleared teams CSV file
+[2025-11-28 01:26:35] [INFO] All teams cleared
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 2 participants
+[2025-11-28 01:28:22] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P102
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant updated: P101
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 0 participants
+[2025-11-28 01:28:22] [INFO] Saved 0 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant deleted: P101
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 5 teams
+[2025-11-28 01:28:22] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 5 teams
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 5 teams
+[2025-11-28 01:28:22] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 5 teams
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 3 teams
+[2025-11-28 01:28:22] [INFO] Exported 3 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 3 teams
+[2025-11-28 01:28:22] [INFO] Saved 0 teams
+[2025-11-28 01:28:22] [INFO] Cleared teams CSV file
+[2025-11-28 01:28:22] [INFO] All teams cleared
+[2025-11-28 01:28:22] [INFO] Saved 10 participants
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 10 teams
+[2025-11-28 01:28:22] [INFO] Exported 10 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 10 teams
+[2025-11-28 01:28:22] [INFO] Saved 8 teams
+[2025-11-28 01:28:22] [INFO] Exported 8 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 8 teams
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 2 participants
+[2025-11-28 01:28:22] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P102
+[2025-11-28 01:28:22] [INFO] Saved 3 participants
+[2025-11-28 01:28:22] [INFO] Saved 3 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P103
+[2025-11-28 01:28:22] [INFO] Saved 4 participants
+[2025-11-28 01:28:22] [INFO] Saved 4 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P104
+[2025-11-28 01:28:22] [INFO] Saved 5 participants
+[2025-11-28 01:28:22] [INFO] Saved 5 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P105
+[2025-11-28 01:28:22] [INFO] Saved 6 participants
+[2025-11-28 01:28:22] [INFO] Saved 6 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P106
+[2025-11-28 01:28:22] [INFO] Saved 7 participants
+[2025-11-28 01:28:22] [INFO] Saved 7 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P107
+[2025-11-28 01:28:22] [INFO] Saved 8 participants
+[2025-11-28 01:28:22] [INFO] Saved 8 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P108
+[2025-11-28 01:28:22] [INFO] Saved 9 participants
+[2025-11-28 01:28:22] [INFO] Saved 9 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P109
+[2025-11-28 01:28:22] [INFO] Saved 10 participants
+[2025-11-28 01:28:22] [INFO] Saved 10 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P110
+[2025-11-28 01:28:22] [INFO] Saved 11 participants
+[2025-11-28 01:28:22] [INFO] Saved 11 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P111
+[2025-11-28 01:28:22] [INFO] Saved 12 participants
+[2025-11-28 01:28:22] [INFO] Saved 12 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P112
+[2025-11-28 01:28:22] [INFO] Saved 13 participants
+[2025-11-28 01:28:22] [INFO] Saved 13 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P113
+[2025-11-28 01:28:22] [INFO] Saved 14 participants
+[2025-11-28 01:28:22] [INFO] Saved 14 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P114
+[2025-11-28 01:28:22] [INFO] Saved 15 participants
+[2025-11-28 01:28:22] [INFO] Saved 15 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P115
+[2025-11-28 01:28:22] [INFO] Saved 16 participants
+[2025-11-28 01:28:22] [INFO] Saved 16 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P116
+[2025-11-28 01:28:22] [INFO] Saved 17 participants
+[2025-11-28 01:28:22] [INFO] Saved 17 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P117
+[2025-11-28 01:28:22] [INFO] Saved 18 participants
+[2025-11-28 01:28:22] [INFO] Saved 18 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P118
+[2025-11-28 01:28:22] [INFO] Saved 19 participants
+[2025-11-28 01:28:22] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P119
+[2025-11-28 01:28:22] [INFO] Saved 20 participants
+[2025-11-28 01:28:22] [INFO] Saved 20 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P120
+[2025-11-28 01:28:22] [INFO] Saved 21 participants
+[2025-11-28 01:28:22] [INFO] Saved 21 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P121
+[2025-11-28 01:28:22] [INFO] Saved 22 participants
+[2025-11-28 01:28:22] [INFO] Saved 22 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P122
+[2025-11-28 01:28:22] [INFO] Saved 23 participants
+[2025-11-28 01:28:22] [INFO] Saved 23 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P123
+[2025-11-28 01:28:22] [INFO] Saved 24 participants
+[2025-11-28 01:28:22] [INFO] Saved 24 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P124
+[2025-11-28 01:28:22] [INFO] Saved 25 participants
+[2025-11-28 01:28:22] [INFO] Saved 25 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P125
+[2025-11-28 01:28:22] [INFO] Saved 5 teams
+[2025-11-28 01:28:22] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 5 teams
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 4 teams
+[2025-11-28 01:28:22] [INFO] Exported 4 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 4 teams
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant updated: P101
+[2025-11-28 01:28:22] [INFO] Saved 0 participants
+[2025-11-28 01:28:22] [INFO] Saved 0 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant deleted: P101
+[2025-11-28 01:28:22] [INFO] UserService initialized
+[2025-11-28 01:28:22] [INFO] TeamService initialized
+[2025-11-28 01:28:22] [INFO] Saved 1 participants
+[2025-11-28 01:28:22] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P101
+[2025-11-28 01:28:22] [INFO] Saved 2 participants
+[2025-11-28 01:28:22] [INFO] Saved 2 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P102
+[2025-11-28 01:28:22] [INFO] Saved 3 participants
+[2025-11-28 01:28:22] [INFO] Saved 3 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P103
+[2025-11-28 01:28:22] [INFO] Saved 4 participants
+[2025-11-28 01:28:22] [INFO] Saved 4 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P104
+[2025-11-28 01:28:22] [INFO] Saved 5 participants
+[2025-11-28 01:28:22] [INFO] Saved 5 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P105
+[2025-11-28 01:28:22] [INFO] Saved 6 participants
+[2025-11-28 01:28:22] [INFO] Saved 6 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P106
+[2025-11-28 01:28:22] [INFO] Saved 7 participants
+[2025-11-28 01:28:22] [INFO] Saved 7 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P107
+[2025-11-28 01:28:22] [INFO] Saved 8 participants
+[2025-11-28 01:28:22] [INFO] Saved 8 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P108
+[2025-11-28 01:28:22] [INFO] Saved 9 participants
+[2025-11-28 01:28:22] [INFO] Saved 9 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P109
+[2025-11-28 01:28:22] [INFO] Saved 10 participants
+[2025-11-28 01:28:22] [INFO] Saved 10 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P110
+[2025-11-28 01:28:22] [INFO] Saved 11 participants
+[2025-11-28 01:28:22] [INFO] Saved 11 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P111
+[2025-11-28 01:28:22] [INFO] Saved 12 participants
+[2025-11-28 01:28:22] [INFO] Saved 12 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P112
+[2025-11-28 01:28:22] [INFO] Saved 13 participants
+[2025-11-28 01:28:22] [INFO] Saved 13 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P113
+[2025-11-28 01:28:22] [INFO] Saved 14 participants
+[2025-11-28 01:28:22] [INFO] Saved 14 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P114
+[2025-11-28 01:28:22] [INFO] Saved 15 participants
+[2025-11-28 01:28:22] [INFO] Saved 15 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P115
+[2025-11-28 01:28:22] [INFO] Saved 16 participants
+[2025-11-28 01:28:22] [INFO] Saved 16 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P116
+[2025-11-28 01:28:22] [INFO] Saved 17 participants
+[2025-11-28 01:28:22] [INFO] Saved 17 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P117
+[2025-11-28 01:28:22] [INFO] Saved 18 participants
+[2025-11-28 01:28:22] [INFO] Saved 18 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P118
+[2025-11-28 01:28:22] [INFO] Saved 19 participants
+[2025-11-28 01:28:22] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P119
+[2025-11-28 01:28:22] [INFO] Saved 20 participants
+[2025-11-28 01:28:22] [INFO] Saved 20 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant registered: P120
+[2025-11-28 01:28:22] [INFO] Saved 5 teams
+[2025-11-28 01:28:22] [INFO] Exported 5 teams to formed_teams.csv
+[2025-11-28 01:28:22] [INFO] Generated 5 teams
+[2025-11-28 01:28:22] [INFO] Saved 19 participants
+[2025-11-28 01:28:22] [INFO] Saved 19 participants to CSV
+[2025-11-28 01:28:22] [INFO] Participant deleted: P101
+[2025-11-28 01:28:22] [INFO] Saved 0 teams
+[2025-11-28 01:28:22] [INFO] Cleared teams CSV file
+[2025-11-28 01:28:22] [INFO] All teams cleared
+[2025-11-28 01:28:50] [INFO] TeamMate application started
+[2025-11-28 01:28:50] [INFO] UserService initialized
+[2025-11-28 01:28:50] [INFO] TeamService initialized
+[2025-11-28 01:29:02] [INFO] New participant registration initiated
+[2025-11-28 01:30:10] [INFO] Saved 1 participants
+[2025-11-28 01:30:10] [INFO] Saved 1 participants to CSV
+[2025-11-28 01:30:10] [INFO] Participant registered: P101
+[2025-11-28 01:30:10] [INFO] New participant registered: P101
+[2025-11-28 01:30:37] [INFO] Participant logged out: P101
+[2025-11-28 01:30:41] [INFO] Organizer logged in successfully
+[2025-11-28 01:31:16] [INFO] Loaded 1 participants. Next ID: P102
+[2025-11-28 01:31:16] [INFO] Loaded 1 participants from participants_sample.csv
+[2025-11-28 01:31:33] [ERROR] CSV load failed: File does not exist: hall.csv
+Stack Trace:
+  at com.teammate.service.FileHandler.validateCSV(FileHandler.java:172)
+  at com.teammate.service.FileHandler.loadParticipants(FileHandler.java:27)
+  at com.teammate.service.UserService.loadFromCSV(UserService.java:104)
+  at com.teammate.TeamMateApp.loadParticipantData(TeamMateApp.java:517)
+  at com.teammate.TeamMateApp.organizerMenu(TeamMateApp.java:472)
+  at com.teammate.TeamMateApp.organizerFlow(TeamMateApp.java:447)
+  at com.teammate.TeamMateApp.main(TeamMateApp.java:42)
+
+[2025-11-28 01:31:48] [INFO] TeamMate application started
+[2025-11-28 01:31:48] [INFO] UserService initialized
+[2025-11-28 01:31:48] [INFO] TeamService initialized
+[2025-11-28 01:31:53] [INFO] Organizer logged in successfully
+[2025-11-28 01:32:03] [ERROR] CSV load failed: File does not exist: hall.csv
+Stack Trace:
+  at com.teammate.service.FileHandler.validateCSV(FileHandler.java:172)
+  at com.teammate.service.FileHandler.loadParticipants(FileHandler.java:27)
+  at com.teammate.service.UserService.loadFromCSV(UserService.java:104)
+  at com.teammate.TeamMateApp.loadParticipantData(TeamMateApp.java:517)
+  at com.teammate.TeamMateApp.organizerMenu(TeamMateApp.java:472)
+  at com.teammate.TeamMateApp.organizerFlow(TeamMateApp.java:447)
+  at com.teammate.TeamMateApp.main(TeamMateApp.java:42)
+
+[2025-11-28 01:32:17] [INFO] Loaded 1 participants. Next ID: P102
+[2025-11-28 01:32:17] [INFO] Loaded 1 participants from participants_sample.csv
+[2025-11-28 01:34:04] [INFO] TeamMate application started
+[2025-11-28 01:34:04] [INFO] UserService initialized
+[2025-11-28 01:34:04] [INFO] TeamService initialized
+[2025-11-28 01:34:10] [INFO] Organizer logged in successfully
+[2025-11-28 01:34:17] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-28 01:34:17] [INFO] Loaded 100 participants from participants_sample.csv
+[2025-11-28 01:35:13] [INFO] Saved 14 teams
+[2025-11-28 01:35:13] [INFO] Exported 14 teams to formed_teams.csv
+[2025-11-28 01:35:13] [INFO] Generated 14 teams
+[2025-11-28 01:35:51] [INFO] Organizer logged out
+[2025-11-28 01:35:55] [INFO] User chose to exit application
+[2025-11-28 01:35:55] [INFO] Application terminated
+[2025-11-28 01:39:49] [INFO] TeamMate application started
+[2025-11-28 01:39:49] [INFO] UserService initialized
+[2025-11-28 01:39:49] [INFO] TeamService initialized
+[2025-11-28 01:40:05] [INFO] Organizer logged in successfully
+[2025-11-28 01:40:14] [INFO] Loaded 100 participants. Next ID: P101
+[2025-11-28 01:40:14] [INFO] Loaded 100 participants from participants_sample.csv
+[2025-11-28 17:30:03] [INFO] TeamMate application started
+[2025-11-28 17:30:03] [INFO] UserService initialized
+[2025-11-28 17:30:03] [INFO] TeamService initialized
+[2025-11-28 17:30:26] [WARNING] Login failed: Participant P001 not found
+[2025-11-28 21:24:46] [INFO] TeamMate application started
+[2025-11-28 21:24:46] [INFO] UserService initialized
+[2025-11-28 21:24:46] [INFO] TeamService initialized
+[2025-11-28 21:24:58] [INFO] New participant registration initiated
+[2025-11-28 21:25:57] [INFO] Saved 1 participants
+[2025-11-28 21:25:57] [INFO] Saved 1 participants to CSV
+[2025-11-28 21:25:57] [INFO] Participant registered: P101
+[2025-11-28 21:25:57] [INFO] New participant registered: P101
+[2025-11-28 21:26:11] [INFO] Participant logged out: P101
+[2025-11-28 21:26:15] [INFO] Organizer logged in successfully
+[2025-11-28 21:26:25] [INFO] Saved 0 participants
+[2025-11-28 21:26:25] [INFO] Saved 0 participants to CSV
+[2025-11-28 21:26:25] [INFO] Participant deleted: P101
+[2025-11-28 22:31:44] [ERROR] CSV load failed: No valid participants found
+Stack Trace:
+  at com.teammate.service.FileHandler.loadParticipants(FileHandler.java:60)
+  at com.teammate.service.UserService.loadFromCSV(UserService.java:104)
+  at com.teammate.TeamMateApp.loadParticipantData(TeamMateApp.java:517)
+  at com.teammate.TeamMateApp.organizerMenu(TeamMateApp.java:472)
+  at com.teammate.TeamMateApp.organizerFlow(TeamMateApp.java:447)
+  at com.teammate.TeamMateApp.main(TeamMateApp.java:42)
+
+[2025-11-28 22:32:56] [INFO] Loaded 100 participants. Next ID: P102
+[2025-11-28 22:32:56] [INFO] Loaded 100 participants from participants_sample.csv
+[2025-11-28 22:33:05] [INFO] Saved 25 teams
+[2025-11-28 22:33:05] [INFO] Exported 25 teams to formed_teams.csv
+[2025-11-28 22:33:05] [INFO] Generated 25 teams
+[2025-11-28 22:33:10] [INFO] Organizer logged out
+[2025-11-28 22:33:16] [INFO] Participant logged in: P001
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 2 participants
+[2025-12-02 13:17:12] [INFO] Saved 2 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P102
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant updated: P101
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 0 participants
+[2025-12-02 13:17:12] [INFO] Saved 0 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant deleted: P101
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 5 teams
+[2025-12-02 13:17:12] [INFO] Exported 5 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 5 teams
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 5 teams
+[2025-12-02 13:17:12] [INFO] Exported 5 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 5 teams
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 3 teams
+[2025-12-02 13:17:12] [INFO] Exported 3 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 3 teams
+[2025-12-02 13:17:12] [INFO] Saved 0 teams
+[2025-12-02 13:17:12] [INFO] Cleared teams CSV file
+[2025-12-02 13:17:12] [INFO] All teams cleared
+[2025-12-02 13:17:12] [INFO] Saved 10 participants
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 10 teams
+[2025-12-02 13:17:12] [INFO] Exported 10 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 10 teams
+[2025-12-02 13:17:12] [INFO] Saved 8 teams
+[2025-12-02 13:17:12] [INFO] Exported 8 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 8 teams
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 2 participants
+[2025-12-02 13:17:12] [INFO] Saved 2 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P102
+[2025-12-02 13:17:12] [INFO] Saved 3 participants
+[2025-12-02 13:17:12] [INFO] Saved 3 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P103
+[2025-12-02 13:17:12] [INFO] Saved 4 participants
+[2025-12-02 13:17:12] [INFO] Saved 4 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P104
+[2025-12-02 13:17:12] [INFO] Saved 5 participants
+[2025-12-02 13:17:12] [INFO] Saved 5 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P105
+[2025-12-02 13:17:12] [INFO] Saved 6 participants
+[2025-12-02 13:17:12] [INFO] Saved 6 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P106
+[2025-12-02 13:17:12] [INFO] Saved 7 participants
+[2025-12-02 13:17:12] [INFO] Saved 7 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P107
+[2025-12-02 13:17:12] [INFO] Saved 8 participants
+[2025-12-02 13:17:12] [INFO] Saved 8 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P108
+[2025-12-02 13:17:12] [INFO] Saved 9 participants
+[2025-12-02 13:17:12] [INFO] Saved 9 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P109
+[2025-12-02 13:17:12] [INFO] Saved 10 participants
+[2025-12-02 13:17:12] [INFO] Saved 10 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P110
+[2025-12-02 13:17:12] [INFO] Saved 11 participants
+[2025-12-02 13:17:12] [INFO] Saved 11 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P111
+[2025-12-02 13:17:12] [INFO] Saved 12 participants
+[2025-12-02 13:17:12] [INFO] Saved 12 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P112
+[2025-12-02 13:17:12] [INFO] Saved 13 participants
+[2025-12-02 13:17:12] [INFO] Saved 13 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P113
+[2025-12-02 13:17:12] [INFO] Saved 14 participants
+[2025-12-02 13:17:12] [INFO] Saved 14 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P114
+[2025-12-02 13:17:12] [INFO] Saved 15 participants
+[2025-12-02 13:17:12] [INFO] Saved 15 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P115
+[2025-12-02 13:17:12] [INFO] Saved 16 participants
+[2025-12-02 13:17:12] [INFO] Saved 16 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P116
+[2025-12-02 13:17:12] [INFO] Saved 17 participants
+[2025-12-02 13:17:12] [INFO] Saved 17 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P117
+[2025-12-02 13:17:12] [INFO] Saved 18 participants
+[2025-12-02 13:17:12] [INFO] Saved 18 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P118
+[2025-12-02 13:17:12] [INFO] Saved 19 participants
+[2025-12-02 13:17:12] [INFO] Saved 19 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P119
+[2025-12-02 13:17:12] [INFO] Saved 20 participants
+[2025-12-02 13:17:12] [INFO] Saved 20 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P120
+[2025-12-02 13:17:12] [INFO] Saved 21 participants
+[2025-12-02 13:17:12] [INFO] Saved 21 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P121
+[2025-12-02 13:17:12] [INFO] Saved 22 participants
+[2025-12-02 13:17:12] [INFO] Saved 22 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P122
+[2025-12-02 13:17:12] [INFO] Saved 23 participants
+[2025-12-02 13:17:12] [INFO] Saved 23 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P123
+[2025-12-02 13:17:12] [INFO] Saved 24 participants
+[2025-12-02 13:17:12] [INFO] Saved 24 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P124
+[2025-12-02 13:17:12] [INFO] Saved 25 participants
+[2025-12-02 13:17:12] [INFO] Saved 25 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P125
+[2025-12-02 13:17:12] [INFO] Saved 5 teams
+[2025-12-02 13:17:12] [INFO] Exported 5 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 5 teams
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 4 teams
+[2025-12-02 13:17:12] [INFO] Exported 4 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 4 teams
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant updated: P101
+[2025-12-02 13:17:12] [INFO] Saved 0 participants
+[2025-12-02 13:17:12] [INFO] Saved 0 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant deleted: P101
+[2025-12-02 13:17:12] [INFO] UserService initialized
+[2025-12-02 13:17:12] [INFO] TeamService initialized
+[2025-12-02 13:17:12] [INFO] Saved 1 participants
+[2025-12-02 13:17:12] [INFO] Saved 1 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P101
+[2025-12-02 13:17:12] [INFO] Saved 2 participants
+[2025-12-02 13:17:12] [INFO] Saved 2 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P102
+[2025-12-02 13:17:12] [INFO] Saved 3 participants
+[2025-12-02 13:17:12] [INFO] Saved 3 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P103
+[2025-12-02 13:17:12] [INFO] Saved 4 participants
+[2025-12-02 13:17:12] [INFO] Saved 4 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P104
+[2025-12-02 13:17:12] [INFO] Saved 5 participants
+[2025-12-02 13:17:12] [INFO] Saved 5 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P105
+[2025-12-02 13:17:12] [INFO] Saved 6 participants
+[2025-12-02 13:17:12] [INFO] Saved 6 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P106
+[2025-12-02 13:17:12] [INFO] Saved 7 participants
+[2025-12-02 13:17:12] [INFO] Saved 7 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P107
+[2025-12-02 13:17:12] [INFO] Saved 8 participants
+[2025-12-02 13:17:12] [INFO] Saved 8 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P108
+[2025-12-02 13:17:12] [INFO] Saved 9 participants
+[2025-12-02 13:17:12] [INFO] Saved 9 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P109
+[2025-12-02 13:17:12] [INFO] Saved 10 participants
+[2025-12-02 13:17:12] [INFO] Saved 10 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P110
+[2025-12-02 13:17:12] [INFO] Saved 11 participants
+[2025-12-02 13:17:12] [INFO] Saved 11 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P111
+[2025-12-02 13:17:12] [INFO] Saved 12 participants
+[2025-12-02 13:17:12] [INFO] Saved 12 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P112
+[2025-12-02 13:17:12] [INFO] Saved 13 participants
+[2025-12-02 13:17:12] [INFO] Saved 13 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P113
+[2025-12-02 13:17:12] [INFO] Saved 14 participants
+[2025-12-02 13:17:12] [INFO] Saved 14 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P114
+[2025-12-02 13:17:12] [INFO] Saved 15 participants
+[2025-12-02 13:17:12] [INFO] Saved 15 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P115
+[2025-12-02 13:17:12] [INFO] Saved 16 participants
+[2025-12-02 13:17:12] [INFO] Saved 16 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P116
+[2025-12-02 13:17:12] [INFO] Saved 17 participants
+[2025-12-02 13:17:12] [INFO] Saved 17 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P117
+[2025-12-02 13:17:12] [INFO] Saved 18 participants
+[2025-12-02 13:17:12] [INFO] Saved 18 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P118
+[2025-12-02 13:17:12] [INFO] Saved 19 participants
+[2025-12-02 13:17:12] [INFO] Saved 19 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P119
+[2025-12-02 13:17:12] [INFO] Saved 20 participants
+[2025-12-02 13:17:12] [INFO] Saved 20 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant registered: P120
+[2025-12-02 13:17:12] [INFO] Saved 5 teams
+[2025-12-02 13:17:12] [INFO] Exported 5 teams to formed_teams.csv
+[2025-12-02 13:17:12] [INFO] Generated 5 teams
+[2025-12-02 13:17:12] [INFO] Saved 19 participants
+[2025-12-02 13:17:12] [INFO] Saved 19 participants to CSV
+[2025-12-02 13:17:12] [INFO] Participant deleted: P101
+[2025-12-02 13:17:12] [INFO] Saved 0 teams
+[2025-12-02 13:17:12] [INFO] Cleared teams CSV file
+[2025-12-02 13:17:12] [INFO] All teams cleared
+[2025-12-02 13:17:32] [INFO] TeamMate application started
+[2025-12-02 13:17:32] [INFO] UserService initialized
+[2025-12-02 13:17:32] [INFO] TeamService initialized
+[2025-12-03 12:39:36] [INFO] TeamMate application started
+[2025-12-03 12:39:36] [INFO] UserService initialized
+[2025-12-03 12:39:36] [INFO] TeamService initialized
+[2025-12-03 12:39:45] [WARNING] Failed organizer login attempt
+[2025-12-03 12:39:54] [INFO] Organizer logged in successfully
+[2025-12-03 12:40:04] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 12:40:04] [INFO] Loaded 100 participants from participants_sample.csv
+[2025-12-03 13:17:21] [INFO] Organizer logged out
+[2025-12-03 13:17:25] [INFO] Participant logged in: P001
+[2025-12-03 14:03:07] [INFO] Participant logged out: P001
+[2025-12-03 14:03:16] [INFO] Organizer logged in successfully
+[2025-12-03 14:04:48] [INFO] Saved 16 teams
+[2025-12-03 14:04:48] [INFO] Exported 16 teams to formed_teams.csv
+[2025-12-03 14:04:48] [INFO] Generated 16 teams
+[2025-12-03 15:00:02] [INFO] TeamMate application started
+[2025-12-03 15:00:02] [INFO] UserService initialized
+[2025-12-03 15:00:02] [INFO] TeamService initialized
+[2025-12-03 15:00:23] [INFO] Organizer logged in
+[2025-12-03 15:00:30] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 15:00:30] [INFO] Loaded 100 participants from CSV
+[2025-12-03 15:00:48] [INFO] Generated 16 teams
+[2025-12-03 15:01:12] [INFO] Viewed unassigned participants: 4 unassigned
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 2 participants
+[2025-12-03 16:21:44] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P102
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant updated: P101
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 0 participants
+[2025-12-03 16:21:44] [INFO] Saved 0 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant deleted: P101
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Generated 5 teams
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Generated 5 teams
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Generated 3 teams
+[2025-12-03 16:21:44] [INFO] Saved 0 teams
+[2025-12-03 16:21:44] [INFO] Cleared teams CSV file
+[2025-12-03 16:21:44] [INFO] All teams cleared
+[2025-12-03 16:21:44] [INFO] Saved 10 participants
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Generated 10 teams
+[2025-12-03 16:21:44] [INFO] Generated 8 teams
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 2 participants
+[2025-12-03 16:21:44] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P102
+[2025-12-03 16:21:44] [INFO] Saved 3 participants
+[2025-12-03 16:21:44] [INFO] Saved 3 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P103
+[2025-12-03 16:21:44] [INFO] Saved 4 participants
+[2025-12-03 16:21:44] [INFO] Saved 4 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P104
+[2025-12-03 16:21:44] [INFO] Saved 5 participants
+[2025-12-03 16:21:44] [INFO] Saved 5 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P105
+[2025-12-03 16:21:44] [INFO] Saved 6 participants
+[2025-12-03 16:21:44] [INFO] Saved 6 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P106
+[2025-12-03 16:21:44] [INFO] Saved 7 participants
+[2025-12-03 16:21:44] [INFO] Saved 7 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P107
+[2025-12-03 16:21:44] [INFO] Saved 8 participants
+[2025-12-03 16:21:44] [INFO] Saved 8 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P108
+[2025-12-03 16:21:44] [INFO] Saved 9 participants
+[2025-12-03 16:21:44] [INFO] Saved 9 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P109
+[2025-12-03 16:21:44] [INFO] Saved 10 participants
+[2025-12-03 16:21:44] [INFO] Saved 10 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P110
+[2025-12-03 16:21:44] [INFO] Saved 11 participants
+[2025-12-03 16:21:44] [INFO] Saved 11 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P111
+[2025-12-03 16:21:44] [INFO] Saved 12 participants
+[2025-12-03 16:21:44] [INFO] Saved 12 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P112
+[2025-12-03 16:21:44] [INFO] Saved 13 participants
+[2025-12-03 16:21:44] [INFO] Saved 13 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P113
+[2025-12-03 16:21:44] [INFO] Saved 14 participants
+[2025-12-03 16:21:44] [INFO] Saved 14 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P114
+[2025-12-03 16:21:44] [INFO] Saved 15 participants
+[2025-12-03 16:21:44] [INFO] Saved 15 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P115
+[2025-12-03 16:21:44] [INFO] Saved 16 participants
+[2025-12-03 16:21:44] [INFO] Saved 16 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P116
+[2025-12-03 16:21:44] [INFO] Saved 17 participants
+[2025-12-03 16:21:44] [INFO] Saved 17 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P117
+[2025-12-03 16:21:44] [INFO] Saved 18 participants
+[2025-12-03 16:21:44] [INFO] Saved 18 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P118
+[2025-12-03 16:21:44] [INFO] Saved 19 participants
+[2025-12-03 16:21:44] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P119
+[2025-12-03 16:21:44] [INFO] Saved 20 participants
+[2025-12-03 16:21:44] [INFO] Saved 20 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P120
+[2025-12-03 16:21:44] [INFO] Saved 21 participants
+[2025-12-03 16:21:44] [INFO] Saved 21 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P121
+[2025-12-03 16:21:44] [INFO] Saved 22 participants
+[2025-12-03 16:21:44] [INFO] Saved 22 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P122
+[2025-12-03 16:21:44] [INFO] Saved 23 participants
+[2025-12-03 16:21:44] [INFO] Saved 23 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P123
+[2025-12-03 16:21:44] [INFO] Saved 24 participants
+[2025-12-03 16:21:44] [INFO] Saved 24 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P124
+[2025-12-03 16:21:44] [INFO] Saved 25 participants
+[2025-12-03 16:21:44] [INFO] Saved 25 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P125
+[2025-12-03 16:21:44] [INFO] Generated 5 teams
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Generated 4 teams
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant updated: P101
+[2025-12-03 16:21:44] [INFO] Saved 0 participants
+[2025-12-03 16:21:44] [INFO] Saved 0 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant deleted: P101
+[2025-12-03 16:21:44] [INFO] UserService initialized
+[2025-12-03 16:21:44] [INFO] TeamService initialized
+[2025-12-03 16:21:44] [INFO] Saved 1 participants
+[2025-12-03 16:21:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P101
+[2025-12-03 16:21:44] [INFO] Saved 2 participants
+[2025-12-03 16:21:44] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P102
+[2025-12-03 16:21:44] [INFO] Saved 3 participants
+[2025-12-03 16:21:44] [INFO] Saved 3 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P103
+[2025-12-03 16:21:44] [INFO] Saved 4 participants
+[2025-12-03 16:21:44] [INFO] Saved 4 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P104
+[2025-12-03 16:21:44] [INFO] Saved 5 participants
+[2025-12-03 16:21:44] [INFO] Saved 5 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P105
+[2025-12-03 16:21:44] [INFO] Saved 6 participants
+[2025-12-03 16:21:44] [INFO] Saved 6 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P106
+[2025-12-03 16:21:44] [INFO] Saved 7 participants
+[2025-12-03 16:21:44] [INFO] Saved 7 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P107
+[2025-12-03 16:21:44] [INFO] Saved 8 participants
+[2025-12-03 16:21:44] [INFO] Saved 8 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P108
+[2025-12-03 16:21:44] [INFO] Saved 9 participants
+[2025-12-03 16:21:44] [INFO] Saved 9 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P109
+[2025-12-03 16:21:44] [INFO] Saved 10 participants
+[2025-12-03 16:21:44] [INFO] Saved 10 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P110
+[2025-12-03 16:21:44] [INFO] Saved 11 participants
+[2025-12-03 16:21:44] [INFO] Saved 11 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P111
+[2025-12-03 16:21:44] [INFO] Saved 12 participants
+[2025-12-03 16:21:44] [INFO] Saved 12 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P112
+[2025-12-03 16:21:44] [INFO] Saved 13 participants
+[2025-12-03 16:21:44] [INFO] Saved 13 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P113
+[2025-12-03 16:21:44] [INFO] Saved 14 participants
+[2025-12-03 16:21:44] [INFO] Saved 14 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P114
+[2025-12-03 16:21:44] [INFO] Saved 15 participants
+[2025-12-03 16:21:44] [INFO] Saved 15 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P115
+[2025-12-03 16:21:44] [INFO] Saved 16 participants
+[2025-12-03 16:21:44] [INFO] Saved 16 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P116
+[2025-12-03 16:21:44] [INFO] Saved 17 participants
+[2025-12-03 16:21:44] [INFO] Saved 17 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P117
+[2025-12-03 16:21:44] [INFO] Saved 18 participants
+[2025-12-03 16:21:44] [INFO] Saved 18 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P118
+[2025-12-03 16:21:44] [INFO] Saved 19 participants
+[2025-12-03 16:21:44] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P119
+[2025-12-03 16:21:44] [INFO] Saved 20 participants
+[2025-12-03 16:21:44] [INFO] Saved 20 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant registered: P120
+[2025-12-03 16:21:44] [INFO] Generated 5 teams
+[2025-12-03 16:21:44] [INFO] Saved 19 participants
+[2025-12-03 16:21:44] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:21:44] [INFO] Participant deleted: P101
+[2025-12-03 16:21:44] [INFO] Saved 0 teams
+[2025-12-03 16:21:44] [INFO] Cleared teams CSV file
+[2025-12-03 16:21:44] [INFO] All teams cleared
+[2025-12-03 16:21:52] [INFO] TeamMate application started
+[2025-12-03 16:21:52] [INFO] UserService initialized
+[2025-12-03 16:21:52] [INFO] TeamService initialized
+[2025-12-03 16:22:00] [INFO] Organizer logged in
+[2025-12-03 16:22:11] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 16:22:11] [INFO] Loaded 100 participants from CSV
+[2025-12-03 16:22:17] [INFO] Generated 14 teams
+[2025-12-03 16:22:34] [INFO] Viewed unassigned participants: 2 unassigned
+[2025-12-03 16:23:08] [INFO] User chose to exit application
+[2025-12-03 16:23:08] [INFO] Application terminated
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 2 participants
+[2025-12-03 16:23:22] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P102
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant updated: P101
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 0 participants
+[2025-12-03 16:23:22] [INFO] Saved 0 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant deleted: P101
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Generated 5 teams
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Generated 5 teams
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Generated 3 teams
+[2025-12-03 16:23:22] [INFO] Saved 0 teams
+[2025-12-03 16:23:22] [INFO] Cleared teams CSV file
+[2025-12-03 16:23:22] [INFO] All teams cleared
+[2025-12-03 16:23:22] [INFO] Saved 10 participants
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Generated 10 teams
+[2025-12-03 16:23:22] [INFO] Generated 8 teams
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 2 participants
+[2025-12-03 16:23:22] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P102
+[2025-12-03 16:23:22] [INFO] Saved 3 participants
+[2025-12-03 16:23:22] [INFO] Saved 3 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P103
+[2025-12-03 16:23:22] [INFO] Saved 4 participants
+[2025-12-03 16:23:22] [INFO] Saved 4 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P104
+[2025-12-03 16:23:22] [INFO] Saved 5 participants
+[2025-12-03 16:23:22] [INFO] Saved 5 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P105
+[2025-12-03 16:23:22] [INFO] Saved 6 participants
+[2025-12-03 16:23:22] [INFO] Saved 6 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P106
+[2025-12-03 16:23:22] [INFO] Saved 7 participants
+[2025-12-03 16:23:22] [INFO] Saved 7 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P107
+[2025-12-03 16:23:22] [INFO] Saved 8 participants
+[2025-12-03 16:23:22] [INFO] Saved 8 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P108
+[2025-12-03 16:23:22] [INFO] Saved 9 participants
+[2025-12-03 16:23:22] [INFO] Saved 9 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P109
+[2025-12-03 16:23:22] [INFO] Saved 10 participants
+[2025-12-03 16:23:22] [INFO] Saved 10 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P110
+[2025-12-03 16:23:22] [INFO] Saved 11 participants
+[2025-12-03 16:23:22] [INFO] Saved 11 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P111
+[2025-12-03 16:23:22] [INFO] Saved 12 participants
+[2025-12-03 16:23:22] [INFO] Saved 12 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P112
+[2025-12-03 16:23:22] [INFO] Saved 13 participants
+[2025-12-03 16:23:22] [INFO] Saved 13 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P113
+[2025-12-03 16:23:22] [INFO] Saved 14 participants
+[2025-12-03 16:23:22] [INFO] Saved 14 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P114
+[2025-12-03 16:23:22] [INFO] Saved 15 participants
+[2025-12-03 16:23:22] [INFO] Saved 15 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P115
+[2025-12-03 16:23:22] [INFO] Saved 16 participants
+[2025-12-03 16:23:22] [INFO] Saved 16 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P116
+[2025-12-03 16:23:22] [INFO] Saved 17 participants
+[2025-12-03 16:23:22] [INFO] Saved 17 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P117
+[2025-12-03 16:23:22] [INFO] Saved 18 participants
+[2025-12-03 16:23:22] [INFO] Saved 18 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P118
+[2025-12-03 16:23:22] [INFO] Saved 19 participants
+[2025-12-03 16:23:22] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P119
+[2025-12-03 16:23:22] [INFO] Saved 20 participants
+[2025-12-03 16:23:22] [INFO] Saved 20 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P120
+[2025-12-03 16:23:22] [INFO] Saved 21 participants
+[2025-12-03 16:23:22] [INFO] Saved 21 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P121
+[2025-12-03 16:23:22] [INFO] Saved 22 participants
+[2025-12-03 16:23:22] [INFO] Saved 22 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P122
+[2025-12-03 16:23:22] [INFO] Saved 23 participants
+[2025-12-03 16:23:22] [INFO] Saved 23 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P123
+[2025-12-03 16:23:22] [INFO] Saved 24 participants
+[2025-12-03 16:23:22] [INFO] Saved 24 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P124
+[2025-12-03 16:23:22] [INFO] Saved 25 participants
+[2025-12-03 16:23:22] [INFO] Saved 25 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P125
+[2025-12-03 16:23:22] [INFO] Generated 5 teams
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Generated 4 teams
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant updated: P101
+[2025-12-03 16:23:22] [INFO] Saved 0 participants
+[2025-12-03 16:23:22] [INFO] Saved 0 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant deleted: P101
+[2025-12-03 16:23:22] [INFO] UserService initialized
+[2025-12-03 16:23:22] [INFO] TeamService initialized
+[2025-12-03 16:23:22] [INFO] Saved 1 participants
+[2025-12-03 16:23:22] [INFO] Saved 1 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P101
+[2025-12-03 16:23:22] [INFO] Saved 2 participants
+[2025-12-03 16:23:22] [INFO] Saved 2 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P102
+[2025-12-03 16:23:22] [INFO] Saved 3 participants
+[2025-12-03 16:23:22] [INFO] Saved 3 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P103
+[2025-12-03 16:23:22] [INFO] Saved 4 participants
+[2025-12-03 16:23:22] [INFO] Saved 4 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P104
+[2025-12-03 16:23:22] [INFO] Saved 5 participants
+[2025-12-03 16:23:22] [INFO] Saved 5 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P105
+[2025-12-03 16:23:22] [INFO] Saved 6 participants
+[2025-12-03 16:23:22] [INFO] Saved 6 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P106
+[2025-12-03 16:23:22] [INFO] Saved 7 participants
+[2025-12-03 16:23:22] [INFO] Saved 7 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P107
+[2025-12-03 16:23:22] [INFO] Saved 8 participants
+[2025-12-03 16:23:22] [INFO] Saved 8 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P108
+[2025-12-03 16:23:22] [INFO] Saved 9 participants
+[2025-12-03 16:23:22] [INFO] Saved 9 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P109
+[2025-12-03 16:23:22] [INFO] Saved 10 participants
+[2025-12-03 16:23:22] [INFO] Saved 10 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P110
+[2025-12-03 16:23:22] [INFO] Saved 11 participants
+[2025-12-03 16:23:22] [INFO] Saved 11 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P111
+[2025-12-03 16:23:22] [INFO] Saved 12 participants
+[2025-12-03 16:23:22] [INFO] Saved 12 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P112
+[2025-12-03 16:23:22] [INFO] Saved 13 participants
+[2025-12-03 16:23:22] [INFO] Saved 13 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P113
+[2025-12-03 16:23:22] [INFO] Saved 14 participants
+[2025-12-03 16:23:22] [INFO] Saved 14 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P114
+[2025-12-03 16:23:22] [INFO] Saved 15 participants
+[2025-12-03 16:23:22] [INFO] Saved 15 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P115
+[2025-12-03 16:23:22] [INFO] Saved 16 participants
+[2025-12-03 16:23:22] [INFO] Saved 16 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P116
+[2025-12-03 16:23:22] [INFO] Saved 17 participants
+[2025-12-03 16:23:22] [INFO] Saved 17 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P117
+[2025-12-03 16:23:22] [INFO] Saved 18 participants
+[2025-12-03 16:23:22] [INFO] Saved 18 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P118
+[2025-12-03 16:23:22] [INFO] Saved 19 participants
+[2025-12-03 16:23:22] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P119
+[2025-12-03 16:23:22] [INFO] Saved 20 participants
+[2025-12-03 16:23:22] [INFO] Saved 20 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant registered: P120
+[2025-12-03 16:23:22] [INFO] Generated 5 teams
+[2025-12-03 16:23:22] [INFO] Saved 19 participants
+[2025-12-03 16:23:22] [INFO] Saved 19 participants to CSV
+[2025-12-03 16:23:22] [INFO] Participant deleted: P101
+[2025-12-03 16:23:22] [INFO] Saved 0 teams
+[2025-12-03 16:23:22] [INFO] Cleared teams CSV file
+[2025-12-03 16:23:22] [INFO] All teams cleared
+[2025-12-03 20:56:25] [INFO] TeamMate application started
+[2025-12-03 20:56:25] [INFO] UserService initialized
+[2025-12-03 20:56:25] [INFO] TeamService initialized
+[2025-12-03 20:56:39] [INFO] Organizer logged in
+[2025-12-03 20:57:00] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 20:57:00] [INFO] Loaded 100 participants from CSV
+[2025-12-03 20:57:08] [INFO] Generated 10 teams
+[2025-12-03 21:40:03] [INFO] TeamMate application started
+[2025-12-03 21:40:03] [INFO] UserService initialized
+[2025-12-03 21:40:03] [INFO] TeamService initialized
+[2025-12-03 21:40:15] [INFO] Organizer logged in
+[2025-12-03 21:40:21] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 21:40:21] [INFO] Loaded 100 participants from CSV
+[2025-12-03 21:40:29] [INFO] Generated 10 teams
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant updated: P101
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] Saved 0 participants
+[2025-12-03 22:33:44] [INFO] Saved 0 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant deleted: P101
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] Saved 2 participants
+[2025-12-03 22:33:44] [INFO] Saved 2 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P102
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 3 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.67
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 3 teams
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 3 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.83
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 3 teams
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 2 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 2 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 10 thinkers across 2 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 2 teams
+[2025-12-03 22:33:44] [INFO] Saved 2 teams
+[2025-12-03 22:33:44] [INFO] Exported 2 teams to test_teams.csv
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 3 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.83
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 3 teams
+[2025-12-03 22:33:44] [INFO] Saved 0 teams
+[2025-12-03 22:33:44] [INFO] Cleared teams CSV file
+[2025-12-03 22:33:44] [INFO] All teams cleared
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 3 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.67
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.10
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.10
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.10
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 4 teams
+[2025-12-03 22:33:44] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.10
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 20 teams
+[2025-12-03 22:33:44] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Swapped members between TEAM_9 and TEAM_5 for skill balance
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 8 teams
+[2025-12-03 22:33:44] [INFO] Distributing 8 leaders across 8 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 16 thinkers across 8 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 4.70
+[2025-12-03 22:33:44] [INFO] Swapped members between TEAM_5 and TEAM_1 for skill balance
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Saved 5 participants
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 20 teams
+[2025-12-03 22:33:44] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Swapped members between TEAM_4 and TEAM_11 for skill balance
+[2025-12-03 22:33:44] [INFO] Swapped members between TEAM_4 and TEAM_18 for skill balance
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 20 teams
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 10 teams
+[2025-12-03 22:33:44] [INFO] Distributing 10 leaders across 10 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 20 thinkers across 10 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 10 teams
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] TeamService initialized
+[2025-12-03 22:33:44] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:33:44] [INFO] Created 6 teams
+[2025-12-03 22:33:44] [INFO] Distributing 0 leaders across 6 teams
+[2025-12-03 22:33:44] [INFO] Leaders distributed
+[2025-12-03 22:33:44] [INFO] Distributing 20 thinkers across 6 teams
+[2025-12-03 22:33:44] [INFO] Thinkers distributed
+[2025-12-03 22:33:44] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:33:44] [INFO] Global average skill: 5.50
+[2025-12-03 22:33:44] [INFO] Team formation complete
+[2025-12-03 22:33:44] [INFO] Generated 6 teams
+[2025-12-03 22:33:44] [INFO] Saved 6 teams
+[2025-12-03 22:33:44] [INFO] Exported 6 teams to uat_teams.csv
+[2025-12-03 22:33:44] [INFO] UserService initialized
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant registered: P101
+[2025-12-03 22:33:44] [INFO] Saved 1 participants
+[2025-12-03 22:33:44] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant updated: P101
+[2025-12-03 22:33:44] [INFO] Saved 0 participants
+[2025-12-03 22:33:44] [INFO] Saved 0 participants to CSV
+[2025-12-03 22:33:44] [INFO] Participant deleted: P101
+[2025-12-03 22:33:53] [INFO] TeamMate application started
+[2025-12-03 22:33:53] [INFO] UserService initialized
+[2025-12-03 22:33:53] [INFO] TeamService initialized
+[2025-12-03 22:34:04] [INFO] User chose to exit application
+[2025-12-03 22:34:04] [INFO] Application terminated
+[2025-12-03 22:34:09] [INFO] TeamMate application started
+[2025-12-03 22:34:09] [INFO] UserService initialized
+[2025-12-03 22:34:09] [INFO] TeamService initialized
+[2025-12-03 22:34:16] [INFO] Organizer logged in
+[2025-12-03 22:37:24] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 22:38:12] [INFO] Saved 100 participants
+[2025-12-03 22:38:12] [INFO] Saved 100 participants to CSV
+[2025-12-03 22:38:12] [INFO] Participant updated: P001
+[2025-12-03 22:38:25] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:38:25] [INFO] Created 10 teams
+[2025-12-03 22:38:25] [INFO] Distributing 34 leaders across 10 teams
+[2025-12-03 22:38:25] [INFO] Leaders distributed
+[2025-12-03 22:38:25] [INFO] Distributing 33 thinkers across 10 teams
+[2025-12-03 22:38:25] [INFO] Thinkers distributed
+[2025-12-03 22:38:25] [INFO] Distributing 0 balanced participants
+[2025-12-03 22:38:25] [INFO] Global average skill: 5.56
+[2025-12-03 22:38:25] [INFO] Team formation complete
+[2025-12-03 22:38:25] [INFO] Generated 10 teams
+[2025-12-03 22:41:21] [INFO] Shuffled participants for fair distribution
+[2025-12-03 22:41:21] [INFO] Created 16 teams
+[2025-12-03 22:41:21] [INFO] Distributing 34 leaders across 16 teams
+[2025-12-03 22:41:21] [INFO] Leaders distributed
+[2025-12-03 22:41:21] [INFO] Distributing 33 thinkers across 16 teams
+[2025-12-03 22:41:21] [INFO] Thinkers distributed
+[2025-12-03 22:41:21] [INFO] Distributing 3 balanced participants
+[2025-12-03 22:41:21] [INFO] Distributing 4 remaining participants
+[2025-12-03 22:41:21] [INFO] Global average skill: 5.72
+[2025-12-03 22:41:21] [INFO] Team formation complete
+[2025-12-03 22:41:21] [INFO] Generated 16 teams
+[2025-12-03 22:47:48] [INFO] TeamMate application started
+[2025-12-03 22:47:48] [INFO] UserService initialized
+[2025-12-03 22:47:48] [INFO] TeamService initialized
+[2025-12-03 22:47:54] [INFO] New participant registration initiated
+[2025-12-03 22:47:58] [ERROR] Registration failed: Invalid email format
+[2025-12-03 22:48:03] [INFO] New participant registration initiated
+[2025-12-03 22:49:27] [INFO] Saved 1 participants
+[2025-12-03 22:49:27] [INFO] Saved 1 participants to CSV
+[2025-12-03 22:49:27] [INFO] Participant registered: P101
+[2025-12-03 22:49:27] [INFO] Participant registered: P101
+[2025-12-03 22:49:43] [WARNING] Failed organizer login attempt
+[2025-12-03 22:49:48] [INFO] Participant logged in: P101
+[2025-12-03 22:50:12] [INFO] Organizer logged in
+[2025-12-03 22:50:42] [INFO] Saved 0 participants
+[2025-12-03 22:50:42] [INFO] Saved 0 participants to CSV
+[2025-12-03 22:50:42] [INFO] Participant deleted: P101
+[2025-12-03 22:51:04] [INFO] User chose to exit application
+[2025-12-03 22:51:04] [INFO] Application terminated
+[2025-12-03 22:51:21] [INFO] TeamMate application started
+[2025-12-03 22:51:21] [INFO] UserService initialized
+[2025-12-03 22:51:21] [INFO] TeamService initialized
+[2025-12-03 22:51:30] [INFO] Organizer logged in
+[2025-12-03 22:55:07] [INFO] TeamMate application started
+[2025-12-03 22:55:07] [INFO] UserService initialized
+[2025-12-03 22:55:07] [INFO] TeamService initialized
+[2025-12-03 22:55:35] [INFO] TeamMate application started
+[2025-12-03 22:55:35] [INFO] UserService initialized
+[2025-12-03 22:55:35] [INFO] TeamService initialized
+[2025-12-03 22:55:45] [INFO] New participant registration initiated
+[2025-12-03 22:55:54] [ERROR] Registration failed: Name cannot be empty
+[2025-12-03 23:13:45] [INFO] TeamMate application started
+[2025-12-03 23:13:45] [INFO] UserService initialized
+[2025-12-03 23:13:45] [INFO] TeamService initialized
+[2025-12-03 23:14:03] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-03 23:14:38] [INFO] Shuffled participants for fair distribution
+[2025-12-03 23:14:38] [INFO] Created 16 teams
+[2025-12-03 23:14:38] [INFO] Distributing 34 leaders across 16 teams
+[2025-12-03 23:14:38] [INFO] Leaders distributed
+[2025-12-03 23:14:38] [INFO] Distributing 33 thinkers across 16 teams
+[2025-12-03 23:14:38] [INFO] Thinkers distributed
+[2025-12-03 23:14:38] [INFO] Distributing 3 balanced participants
+[2025-12-03 23:14:38] [INFO] Distributing 4 remaining participants
+[2025-12-03 23:14:38] [INFO] Global average skill: 5.72
+[2025-12-03 23:14:38] [INFO] Team formation complete
+[2025-12-03 23:14:38] [INFO] Generated 16 teams
+[2025-12-03 23:15:51] [INFO] User chose to exit application
+[2025-12-03 23:15:51] [INFO] Application terminated
+[2025-12-04 00:22:36] [INFO] TeamMate application started
+[2025-12-04 00:22:36] [INFO] UserService initialized
+[2025-12-04 00:22:36] [INFO] TeamService initialized
+[2025-12-04 00:22:54] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-04 00:41:56] [INFO] Shuffled participants for fair distribution
+[2025-12-04 00:41:56] [INFO] Created 16 teams
+[2025-12-04 00:41:56] [INFO] Distributing 34 leaders across 16 teams
+[2025-12-04 00:41:56] [INFO] Leaders distributed
+[2025-12-04 00:41:56] [INFO] Distributing 33 thinkers across 16 teams
+[2025-12-04 00:41:56] [INFO] Thinkers distributed
+[2025-12-04 00:41:56] [INFO] Distributing 3 balanced participants
+[2025-12-04 00:41:56] [INFO] Distributing 4 remaining participants
+[2025-12-04 00:41:56] [INFO] Global average skill: 5.72
+[2025-12-04 00:41:56] [INFO] Team formation complete
+[2025-12-04 00:41:56] [INFO] Generated 16 teams
+[2025-12-04 08:57:05] [INFO] TeamMate application started
+[2025-12-04 08:57:05] [INFO] UserService initialized
+[2025-12-04 08:57:05] [INFO] TeamService initialized
+[2025-12-04 09:00:37] [INFO] TeamMate application started
+[2025-12-04 09:00:37] [INFO] UserService initialized
+[2025-12-04 09:00:37] [INFO] TeamService initialized
+[2025-12-04 09:01:11] [INFO] Loaded 40 participants. Next ID: P141
+[2025-12-04 09:01:29] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:01:29] [INFO] Created 8 teams
+[2025-12-04 09:01:29] [INFO] Distributing 8 leaders across 8 teams
+[2025-12-04 09:01:29] [INFO] Leaders distributed
+[2025-12-04 09:01:29] [INFO] Distributing 12 thinkers across 8 teams
+[2025-12-04 09:01:29] [INFO] Thinkers distributed
+[2025-12-04 09:01:29] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:01:29] [INFO] Global average skill: 6.78
+[2025-12-04 09:01:29] [INFO] Team formation complete
+[2025-12-04 09:01:29] [INFO] Generated 8 teams
+[2025-12-04 09:06:51] [INFO] TeamMate application started
+[2025-12-04 09:06:51] [INFO] UserService initialized
+[2025-12-04 09:06:51] [INFO] TeamService initialized
+[2025-12-04 09:07:03] [INFO] Loaded 100 participants. Next ID: P101
+[2025-12-04 09:07:09] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:07:09] [INFO] Created 12 teams
+[2025-12-04 09:07:09] [INFO] Distributing 34 leaders across 12 teams
+[2025-12-04 09:07:09] [INFO] Leaders distributed
+[2025-12-04 09:07:09] [INFO] Distributing 33 thinkers across 12 teams
+[2025-12-04 09:07:09] [INFO] Thinkers distributed
+[2025-12-04 09:07:09] [INFO] Distributing 2 balanced participants
+[2025-12-04 09:07:09] [INFO] Distributing 4 remaining participants
+[2025-12-04 09:07:09] [INFO] Global average skill: 5.73
+[2025-12-04 09:07:09] [INFO] Team formation complete
+[2025-12-04 09:07:09] [INFO] Generated 12 teams
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant updated: P101
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] Saved 0 participants
+[2025-12-04 09:10:16] [INFO] Saved 0 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant deleted: P101
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] Saved 2 participants
+[2025-12-04 09:10:16] [INFO] Saved 2 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P102
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 3 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.67
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 3 teams
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 3 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.83
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 3 teams
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 2 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 2 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 10 thinkers across 2 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 2 teams
+[2025-12-04 09:10:16] [INFO] Saved 2 teams
+[2025-12-04 09:10:16] [INFO] Exported 2 teams to test_teams.csv
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 3 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.83
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 3 teams
+[2025-12-04 09:10:16] [INFO] Saved 0 teams
+[2025-12-04 09:10:16] [INFO] Cleared teams CSV file
+[2025-12-04 09:10:16] [INFO] All teams cleared
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 3 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.67
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.10
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.10
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.10
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 4 teams
+[2025-12-04 09:10:16] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.10
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 20 teams
+[2025-12-04 09:10:16] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_17 and TEAM_1 for skill balance
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 8 teams
+[2025-12-04 09:10:16] [INFO] Distributing 8 leaders across 8 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 16 thinkers across 8 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 4.70
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Saved 5 participants
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 20 teams
+[2025-12-04 09:10:16] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_1 and TEAM_7 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_1 and TEAM_8 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_1 and TEAM_15 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_4 and TEAM_7 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_4 and TEAM_8 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_4 and TEAM_15 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_19 and TEAM_8 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_19 and TEAM_15 for skill balance
+[2025-12-04 09:10:16] [INFO] Improved role diversity for TEAM_8
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 20 teams
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 10 teams
+[2025-12-04 09:10:16] [INFO] Distributing 10 leaders across 10 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 20 thinkers across 10 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_1 and TEAM_3 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_1 and TEAM_4 for skill balance
+[2025-12-04 09:10:16] [INFO] Swapped members between TEAM_8 and TEAM_3 for skill balance
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 10 teams
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] TeamService initialized
+[2025-12-04 09:10:16] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:10:16] [INFO] Created 6 teams
+[2025-12-04 09:10:16] [INFO] Distributing 0 leaders across 6 teams
+[2025-12-04 09:10:16] [INFO] Leaders distributed
+[2025-12-04 09:10:16] [INFO] Distributing 20 thinkers across 6 teams
+[2025-12-04 09:10:16] [INFO] Thinkers distributed
+[2025-12-04 09:10:16] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:10:16] [INFO] Global average skill: 5.50
+[2025-12-04 09:10:16] [INFO] Team formation complete
+[2025-12-04 09:10:16] [INFO] Generated 6 teams
+[2025-12-04 09:10:16] [INFO] Saved 6 teams
+[2025-12-04 09:10:16] [INFO] Exported 6 teams to uat_teams.csv
+[2025-12-04 09:10:16] [INFO] UserService initialized
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant registered: P101
+[2025-12-04 09:10:16] [INFO] Saved 1 participants
+[2025-12-04 09:10:16] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant updated: P101
+[2025-12-04 09:10:16] [INFO] Saved 0 participants
+[2025-12-04 09:10:16] [INFO] Saved 0 participants to CSV
+[2025-12-04 09:10:16] [INFO] Participant deleted: P101
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant updated: P101
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] Saved 0 participants
+[2025-12-04 09:11:40] [INFO] Saved 0 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant deleted: P101
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] Saved 2 participants
+[2025-12-04 09:11:40] [INFO] Saved 2 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P102
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 3 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.67
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 3 teams
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 3 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.83
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 3 teams
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 2 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 2 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 10 thinkers across 2 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 2 teams
+[2025-12-04 09:11:40] [INFO] Saved 2 teams
+[2025-12-04 09:11:40] [INFO] Exported 2 teams to test_teams.csv
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 3 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 12 thinkers across 3 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.83
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 3 teams
+[2025-12-04 09:11:40] [INFO] Saved 0 teams
+[2025-12-04 09:11:40] [INFO] Cleared teams CSV file
+[2025-12-04 09:11:40] [INFO] All teams cleared
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 3 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 3 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 15 thinkers across 3 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.67
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 20 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.10
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.10
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.10
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 4 teams
+[2025-12-04 09:11:40] [INFO] Distributing 4 leaders across 4 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 8 thinkers across 4 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.10
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 20 teams
+[2025-12-04 09:11:40] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Swapped members between TEAM_8 and TEAM_3 for skill balance
+[2025-12-04 09:11:40] [INFO] Swapped members between TEAM_11 and TEAM_3 for skill balance
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 8 teams
+[2025-12-04 09:11:40] [INFO] Distributing 8 leaders across 8 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 16 thinkers across 8 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 4.70
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Saved 5 participants
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 20 teams
+[2025-12-04 09:11:40] [INFO] Distributing 20 leaders across 20 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 40 thinkers across 20 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Swapped members between TEAM_10 and TEAM_19 for skill balance
+[2025-12-04 09:11:40] [INFO] Improved role diversity for TEAM_16
+[2025-12-04 09:11:40] [INFO] Improved role diversity for TEAM_17
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 20 teams
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 10 teams
+[2025-12-04 09:11:40] [INFO] Distributing 10 leaders across 10 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 20 thinkers across 10 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Swapped members between TEAM_7 and TEAM_4 for skill balance
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 10 teams
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] TeamService initialized
+[2025-12-04 09:11:40] [INFO] Shuffled participants for fair distribution
+[2025-12-04 09:11:40] [INFO] Created 6 teams
+[2025-12-04 09:11:40] [INFO] Distributing 0 leaders across 6 teams
+[2025-12-04 09:11:40] [INFO] Leaders distributed
+[2025-12-04 09:11:40] [INFO] Distributing 20 thinkers across 6 teams
+[2025-12-04 09:11:40] [INFO] Thinkers distributed
+[2025-12-04 09:11:40] [INFO] Distributing 0 balanced participants
+[2025-12-04 09:11:40] [INFO] Global average skill: 5.50
+[2025-12-04 09:11:40] [INFO] Team formation complete
+[2025-12-04 09:11:40] [INFO] Generated 6 teams
+[2025-12-04 09:11:40] [INFO] Saved 6 teams
+[2025-12-04 09:11:40] [INFO] Exported 6 teams to uat_teams.csv
+[2025-12-04 09:11:40] [INFO] UserService initialized
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant registered: P101
+[2025-12-04 09:11:40] [INFO] Saved 1 participants
+[2025-12-04 09:11:40] [INFO] Saved 1 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant updated: P101
+[2025-12-04 09:11:40] [INFO] Saved 0 participants
+[2025-12-04 09:11:40] [INFO] Saved 0 participants to CSV
+[2025-12-04 09:11:40] [INFO] Participant deleted: P101
+[2025-12-04 10:01:10] [INFO] TeamMate application started
+[2025-12-04 10:01:10] [INFO] UserService initialized
+[2025-12-04 10:01:10] [INFO] TeamService initialized
+[2025-12-04 10:01:17] [INFO] New participant registration initiated
+[2025-12-04 10:01:25] [ERROR] Registration failed: Invalid email format
+[2025-12-04 10:24:02] [INFO] New participant registration initiated
+[2025-12-04 10:24:27] [ERROR] Registration failed: Invalid email format
+[2025-12-04 10:24:38] [INFO] New participant registration initiated
+[2025-12-04 10:25:17] [INFO] Saved 1 participants
+[2025-12-04 10:25:17] [INFO] Saved 1 participants to CSV
+[2025-12-04 10:25:17] [INFO] Participant registered: P101
+[2025-12-04 10:27:44] [INFO] TeamMate application started
+[2025-12-04 10:27:44] [INFO] UserService initialized
+[2025-12-04 10:27:44] [INFO] TeamService initialized
+[2025-12-04 10:27:58] [INFO] New participant registration initiated
+[2025-12-04 10:28:32] [INFO] Saved 1 participants
+[2025-12-04 10:28:32] [INFO] Saved 1 participants to CSV
+[2025-12-04 10:28:32] [INFO] Participant registered: P101
+[2025-12-04 10:28:42] [INFO] Loaded 1 participants. Next ID: P102
+[2025-12-04 10:43:12] [INFO] TeamMate application started
+[2025-12-04 10:43:12] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 10:43:12] [INFO] TeamService initialized
+[2025-12-04 10:43:17] [INFO] New participant registration initiated
+[2025-12-04 10:43:45] [INFO] Appended participant P101 to CSV
+[2025-12-04 10:43:45] [INFO] Participant registered and appended to CSV: P101
+[2025-12-04 10:44:41] [INFO] Loaded 101 participants from CSV. Next ID: P102. Total in memory: 101
+[2025-12-04 10:45:13] [INFO] Saved 100 participants
+[2025-12-04 10:45:13] [INFO] Saved 100 participants to CSV: participants_sample.csv
+[2025-12-04 10:45:13] [INFO] Participant deleted: P101 (Total: 100)
+[2025-12-04 10:45:25] [INFO] Loaded 100 participants from CSV. Next ID: P102. Total in memory: 100
+[2025-12-04 10:45:42] [INFO] User chose to exit application
+[2025-12-04 10:45:42] [INFO] Application terminated
+[2025-12-04 11:59:34] [INFO] TeamMate application started
+[2025-12-04 11:59:34] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 11:59:34] [INFO] TeamService initialized
+[2025-12-04 11:59:37] [INFO] New participant registration initiated
+[2025-12-04 11:59:38] [ERROR] Registration failed: Name cannot be empty
+[2025-12-04 12:09:14] [INFO] New participant registration initiated
+[2025-12-04 13:01:48] [INFO] TeamMate application started
+[2025-12-04 13:01:48] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 13:01:48] [INFO] TeamService initialized
+[2025-12-04 13:01:50] [INFO] New participant registration initiated
+[2025-12-04 13:02:02] [ERROR] Registration failed: Game/sport cannot be empty
+[2025-12-04 13:39:34] [INFO] Loaded 100 participants from CSV. Next ID: P101. Total in memory: 100
+[2025-12-04 16:13:41] [INFO] TeamMate application started
+[2025-12-04 16:13:41] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 16:13:41] [INFO] TeamService initialized
+[2025-12-04 17:03:37] [INFO] TeamMate application started
+[2025-12-04 17:03:37] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 17:03:37] [INFO] TeamService initialized
+[2025-12-04 18:00:03] [INFO] TeamMate application started
+[2025-12-04 18:00:03] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 18:00:03] [INFO] TeamService initialized
+[2025-12-04 18:00:19] [INFO] Loaded 100 participants from CSV. Next ID: P101. Total in memory: 100
+[2025-12-04 18:00:24] [INFO] TeamMate application started
+[2025-12-04 18:00:25] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 18:00:25] [INFO] TeamService initialized
+[2025-12-04 18:09:39] [INFO] TeamMate application started
+[2025-12-04 18:09:39] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 18:09:39] [INFO] TeamService initialized
+[2025-12-04 18:10:11] [INFO] Loaded 100 participants from CSV. Next ID: P101. Total in memory: 100
+[2025-12-04 18:10:17] [INFO] Loaded 100 participants from CSV. Next ID: P101. Total in memory: 100
+[2025-12-04 19:34:40] [INFO] TeamMate application started
+[2025-12-04 19:34:40] [INFO] UserService initialized. Next ID: P101
+[2025-12-04 19:34:40] [INFO] TeamService initialized

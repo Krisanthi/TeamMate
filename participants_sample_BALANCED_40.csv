@@ -1,0 +1,41 @@
+ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType
+P101,Alex Chen,alex.chen@uni.edu,FIFA,8,STRATEGIST,92,LEADER
+P102,Sarah Johnson,sarah.j@uni.edu,CS:GO,7,ATTACKER,88,BALANCED
+P103,Michael Brown,michael.b@uni.edu,DOTA 2,6,DEFENDER,75,BALANCED
+P104,Emma Wilson,emma.w@uni.edu,Valorant,5,SUPPORTER,62,THINKER
+P105,James Davis,james.d@uni.edu,FIFA,7,COORDINATOR,95,LEADER
+P106,Olivia Martinez,olivia.m@uni.edu,CS:GO,9,ATTACKER,78,BALANCED
+P107,William Garcia,william.g@uni.edu,Basketball,6,DEFENDER,72,BALANCED
+P108,Sophia Rodriguez,sophia.r@uni.edu,FIFA,5,SUPPORTER,58,THINKER
+P109,Benjamin Lee,benjamin.l@uni.edu,DOTA 2,8,STRATEGIST,91,LEADER
+P110,Isabella White,isabella.w@uni.edu,Valorant,7,COORDINATOR,65,THINKER
+P111,Lucas Anderson,lucas.a@uni.edu,CS:GO,6,ATTACKER,81,BALANCED
+P112,Mia Thomas,mia.t@uni.edu,FIFA,8,DEFENDER,76,BALANCED
+P113,Henry Jackson,henry.j@uni.edu,Basketball,5,SUPPORTER,70,BALANCED
+P114,Charlotte Harris,charlotte.h@uni.edu,DOTA 2,7,STRATEGIST,60,THINKER
+P115,Alexander Martin,alex.m@uni.edu,Valorant,9,COORDINATOR,93,LEADER
+P116,Amelia Thompson,amelia.t@uni.edu,FIFA,6,ATTACKER,84,BALANCED
+P117,Daniel Moore,daniel.m@uni.edu,CS:GO,7,DEFENDER,73,BALANCED
+P118,Emily Taylor,emily.t@uni.edu,Basketball,5,SUPPORTER,55,THINKER
+P119,Matthew Anderson,matt.a@uni.edu,DOTA 2,8,STRATEGIST,79,BALANCED
+P120,Abigail Thomas,abigail.t@uni.edu,Valorant,6,COORDINATOR,67,THINKER
+P121,Joseph White,joseph.w@uni.edu,FIFA,7,ATTACKER,94,LEADER
+P122,Sofia Harris,sofia.h@uni.edu,CS:GO,8,DEFENDER,77,BALANCED
+P123,David Clark,david.c@uni.edu,Basketball,6,SUPPORTER,71,BALANCED
+P124,Elizabeth Lewis,elizabeth.l@uni.edu,DOTA 2,5,STRATEGIST,63,THINKER
+P125,Christopher Walker,chris.w@uni.edu,Valorant,9,COORDINATOR,82,BALANCED
+P126,Victoria Hall,victoria.h@uni.edu,FIFA,7,ATTACKER,90,LEADER
+P127,Andrew Allen,andrew.a@uni.edu,CS:GO,6,DEFENDER,74,BALANCED
+P128,Grace Young,grace.y@uni.edu,Basketball,8,SUPPORTER,59,THINKER
+P129,Joshua King,joshua.k@uni.edu,DOTA 2,5,STRATEGIST,80,BALANCED
+P130,Chloe Wright,chloe.w@uni.edu,Valorant,7,COORDINATOR,68,THINKER
+P131,Ryan Lopez,ryan.l@uni.edu,FIFA,8,ATTACKER,92,LEADER
+P132,Lily Hill,lily.h@uni.edu,CS:GO,6,DEFENDER,75,BALANCED
+P133,Nathan Scott,nathan.s@uni.edu,Basketball,7,SUPPORTER,72,BALANCED
+P134,Zoe Green,zoe.g@uni.edu,DOTA 2,5,STRATEGIST,61,THINKER
+P135,Ethan Adams,ethan.a@uni.edu,Valorant,9,COORDINATOR,83,BALANCED
+P136,Hannah Baker,hannah.b@uni.edu,FIFA,7,ATTACKER,94,LEADER
+P137,Samuel Nelson,samuel.n@uni.edu,CS:GO,6,DEFENDER,76,BALANCED
+P138,Aria Carter,aria.c@uni.edu,Basketball,8,SUPPORTER,57,THINKER
+P139,Jack Mitchell,jack.m@uni.edu,DOTA 2,5,STRATEGIST,78,BALANCED
+P140,Ella Perez,ella.p@uni.edu,Valorant,7,COORDINATOR,66,THINKER

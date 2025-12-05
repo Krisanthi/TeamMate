@@ -1,0 +1,4 @@
+ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType
+P101,John,john@uni.edu,FIFA,7,ATTACKER,85,BALANCED
+P102,Jane,jane@uni.edu,LOL,8,DEFENDER,75,BALANCED
+P103,Bob,bob@uni.edu,Valorant,9,STRATEGIST,95,LEADER

@@ -1,0 +1,6 @@
+ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType
+P001,Player1,player1@uni.edu,FIFA,1,STRATEGIST,50,THINKER
+P002,Player2,player2@uni.edu,LOL,2,ATTACKER,51,THINKER
+P003,Player3,player3@uni.edu,Valorant,3,DEFENDER,52,THINKER
+P004,Player4,player4@uni.edu,CS2,4,SUPPORTER,53,THINKER
+P005,Player5,player5@uni.edu,Dota,5,COORDINATOR,54,THINKER
