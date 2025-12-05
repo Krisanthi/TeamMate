@@ -1,8 +1,13 @@
 package com.teammate.model;
 
 /**
- * Represents a participant in the gaming club
- * Contains all personal information, preferences, and personality data
+ * Participant - Represents a gaming club participant
+ *
+ * Contains all personal information, preferences, and personality data.
+ *
+ * @author Student Name
+ * @version 1.0
+ * @since 2025
  */
 public class Participant {
     private String id;
