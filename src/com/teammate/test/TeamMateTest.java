@@ -12,7 +12,7 @@ import java.io.*;
  * Total Tests: 50+ covering all functionality
  * Includes: Unit, Integration, Concurrency, Balance Validation, File Integrity, UAT
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 2.0 - WITH BALANCE VALIDATION TESTS
  * @since 2025
  */
