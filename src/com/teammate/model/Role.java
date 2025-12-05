@@ -9,7 +9,7 @@ package com.teammate.model;
  * Team Formation Rules:
  * - Each team should have at least 3 different roles
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
