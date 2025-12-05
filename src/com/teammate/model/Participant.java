@@ -5,7 +5,7 @@ package com.teammate.model;
  *
  * Contains all personal information, preferences, and personality data.
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
