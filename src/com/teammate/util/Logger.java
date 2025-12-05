@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
  * Logs application events to file with timestamps and severity levels.
  * Supports INFO, WARNING, and ERROR levels for categorizing events.
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
