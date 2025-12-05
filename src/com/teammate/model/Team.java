@@ -7,7 +7,7 @@ import java.util.*;
  *
  * Provides methods to check team balance and composition according to matching strategy.
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 1.0
  * @since 2025
  */
