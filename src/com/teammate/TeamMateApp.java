@@ -8,70 +8,40 @@ import java.util.*;
 /**
  * TeamMate: Intelligent Team Formation System
  *
- * Main Application Class - Entry point for the TeamMate application.
- * This system helps university gaming clubs form balanced teams for tournaments
- * and events based on personality traits, skills, roles, and game preferences.
- *
- * Features:
- * - Participant registration with auto-generated IDs (P101, P102, ...)
- * - 5-question personality survey
- * - Team formation with concurrent processing (3 threads)
- * - CSV file operations (load/export)
- * - CRUD operations for participants
- * - Role-based access (Organizer/Participant)
- *
- * Use Cases Implemented:
- * - UC-01: Register Participant
- * - UC-02: Login Participant
- * - UC-03: Login Organizer
- * - UC-04: Manage Participants (Search, Update, Delete, View All)
- * - UC-05: Form Teams (Generate, View Unassigned, Export)
+ * UPDATED VERSION:
+ * - Removed "Clear All Teams" option (option 10)
+ * - Changed all "Back/Exit" options to "0" for consistency
+ * - Exit is now option 0 in all menus
+ * - CSV load appears after organizer authentication
  *
  * @author Student Name
- * @version 1.0
+ * @version 2.1
  * @since 2025
  */
 public class TeamMateApp {
 
-    // Organizer password for authentication
     private static final String ORGANIZER_PASSWORD = "Teammate";
-
-    // CSV file paths
     private static final String PARTICIPANT_CSV = "participants_sample.csv";
-
-    // Scanner for user input
     private static final Scanner scanner = new Scanner(System.in);
-
-    // Service layer objects
     private static UserService userService;
     private static TeamService teamService;
 
-    /**
-     * Main method - Entry point of the application
-     *
-     * Initializes services and displays the welcome menu.
-     * Handles user selection between Participant/Organizer/Exit.
-     *
-     * @param args Command line arguments (not used)
-     */
     public static void main(String[] args) {
         Logger.logInfo("TeamMate application started");
 
-        // Display application header
         System.out.println("================================================================");
         System.out.println("   TeamMate: Intelligent Team Formation System");
         System.out.println("   University Gaming Club Management");
         System.out.println("================================================================\n");
 
         try {
-            // Initialize services
             userService = new UserService(PARTICIPANT_CSV);
             teamService = new TeamService();
 
             boolean exit = false;
             while (!exit) {
                 displayWelcomeMenu();
-                String choice = getUserInput("Enter your choice (1-3): ");
+                String choice = getUserInput("Enter your choice (0-2): ");
 
                 switch (choice) {
                     case "1":
@@ -80,13 +50,13 @@ public class TeamMateApp {
                     case "2":
                         organizerFlow();
                         break;
-                    case "3":
+                    case "0":
                         exit = true;
                         System.out.println("\n[INFO] Thank you for using TeamMate. Goodbye!");
                         Logger.logInfo("User chose to exit application");
                         break;
                     default:
-                        System.err.println("[ERROR] Invalid choice. Please enter 1, 2, or 3.");
+                        System.err.println("[ERROR] Invalid choice. Please enter 0, 1, or 2.");
                 }
             }
 
@@ -101,35 +71,25 @@ public class TeamMateApp {
         }
     }
 
-    /**
-     * Displays the welcome menu with main options
-     *
-     * Shows three options: Participant Login/Register, Organizer Login, Exit
-     */
     private static void displayWelcomeMenu() {
         System.out.println("\n================================================================");
         System.out.println("                    WELCOME TO TEAMMATE");
         System.out.println("================================================================");
         System.out.println("  1. Participant Login/Register");
         System.out.println("  2. Organizer Login");
-        System.out.println("  3. Exit");
+        System.out.println("  0. Exit");
         System.out.println("================================================================");
     }
 
-    /**
-     * Handles participant flow - registration or login
-     *
-     * Presents options for new participant registration or existing participant login.
-     */
     private static void participantFlow() {
         System.out.println("\n[PARTICIPANT MENU]");
         System.out.println("----------------------------------------------------------------");
         System.out.println("  1. Register as New Participant");
         System.out.println("  2. Login as Existing Participant");
-        System.out.println("  3. Back to Main Menu");
+        System.out.println("  0. Back to Main Menu");
         System.out.println("----------------------------------------------------------------");
 
-        String choice = getUserInput("Enter your choice (1-3): ");
+        String choice = getUserInput("Enter your choice (0-2): ");
 
         switch (choice) {
             case "1":
@@ -138,7 +98,7 @@ public class TeamMateApp {
             case "2":
                 loginParticipant();
                 break;
-            case "3":
+            case "0":
                 return;
             default:
                 System.err.println("[ERROR] Invalid choice.");
@@ -148,18 +108,7 @@ public class TeamMateApp {
     /**
      * UC-01: Register New Participant
      *
-     * Registers a new participant with:
-     * - Auto-generated ID (P101, P102, P103, ...)
-     * - Name and email
-     * - 5-question personality survey
-     * - Game preference
-     * - Role selection
-     * - Skill level (1-10)
-     *
-     * The personality survey classifies participants into:
-     * - Leader (90-100)
-     * - Balanced (70-89)
-     * - Thinker (50-69)
+     * With EXACT 5 personality survey questions and EXACT role descriptions
      */
     private static void registerParticipant() {
         Logger.logInfo("New participant registration initiated");
@@ -168,19 +117,17 @@ public class TeamMateApp {
             System.out.println("\n[NEW PARTICIPANT REGISTRATION]");
             System.out.println("================================================================");
 
-            // Get name
             String name = getUserInput("Enter your full name: ");
             if (!ValidationUtils.isNotEmpty(name)) {
                 throw new InvalidInputException("Name cannot be empty");
             }
 
-            // Get email with validation
             String email = getUserInput("Enter your email: ");
             if (!ValidationUtils.isValidEmail(email)) {
                 throw new InvalidInputException("Invalid email format");
             }
 
-            // Personality Survey - 5 Questions
+            // EXACT 5 PERSONALITY SURVEY QUESTIONS (as per specification)
             System.out.println("\n[PERSONALITY SURVEY]");
             System.out.println("Rate each statement from 1 (Strongly Disagree) to 5 (Strongly Agree)");
             System.out.println("================================================================");
@@ -194,7 +141,6 @@ public class TeamMateApp {
                     "Q5: I like making quick decisions and adapting in dynamic situations."
             };
 
-            // Collect survey responses with validation
             for (int i = 0; i < 5; i++) {
                 System.out.println("\n" + questions[i]);
                 boolean validResponse = false;
@@ -215,38 +161,38 @@ public class TeamMateApp {
                 }
             }
 
-            // Calculate personality score and classify
             int personalityScore = PersonalityClassifier.calculateScore(responses);
             PersonalityType personalityType = PersonalityClassifier.classify(personalityScore);
 
-            // Display survey results
             System.out.println("\n[SURVEY RESULTS]");
-            System.out.println("Your Personality Score: " + personalityScore);
-            System.out.println("Your Personality Type: " + personalityType);
+            System.out.println("Your Personality Type: " + personalityType.getDisplayName());
+            System.out.println("Score: " + personalityScore + "/100");
             System.out.println("Description: " + personalityType.getDescription());
 
-            // Get gaming preferences
-            System.out.println("\n[GAMING PREFERENCES]");
-            System.out.println("eg: FIFA, CS:GO, DOTA 2, Valorant, Basketball, Chess");
-            String preferredGame = getUserInput("Enter your preferred game/sport: ");
+            String preferredGame = getUserInput("\nEnter your preferred game (eg: FIFA, Chess, Basketball, CS:GO, Dota 2, Valorant): ");
             if (!ValidationUtils.isNotEmpty(preferredGame)) {
-                throw new InvalidInputException("Preferred game cannot be empty");
+                throw new InvalidInputException("Game/sport cannot be empty");
             }
 
-            // Role selection with descriptions
-            System.out.println("\n[SELECT YOUR ROLE]");
+            // EXACT ROLE DESCRIPTIONS (as per specification)
+            System.out.println("\n[SELECT YOUR PREFERRED ROLE]");
             System.out.println("================================================================");
-            System.out.println("1. Strategist : Focuses on tactics and planning. Keeps the bigger picture in mind during gameplay.");
-            System.out.println("2. Attacker : Frontline player. Good reflexes, offensive tactics, quick execution");
-            System.out.println("3. Defender : Protects and supports team stability. Good under pressure and team-focused.");
-            System.out.println("4. Supporter : Jack-of-all-trades. Adapts roles, ensures smooth coordination.");
-            System.out.println("5. Coordinator : Communication lead. Keeps the team informed and organized in real time.");
+            System.out.println("1. Strategist");
+            System.out.println("   Focuses on tactics and planning. Keeps the bigger picture in mind during gameplay.");
+            System.out.println("\n2. Attacker");
+            System.out.println("   Frontline player. Good reflexes, offensive tactics, quick execution.");
+            System.out.println("\n3. Defender");
+            System.out.println("   Protects and supports team stability. Good under pressure and team-focused.");
+            System.out.println("\n4. Supporter");
+            System.out.println("   Jack-of-all-trades. Adapts roles, ensures smooth coordination.");
+            System.out.println("\n5. Coordinator");
+            System.out.println("   Communication lead. Keeps the team informed and organized in real time.");
             System.out.println("================================================================");
 
             Role preferredRole = null;
             boolean validRole = false;
             while (!validRole) {
-                String roleChoice = getUserInput("Select your preferred role (1-5): ");
+                String roleChoice = getUserInput("Select your role (1-5): ");
                 try {
                     int choice = Integer.parseInt(roleChoice);
                     switch (choice) {
@@ -255,123 +201,84 @@ public class TeamMateApp {
                         case 3: preferredRole = Role.DEFENDER; validRole = true; break;
                         case 4: preferredRole = Role.SUPPORTER; validRole = true; break;
                         case 5: preferredRole = Role.COORDINATOR; validRole = true; break;
-                        default:
-                            System.err.println("[ERROR] Please select a role between 1 and 5");
+                        default: System.err.println("[ERROR] Please enter a number between 1 and 5");
                     }
                 } catch (NumberFormatException e) {
                     System.err.println("[ERROR] Please enter a valid number");
                 }
             }
 
-            // Get skill level with validation
             int skillLevel = 0;
             boolean validSkill = false;
             while (!validSkill) {
-                String skillInput = getUserInput("Rate your skill level (1-10): ");
+                String skillInput = getUserInput("Enter your skill level (1-10): ");
                 try {
                     skillLevel = Integer.parseInt(skillInput);
-                    if (ValidationUtils.isValidSkillLevel(skillLevel)) {
-                        validSkill = true;
-                    } else {
-                        System.err.println("[ERROR] Skill level must be between 1 and 10");
+                    if (!ValidationUtils.isValidSkillLevel(skillLevel)) {
+                        throw new InvalidInputException("Skill level must be between 1 and 10");
                     }
+                    validSkill = true;
                 } catch (NumberFormatException e) {
                     System.err.println("[ERROR] Please enter a valid number");
+                } catch (InvalidInputException e) {
+                    System.err.println("[ERROR] " + e.getMessage());
                 }
             }
 
-            // Register the participant (ID auto-generated)
-            Participant newParticipant = userService.registerParticipant(name, email, preferredGame,
-                    skillLevel, preferredRole, personalityScore);
+            Participant participant = userService.registerParticipant(
+                    name, email, preferredGame, skillLevel, preferredRole, personalityScore);
 
-            // Display success message with generated ID
-            System.out.println("\n[REGISTRATION SUCCESSFUL]");
-            System.out.println("================================================================");
-            System.out.println("Your Participant ID: " + newParticipant.getId());
-            System.out.println("Please save this ID for login.");
-            System.out.println("================================================================");
-
-            Logger.logInfo("Participant registered: " + newParticipant.getId());
+            System.out.println("\n[SUCCESS] Registration Complete!");
+            System.out.println("Your Participant ID: " + participant.getId());
+            System.out.println("Save this ID for future logins.");
 
         } catch (InvalidInputException e) {
             System.err.println("[ERROR] Registration failed: " + e.getMessage());
-            Logger.logException("Participant registration failed", e);
-        } catch (Exception e) {
-            System.err.println("[ERROR] Unexpected error: " + e.getMessage());
-            Logger.logException("Unexpected registration error", e);
+            Logger.logError("Registration failed: " + e.getMessage());
         }
     }
 
     /**
-     * UC-02: Login Existing Participant
-     *
-     * Allows existing participants to login using their ID.
-     * Upon successful login, displays participant dashboard.
-     *
-     * @throws InvalidInputException if ID format is invalid
+     * UC-02: Login Participant
      */
     private static void loginParticipant() {
-        try {
-            String id = getUserInput("Enter your Participant ID: ");
+        String id = getUserInput("Enter your Participant ID: ");
+        Participant participant = userService.getParticipant(id);
 
-            // Validate ID format
-            if (!ValidationUtils.isValidParticipantId(id)) {
-                System.err.println("[ERROR] Invalid ID format. Must be P### (e.g., P101)");
-                return;
-            }
-
-            // Retrieve participant
-            Participant participant = userService.getParticipant(id);
-
-            if (participant == null) {
-                System.err.println("[ERROR] Participant not found. Please register first.");
-                return;
-            }
-
-            System.out.println("\n[WELCOME BACK, " + participant.getName() + "!]");
-            System.out.println("================================================================");
-
-            participantDashboard(participant);
-
-        } catch (Exception e) {
-            System.err.println("[ERROR] Login failed: " + e.getMessage());
-            Logger.logException("Participant login failed", e);
+        if (participant == null) {
+            System.err.println("[ERROR] If participants loaded already, participant not found. Please register first.Else, organiser didn't load participants yet..");
+            return;
         }
+
+        System.out.println("\n[WELCOME] " + participant.getName());
+        participantMenu(participant);
     }
 
-    /**
-     * Participant Dashboard - Main menu for logged-in participants
-     *
-     * Features:
-     * - View assigned team
-     * - Update profile (game, role, skill)
-     * - Logout
-     *
-     * @param participant The logged-in participant
-     */
-    private static void participantDashboard(Participant participant) {
-        boolean logout = false;
-
-        while (!logout) {
-            System.out.println("\n[PARTICIPANT DASHBOARD]");
+    private static void participantMenu(Participant participant) {
+        boolean back = false;
+        while (!back) {
+            System.out.println("\n[PARTICIPANT MENU - " + participant.getName() + "]");
             System.out.println("----------------------------------------------------------------");
-            System.out.println("  1. View My Team");
+            System.out.println("  1. View My Profile");
             System.out.println("  2. Update My Profile");
-            System.out.println("  0. Logout");
+            System.out.println("  3. View My Team");
+            System.out.println("  0. Back to Main Menu");
             System.out.println("----------------------------------------------------------------");
 
-            String choice = getUserInput("Enter your choice: ");
+            String choice = getUserInput("Enter your choice (0-3): ");
 
             switch (choice) {
                 case "1":
-                    viewMyTeam(participant);
+                    viewParticipantProfile(participant);
                     break;
                 case "2":
-                    updateMyProfile(participant);
+                    updateParticipantProfile(participant);
+                    break;
+                case "3":
+                    viewParticipantTeam(participant);
                     break;
                 case "0":
-                    logout = true;
-                    System.out.println("[INFO] Logged out successfully.");
+                    back = true;
                     break;
                 default:
                     System.err.println("[ERROR] Invalid choice.");
@@ -379,237 +286,153 @@ public class TeamMateApp {
         }
     }
 
-    /**
-     * View Participant's Team Assignment
-     *
-     * Displays the team the participant is assigned to, including:
-     * - Team ID
-     * - Team members
-     * - Average skill level
-     * - Current marker for the participant
-     *
-     * @param participant The participant viewing their team
-     */
-    private static void viewMyTeam(Participant participant) {
-        Team myTeam = teamService.getTeamByParticipant(participant.getId());
-
-        if (myTeam == null) {
-            System.out.println("\n[INFO] You are not assigned to a team yet.");
-            System.out.println("Teams will be formed by the organizer.");
-            return;
-        }
-
-        System.out.println("\n[YOUR TEAM: " + myTeam.getTeamId() + "]");
+    private static void viewParticipantProfile(Participant participant) {
+        System.out.println("\n[MY PROFILE]");
         System.out.println("================================================================");
-        System.out.println("Team Size: " + myTeam.getCurrentSize() + "/" + myTeam.getTeamSize());
-        System.out.println("Average Skill: " + String.format("%.2f", myTeam.getAverageSkill()));
-        System.out.println("\n[TEAM MEMBERS]");
-        System.out.println("----------------------------------------------------------------");
-
-        for (Participant member : myTeam.getMembers()) {
-            String marker = member.getId().equals(participant.getId()) ? " (YOU)" : "";
-            System.out.printf("%-15s | %-10s | %-12s | %-15s | Skill: %d%s\n",
-                    member.getName(),
-                    member.getPersonalityType(),
-                    member.getPreferredRole(),
-                    member.getPreferredGame(),
-                    member.getSkillLevel(),
-                    marker);
-        }
-
+        System.out.println("ID: " + participant.getId());
+        System.out.println("Name: " + participant.getName());
+        System.out.println("Email: " + participant.getEmail());
+        System.out.println("Preferred Game: " + participant.getPreferredGame());
+        System.out.println("Skill Level: " + participant.getSkillLevel() + "/10");
+        System.out.println("Preferred Role: " + participant.getPreferredRole());
+        System.out.println("Personality Type: " + participant.getPersonalityType() +
+                " (Score: " + participant.getPersonalityScore() + "/100)");
         System.out.println("================================================================");
     }
 
-    /**
-     * Update Participant Profile
-     *
-     * Allows participants to update:
-     * - Preferred game
-     * - Role
-     * - Skill level
-     *
-     * Note: Personality type can only be changed by retaking the survey
-     *
-     * @param participant The participant updating their profile
-     */
-    private static void updateMyProfile(Participant participant) {
+    private static void updateParticipantProfile(Participant participant) {
         try {
-            System.out.println("\n[UPDATE YOUR PROFILE]");
-            System.out.println("================================================================");
+            System.out.println("\n[UPDATE PROFILE]");
             System.out.println("Leave blank to keep current value");
 
-            // Update game
-            String game = getUserInput("New game [" + participant.getPreferredGame() + "]: ");
-            if (ValidationUtils.isNotEmpty(game)) {
-                participant.setPreferredGame(game);
+            String name = getUserInput("New name [" + participant.getName() + "]: ");
+            if (!name.isEmpty()) participant.setName(name);
+
+            String email = getUserInput("New email [" + participant.getEmail() + "]: ");
+            if (!email.isEmpty() && ValidationUtils.isValidEmail(email)) {
+                participant.setEmail(email);
             }
 
-            // Update role
-            System.out.println("\nCurrent Role: " + participant.getPreferredRole());
-            System.out.println("1. Strategist  2. Attacker  3. Defender  4. Supporter  5. Coordinator");
-            String roleChoice = getUserInput("New role (1-5) [keep current]: ");
-            if (ValidationUtils.isNotEmpty(roleChoice)) {
-                try {
-                    int choice = Integer.parseInt(roleChoice);
-                    switch (choice) {
-                        case 1: participant.setPreferredRole(Role.STRATEGIST); break;
-                        case 2: participant.setPreferredRole(Role.ATTACKER); break;
-                        case 3: participant.setPreferredRole(Role.DEFENDER); break;
-                        case 4: participant.setPreferredRole(Role.SUPPORTER); break;
-                        case 5: participant.setPreferredRole(Role.COORDINATOR); break;
-                        default: System.out.println("[INFO] Keeping current role");
-                    }
-                } catch (NumberFormatException e) {
-                    System.out.println("[INFO] Keeping current role");
-                }
-            }
+            String game = getUserInput("New preferred game [" + participant.getPreferredGame() + "]: ");
+            if (!game.isEmpty()) participant.setPreferredGame(game);
 
-            // Update skill level
             String skillInput = getUserInput("New skill level [" + participant.getSkillLevel() + "]: ");
-            if (ValidationUtils.isNotEmpty(skillInput)) {
-                try {
-                    int skill = Integer.parseInt(skillInput);
-                    if (ValidationUtils.isValidSkillLevel(skill)) {
-                        participant.setSkillLevel(skill);
-                    } else {
-                        System.out.println("[INFO] Skill must be 1-10. Keeping current value.");
-                    }
-                } catch (NumberFormatException e) {
-                    System.out.println("[INFO] Keeping current skill level");
+            if (!skillInput.isEmpty()) {
+                int skill = Integer.parseInt(skillInput);
+                if (ValidationUtils.isValidSkillLevel(skill)) {
+                    participant.setSkillLevel(skill);
                 }
             }
 
             userService.updateParticipant(participant);
-            System.out.println("\n[SUCCESS] Profile updated!");
+            System.out.println("[SUCCESS] Profile updated!");
 
         } catch (Exception e) {
             System.err.println("[ERROR] Update failed: " + e.getMessage());
         }
     }
 
+    private static void viewParticipantTeam(Participant participant) {
+        Team team = teamService.getTeamByParticipant(participant.getId());
+
+        if (team == null) {
+            System.out.println("\n[INFO] You are not assigned to a team yet.");
+            System.out.println("Teams will be formed by the organizer.");
+            return;
+        }
+
+        System.out.println("\n[YOUR TEAM: " + team.getTeamId() + "]");
+        System.out.println("================================================================");
+        System.out.println("Team Size: " + team.getCurrentSize() + "/" + team.getTeamSize());
+        System.out.println("Average Skill: " + String.format("%.2f", team.getAverageSkill()));
+        System.out.println("\nTeam Members:");
+        System.out.println("----------------------------------------------------------------");
+
+        for (Participant member : team.getMembers()) {
+            String marker = member.getId().equals(participant.getId()) ? " (YOU)" : "";
+            System.out.printf("%-15s | %-10s | %-12s | Skill: %d%s\n",
+                    member.getName(),
+                    member.getPersonalityType(),
+                    member.getPreferredRole(),
+                    member.getSkillLevel(),
+                    marker);
+        }
+        System.out.println("================================================================");
+    }
+
     /**
      * UC-03: Organizer Login
      *
-     * Authenticates organizer using password.
-     * Upon successful authentication, displays organizer dashboard.
+     * After authentication, CSV must be loaded successfully to access menu
      */
     private static void organizerFlow() {
         System.out.println("\n[ORGANIZER LOGIN]");
         String password = getUserInput("Enter organizer password: ");
 
         if (!password.equals(ORGANIZER_PASSWORD)) {
-            System.err.println("[ERROR] Incorrect password. Access denied.");
-            Logger.logWarning("Failed organizer login attempt");
+            System.err.println("[ERROR] Invalid password!");
             return;
         }
 
-        System.out.println("[SUCCESS] Organizer authenticated!");
-        Logger.logInfo("Organizer logged in");
+        System.out.println("[SUCCESS] Login successful!");
 
-        organizerDashboard();
+        // Load CSV - only proceed to menu if successful
+        if (loadParticipantsFromCSV()) {
+            organizerMenu();
+        }
+        // If load failed, automatically returns to main menu
     }
 
-    /**
-     * Organizer Dashboard - Main menu for organizer
-     *
-     * UC-04: Manage Participants
-     * - Load from CSV
-     * - Search, Update, Delete
-     * - View All
-     *
-     * UC-05: Form Teams
-     * - Generate Teams
-     * - View Unassigned Participants
-     * - View All Teams
-     * - Export to CSV
-     */
-    private static void organizerDashboard() {
-        boolean logout = false;
-
-        while (!logout) {
-            System.out.println("\n[ORGANIZER DASHBOARD]");
+    private static void organizerMenu() {
+        boolean back = false;
+        while (!back) {
+            System.out.println("\n[ORGANIZER MENU]");
             System.out.println("================================================================");
-            System.out.println("  1. Load Participants from CSV");
+            System.out.println("  1. View All Participants");
             System.out.println("  2. Search Participant");
             System.out.println("  3. Update Participant");
             System.out.println("  4. Delete Participant");
-            System.out.println("  5. View All Participants");
-            System.out.println("  6. Generate Teams");
+            System.out.println("  5. Generate Teams");
+            System.out.println("  6. View All Teams with Statistics");
             System.out.println("  7. View Unassigned Participants");
-            System.out.println("  8. View All Teams");
-            System.out.println("  9. Export Teams to CSV");
-            System.out.println("  0. Logout");
+            System.out.println("  8. Export Teams to CSV");
+            System.out.println("  0. Back to Main Menu");
             System.out.println("================================================================");
 
-            String choice = getUserInput("Enter your choice: ");
+            String choice = getUserInput("Enter your choice (0-8): ");
 
             switch (choice) {
-                case "1":
-                    loadParticipantsFromCSV();
-                    break;
-                case "2":
-                    searchParticipant();
-                    break;
-                case "3":
-                    organizerUpdateParticipant();
-                    break;
-                case "4":
-                    deleteParticipant();
-                    break;
-                case "5":
-                    viewAllParticipants();
-                    break;
-                case "6":
-                    generateTeams();
-                    break;
-                case "7":
-                    viewUnassignedParticipants();
-                    break;
-                case "8":
-                    viewAllTeams();
-                    break;
-                case "9":
-                    exportTeamsToCSV();
-                    break;
-                case "0":
-                    logout = true;
-                    System.out.println("[INFO] Organizer logged out.");
-                    break;
-                default:
-                    System.err.println("[ERROR] Invalid choice.");
+                case "1": viewAllParticipants(); break;
+                case "2": searchParticipant(); break;
+                case "3": organizerUpdateParticipant(); break;
+                case "4": deleteParticipant(); break;
+                case "5": generateTeams(); break;
+                case "6": viewAllTeamsWithStatistics(); break;
+                case "7": viewUnassignedParticipants(); break;
+                case "8": exportTeamsToCSV(); break;
+                case "0": back = true; break;
+                default: System.err.println("[ERROR] Invalid choice.");
             }
         }
     }
 
-    /**
-     * UC-04 INCLUDE: Load Participants from CSV
-     *
-     * Loads participant data from the sample CSV file.
-     * File format: ID,Name,Email,Game,Skill,Role,PersonalityScore
-     *
-     * @throws FileProcessingException if file cannot be read
-     */
-    private static void loadParticipantsFromCSV() {
+    private static boolean loadParticipantsFromCSV() {
         try {
-            System.out.println("\n[LOADING PARTICIPANTS FROM CSV]");
-            int count = userService.loadFromCSV(PARTICIPANT_CSV);
-            System.out.println("[SUCCESS] Loaded " + count + " participants from " + PARTICIPANT_CSV);
-            Logger.logInfo("Loaded " + count + " participants from CSV");
+            String filePath = getUserInput("Enter CSV file path [" + PARTICIPANT_CSV + "]: ");
+            if (filePath.isEmpty()) {
+                filePath = PARTICIPANT_CSV;
+            }
+
+            int count = userService.loadFromCSV(filePath);
+            System.out.println("[SUCCESS] Loaded " + count + " participants from CSV");
+            return true;  // Success
 
         } catch (FileProcessingException e) {
             System.err.println("[ERROR] Failed to load CSV: " + e.getMessage());
-            Logger.logException("CSV loading failed", e);
+            return false;  // Failure
         }
     }
 
-    /**
-     * UC-04 EXTEND: View All Participants
-     *
-     * Displays all registered participants in a table format showing:
-     * - ID, Name, Email
-     * - Personality Type, Role
-     * - Skill Level
-     */
     private static void viewAllParticipants() {
         List<Participant> participants = userService.getAllParticipants();
 
@@ -620,8 +443,8 @@ public class TeamMateApp {
 
         System.out.println("\n[ALL PARTICIPANTS]");
         System.out.println("================================================================");
-        System.out.printf("%-8s | %-20s | %-25s | %-10s | %-12s | Skill\n",
-                "ID", "Name", "Email", "Personality", "Role");
+        System.out.printf("%-8s | %-20s | %-25s | %-10s | %-12s | %s\n",
+                "ID", "Name", "Email", "Personality", "Role", "Skill");
         System.out.println("----------------------------------------------------------------");
 
         for (Participant p : participants) {
@@ -638,97 +461,155 @@ public class TeamMateApp {
         System.out.println("Total Participants: " + participants.size());
     }
 
-    /**
-     * UC-05 INCLUDE: Generate Teams
-     *
-     * Forms balanced teams using concurrent processing (3 threads).
-     *
-     * Algorithm ensures:
-     * - Team size between 3-10
-     * - Minimum 2 teams
-     * - Diverse interests (max 2 same game per team)
-     * - Role variety (min 3 different roles)
-     * - Mixed personality types (min 2 types)
-     *
-     * Uses ExecutorService with 3 threads for concurrent processing.
-     */
     private static void generateTeams() {
         try {
             List<Participant> participants = userService.getAllParticipants();
 
             if (participants.isEmpty()) {
-                System.err.println("[ERROR] No participants loaded. Load from CSV first.");
+                System.err.println("[ERROR] No participants to form teams. Load participants first.");
                 return;
             }
+
+            System.out.println("\n[TEAM GENERATION]");
+            System.out.println("Total Participants: " + participants.size());
 
             String sizeInput = getUserInput("Enter team size (3-10): ");
             int teamSize = Integer.parseInt(sizeInput);
 
-            if (teamSize < 3 || teamSize > 10) {
-                System.err.println("[ERROR] Team size must be between 3 and 10");
+            if (!ValidationUtils.isValidTeamSize(teamSize, participants.size())) {
+                System.err.println("[ERROR] Invalid team size. Must be 3-10 and allow at least 2 teams.");
                 return;
             }
 
-            int minParticipants = teamSize * 2;
-            if (participants.size() < minParticipants) {
-                System.err.println("[ERROR] Need at least " + minParticipants +
-                        " participants to form 2 teams of size " + teamSize);
-                return;
-            }
-
-            System.out.println("[INFO] Generating teams using concurrent processing...");
-            long startTime = System.currentTimeMillis();
+            System.out.println("\n[INFO] Generating teams using concurrent algorithm...");
 
             List<Team> teams = teamService.generateTeams(participants, teamSize);
 
-            long endTime = System.currentTimeMillis();
-            double duration = (endTime - startTime) / 1000.0;
+            System.out.println("\n[SUCCESS] Generated " + teams.size() + " teams!");
+            System.out.println("Use '7. View All Teams with Statistics' to see details.");
+            System.out.println("Use '9. Export Teams to CSV' to save the results.");
 
-            System.out.println("[SUCCESS] Generated " + teams.size() + " teams in " +
-                    String.format("%.2f", duration) + " seconds");
-
-            // Show teams (but not statistics)
-            viewAllTeams();
-
+        } catch (NumberFormatException e) {
+            System.err.println("[ERROR] Please enter a valid number.");
         } catch (Exception e) {
             System.err.println("[ERROR] Team generation failed: " + e.getMessage());
+            Logger.logException("Team generation failed", e);
         }
     }
 
     /**
-     * UC-05 EXTEND: View Unassigned Participants
-     *
-     * Shows participants who are not in any team yet.
-     * Used AFTER Generate Teams to check assignment status.
-     *
-     * Displays:
-     * - Unassigned participants table
-     * - Total participants count
-     * - Unassigned count
-     * - Assigned count
+     * UC-05: View All Teams WITH COMPREHENSIVE STATISTICS
      */
+    private static void viewAllTeamsWithStatistics() {
+        List<Team> teams = teamService.getAllTeams();
+
+        if (teams.isEmpty()) {
+            System.out.println("\n[INFO] No teams formed yet. Use 'Generate Teams' first.");
+            return;
+        }
+
+        System.out.println("\n[ALL TEAMS WITH STATISTICS]");
+        System.out.println("================================================================");
+
+        for (Team team : teams) {
+            System.out.println("\n" + team.getTeamId() + " (Members: " + team.getCurrentSize() +
+                    "/" + team.getTeamSize() + ", Avg Skill: " +
+                    String.format("%.2f", team.getAverageSkill()) + ")");
+            System.out.println("----------------------------------------------------------------");
+
+            // Display members
+            System.out.println("MEMBERS:");
+            for (Participant member : team.getMembers()) {
+                System.out.printf("  %-15s | %-10s | %-12s | %-15s | Skill: %d\n",
+                        member.getName(),
+                        member.getPersonalityType(),
+                        member.getPreferredRole(),
+                        member.getPreferredGame(),
+                        member.getSkillLevel());
+            }
+
+            // Display statistics
+            System.out.println("\nSTATISTICS:");
+
+            // Personality distribution
+            int leaders = team.getPersonalityCount(PersonalityType.LEADER);
+            int balanced = team.getPersonalityCount(PersonalityType.BALANCED);
+            int thinkers = team.getPersonalityCount(PersonalityType.THINKER);
+            System.out.printf("  Personality: %d Leader, %d Balanced, %d Thinker\n",
+                    leaders, balanced, thinkers);
+
+            // Role distribution
+            System.out.print("  Roles: ");
+            for (Role role : Role.values()) {
+                int count = team.getRoleCount(role);
+                if (count > 0) {
+                    System.out.print(role + "(" + count + ") ");
+                }
+            }
+            System.out.println();
+
+            // Game distribution
+            System.out.print("  Games: ");
+            Set<String> games = new HashSet<>();
+            for (Participant p : team.getMembers()) {
+                games.add(p.getPreferredGame());
+            }
+            for (String game : games) {
+                int count = team.getGameCount(game);
+                System.out.print(game + "(" + count + ") ");
+            }
+            System.out.println();
+
+            // Balance status
+            System.out.println("  Balance Status: " + (team.isBalanced() ? " BALANCED" : "✗ NEEDS ADJUSTMENT"));
+        }
+
+        System.out.println("\n================================================================");
+        System.out.println("GLOBAL STATISTICS:");
+        System.out.println("Total Teams: " + teams.size());
+
+        // Global average skill
+        double globalAvgSkill = teams.stream()
+                .mapToDouble(Team::getAverageSkill)
+                .average()
+                .orElse(0.0);
+        System.out.printf("Global Average Skill: %.2f\n", globalAvgSkill);
+
+        // Balanced teams count
+        long balancedTeams = teams.stream().filter(Team::isBalanced).count();
+        System.out.printf("Balanced Teams: %d/%d (%.1f%%)\n",
+                balancedTeams, teams.size(), (balancedTeams * 100.0 / teams.size()));
+        System.out.println("================================================================");
+    }
+
     private static void viewUnassignedParticipants() {
         List<Participant> allParticipants = userService.getAllParticipants();
-        List<Participant> unassigned = new ArrayList<>();
+        List<Team> teams = teamService.getAllTeams();
 
-        // Check which participants are not in any team
+        Set<String> assignedIds = new HashSet<>();
+        for (Team team : teams) {
+            for (Participant p : team.getMembers()) {
+                assignedIds.add(p.getId());
+            }
+        }
+
+        List<Participant> unassigned = new ArrayList<>();
         for (Participant p : allParticipants) {
-            if (teamService.getTeamByParticipant(p.getId()) == null) {
+            if (!assignedIds.contains(p.getId())) {
                 unassigned.add(p);
             }
         }
 
+        System.out.println("\n[UNASSIGNED PARTICIPANTS]");
+        System.out.println("================================================================");
+
         if (unassigned.isEmpty()) {
-            System.out.println("\n[INFO] All participants are assigned to teams.");
-            System.out.println("Total Participants: " + allParticipants.size());
-            System.out.println("Unassigned: 0");
+            System.out.println("All participants have been assigned to teams!");
             return;
         }
 
-        System.out.println("\n[UNASSIGNED PARTICIPANTS]");
-        System.out.println("================================================================");
-        System.out.printf("%-8s | %-20s | %-25s | %-10s | %-12s | Skill\n",
-                "ID", "Name", "Email", "Personality", "Role");
+        System.out.printf("%-8s | %-20s | %-25s | %-10s | %-12s | %s\n",
+                "ID", "Name", "Email", "Personality", "Role", "Skill");
         System.out.println("----------------------------------------------------------------");
 
         for (Participant p : unassigned) {
@@ -745,60 +626,8 @@ public class TeamMateApp {
         System.out.println("Total Participants: " + allParticipants.size());
         System.out.println("Unassigned: " + unassigned.size());
         System.out.println("Assigned: " + (allParticipants.size() - unassigned.size()));
-
-        Logger.logInfo("Viewed unassigned participants: " + unassigned.size() + " unassigned");
     }
 
-    /**
-     * UC-05: View All Teams
-     *
-     * Displays all formed teams with their members.
-     * Shows for each team:
-     * - Team ID
-     * - Team size
-     * - Average skill level
-     * - Member details (name, personality, role, game, skill)
-     */
-    private static void viewAllTeams() {
-        List<Team> teams = teamService.getAllTeams();
-
-        if (teams.isEmpty()) {
-            System.out.println("\n[INFO] No teams formed yet. Use 'Generate Teams' first.");
-            return;
-        }
-
-        System.out.println("\n[ALL TEAMS]");
-        System.out.println("================================================================");
-
-        for (Team team : teams) {
-            System.out.println("\n" + team.getTeamId() + " (Members: " + team.getCurrentSize() +
-                    ", Avg Skill: " + String.format("%.2f", team.getAverageSkill()) + ")");
-            System.out.println("----------------------------------------------------------------");
-
-            for (Participant member : team.getMembers()) {
-                System.out.printf("  %-15s | %-10s | %-12s | %-15s | Skill: %d\n",
-                        member.getName(),
-                        member.getPersonalityType(),
-                        member.getPreferredRole(),
-                        member.getPreferredGame(),
-                        member.getSkillLevel());
-            }
-        }
-
-        System.out.println("\n================================================================");
-        System.out.println("Total Teams: " + teams.size());
-    }
-
-    /**
-     * UC-05 EXTEND: Export Teams to CSV
-     *
-     * MANUAL export only - user must click this option.
-     * Exports formed teams to formed_teams.csv.
-     *
-     * File format: TeamID,ParticipantID,Name,Role,Skill
-     *
-     * @throws FileProcessingException if file cannot be written
-     */
     private static void exportTeamsToCSV() {
         try {
             List<Team> teams = teamService.getAllTeams();
@@ -816,14 +645,6 @@ public class TeamMateApp {
         }
     }
 
-    /**
-     * UC-04 EXTEND: Search Participant
-     *
-     * Searches for a participant by ID and displays their details:
-     * - ID, Name, Email
-     * - Game, Role, Skill
-     * - Personality Type
-     */
     private static void searchParticipant() {
         String id = getUserInput("Enter Participant ID: ");
         Participant p = userService.getParticipant(id);
@@ -834,23 +655,17 @@ public class TeamMateApp {
         }
 
         System.out.println("\n[PARTICIPANT DETAILS]");
-        System.out.println("ID: " + p.getId() + " | Name: " + p.getName());
+        System.out.println("================================================================");
+        System.out.println("ID: " + p.getId());
+        System.out.println("Name: " + p.getName());
         System.out.println("Email: " + p.getEmail());
-        System.out.println("Game: " + p.getPreferredGame() + " | Role: " + p.getPreferredRole());
-        System.out.println("Skill: " + p.getSkillLevel() + " | Personality: " + p.getPersonalityType());
+        System.out.println("Game: " + p.getPreferredGame());
+        System.out.println("Role: " + p.getPreferredRole());
+        System.out.println("Skill: " + p.getSkillLevel());
+        System.out.println("Personality: " + p.getPersonalityType() + " (" + p.getPersonalityScore() + ")");
+        System.out.println("================================================================");
     }
 
-    /**
-     * UC-04 EXTEND: Update Participant
-     *
-     * Allows organizer to update participant details:
-     * - Name
-     * - Email (with validation)
-     * - Game
-     * - Skill level (with validation)
-     *
-     * Leave fields blank to keep current values.
-     */
     private static void organizerUpdateParticipant() {
         try {
             String id = getUserInput("Enter Participant ID: ");
@@ -862,6 +677,7 @@ public class TeamMateApp {
             }
 
             System.out.println("\n[UPDATE: " + p.getName() + "]");
+            System.out.println("Leave blank to keep current value");
 
             String name = getUserInput("New name [" + p.getName() + "]: ");
             if (!name.isEmpty()) p.setName(name);
@@ -886,13 +702,6 @@ public class TeamMateApp {
         }
     }
 
-    /**
-     * UC-04 EXTEND: Delete Participant
-     *
-     * Deletes a participant from the system.
-     * Requires confirmation before deletion.
-     * If participant is in a team, all teams are cleared.
-     */
     private static void deleteParticipant() {
         try {
             String id = getUserInput("Enter Participant ID to delete: ");
@@ -912,26 +721,14 @@ public class TeamMateApp {
             }
 
             userService.deleteParticipant(id);
-
-            // If participant was in a team, clear all teams
-            if (teamService.getTeamByParticipant(id) != null) {
-                teamService.clearAllTeams();
-                System.out.println("[INFO] Teams cleared. Please regenerate.");
-            }
-
             System.out.println("[SUCCESS] Participant deleted!");
+            System.out.println("[INFO] Please regenerate teams if needed.");
 
         } catch (Exception e) {
             System.err.println("[ERROR] Deletion failed: " + e.getMessage());
         }
     }
 
-    /**
-     * Helper method to get user input
-     *
-     * @param prompt The prompt message to display
-     * @return User input as trimmed string
-     */
     private static String getUserInput(String prompt) {
         System.out.print(prompt);
         try {
