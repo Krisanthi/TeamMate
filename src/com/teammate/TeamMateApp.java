@@ -14,7 +14,7 @@ import java.util.*;
  * - Exit is now option 0 in all menus
  * - CSV load appears after organizer authentication
  *
- * @author Student Name
+ * @author Krisanthi Segar 2425596
  * @version 2.1
  * @since 2025
  */
